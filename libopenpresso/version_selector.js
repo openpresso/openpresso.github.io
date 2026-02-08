@@ -49,6 +49,23 @@ async function loadVersions() {
    projectNumber.appendChild(selectElement);
 }
 
-document.addEventListener('DOMContentLoaded', loadVersions);
+function addBackButton() {
+   const navpathUl = document.querySelector('#nav-path ul');
+   if (!navpathUl) return;
+   const backItem = document.createElement('li');
+   backItem.className = 'navelem';
+   backItem.innerHTML = `
+   <a href="../../" title="Back to main site">
+      ← To Openpresso Site
+   </a>`;
+   navpathUl.insertBefore(backItem, navpathUl.firstChild);
+}
+
+async function addOpenpressoSiteControls() {
+   addBackButton();
+   await loadVersions();
+}
+
+document.addEventListener('DOMContentLoaded', addOpenpressoSiteControls);
 
 
