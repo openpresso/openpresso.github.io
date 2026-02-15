@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -137,7 +137,7 @@ $(function(){initNavTree('structopenpresso_1_1_virbro_pump_flow_sensor.html','',
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad4fdb697c128c01ad3901f486d06ee98" id="r_ad4fdb697c128c01ad3901f486d06ee98"><td class="memItemLeft"><a id="ad4fdb697c128c01ad3901f486d06ee98" name="ad4fdb697c128c01ad3901f486d06ee98"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>pressureSensor</b></td></tr>
-<tr class="memdesc:ad4fdb697c128c01ad3901f486d06ee98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should be suitable for call <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html#acf5a3745b8bf4ac7fdb7768cf3e890ce" title="Retrieves or creates the pressure sensor with the specified label.">interfaces::OpenpressoCore::getPressureSensor()</a>. <br /></td></tr>
+<tr class="memdesc:ad4fdb697c128c01ad3901f486d06ee98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to any component config that implements <a class="el" href="classopenpresso_1_1interfaces_1_1_pressure_sensor.html" title="Interface for pressure measurement with callback support.">interfaces::PressureSensor</a>. <br /></td></tr>
 <tr class="memitem:a8000faba65c23c2724fd0e4abad72148" id="r_a8000faba65c23c2724fd0e4abad72148"><td class="memItemLeft"><a id="a8000faba65c23c2724fd0e4abad72148" name="a8000faba65c23c2724fd0e4abad72148"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>pumpPulseController</b></td></tr>
 <tr class="memdesc:a8000faba65c23c2724fd0e4abad72148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to <a class="el" href="structopenpresso_1_1_pulse_controlled_device_config.html" title="Configuration for pulse-controlled AC device (heater, vibro-pump).">PulseControlledDeviceConfig</a>. <br /></td></tr>

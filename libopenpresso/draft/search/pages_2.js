@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['features_0',['Features',['../index.html#autotoc_md3',1,'']]]
+  ['3_20perform_20brew_0',['3. Perform brew',['../md_quick__start.html#autotoc_md18',1,'']]]
 ];

@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -53,10 +49,14 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -131,22 +131,22 @@ $(function(){initNavTree('temperature__controller_8hpp_source.html','',''); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceopenpresso_1_1interfaces.html">openpresso::interfaces</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html">TemperatureController</a> : <span class="keyword">public</span> <a class="code hl_class" href="classopenpresso_1_1interfaces_1_1_controller_base.html">ControllerBase</a> {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aef138960ffe1397c1cc9ac4d2fed43c4">   46</a></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespaceopenpresso.html#aa467d05402d29eed04c4a1695785fd75">millidegrees_t</a> <a class="code hl_function" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aef138960ffe1397c1cc9ac4d2fed43c4">getTargetTemperature</a>() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aed3d4ea1df5bd957d5a35ade82c40e88">   47</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aed3d4ea1df5bd957d5a35ade82c40e88">setTargetTemperature</a>(<a class="code hl_typedef" href="namespaceopenpresso.html#aa467d05402d29eed04c4a1695785fd75">millidegrees_t</a> millidegrees) = 0;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html">   46</a></span><span class="keyword">class </span><a class="code hl_class" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html">TemperatureController</a> : <span class="keyword">public</span> <a class="code hl_class" href="classopenpresso_1_1interfaces_1_1_controller_base.html">ControllerBase</a> {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aef138960ffe1397c1cc9ac4d2fed43c4">   48</a></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="namespaceopenpresso.html#aa467d05402d29eed04c4a1695785fd75">millidegrees_t</a> <a class="code hl_function" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aef138960ffe1397c1cc9ac4d2fed43c4">getTargetTemperature</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aed3d4ea1df5bd957d5a35ade82c40e88">   49</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aed3d4ea1df5bd957d5a35ade82c40e88">setTargetTemperature</a>(<a class="code hl_typedef" href="namespaceopenpresso.html#aa467d05402d29eed04c4a1695785fd75">millidegrees_t</a> millidegrees) = 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace openpresso::interfaces</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif </span><span class="comment">// _TEMPERATURE_CONTROLLER_HPP_</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <span class="comment">// namespace openpresso::interfaces</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif </span><span class="comment">// _TEMPERATURE_CONTROLLER_HPP_</span></div>
 <div class="ttc" id="aclassopenpresso_1_1interfaces_1_1_controller_base_html"><div class="ttname"><a href="classopenpresso_1_1interfaces_1_1_controller_base.html">openpresso::interfaces::ControllerBase</a></div><div class="ttdoc">Abstract base interface for all controllable devices.</div><div class="ttdef"><b>Definition</b> controller_base.hpp:54</div></div>
-<div class="ttc" id="aclassopenpresso_1_1interfaces_1_1_temperature_controller_html"><div class="ttname"><a href="classopenpresso_1_1interfaces_1_1_temperature_controller.html">openpresso::interfaces::TemperatureController</a></div><div class="ttdoc">Interface for temperature regulation with setpoint control.</div><div class="ttdef"><b>Definition</b> temperature_controller.hpp:44</div></div>
+<div class="ttc" id="aclassopenpresso_1_1interfaces_1_1_temperature_controller_html"><div class="ttname"><a href="classopenpresso_1_1interfaces_1_1_temperature_controller.html">openpresso::interfaces::TemperatureController</a></div><div class="ttdoc">Interface for temperature regulation with setpoint control.</div><div class="ttdef"><b>Definition</b> temperature_controller.hpp:46</div></div>
 <div class="ttc" id="aclassopenpresso_1_1interfaces_1_1_temperature_controller_html_aed3d4ea1df5bd957d5a35ade82c40e88"><div class="ttname"><a href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aed3d4ea1df5bd957d5a35ade82c40e88">openpresso::interfaces::TemperatureController::setTargetTemperature</a></div><div class="ttdeci">virtual void setTargetTemperature(millidegrees_t millidegrees)=0</div><div class="ttdoc">Set the temperature target setpoint.</div></div>
 <div class="ttc" id="aclassopenpresso_1_1interfaces_1_1_temperature_controller_html_aef138960ffe1397c1cc9ac4d2fed43c4"><div class="ttname"><a href="classopenpresso_1_1interfaces_1_1_temperature_controller.html#aef138960ffe1397c1cc9ac4d2fed43c4">openpresso::interfaces::TemperatureController::getTargetTemperature</a></div><div class="ttdeci">virtual millidegrees_t getTargetTemperature() const =0</div><div class="ttdoc">Get the current temperature target setpoint.</div></div>
 <div class="ttc" id="acontroller__base_8hpp_html"><div class="ttname"><a href="controller__base_8hpp.html">controller_base.hpp</a></div><div class="ttdoc">Base interface for all controller components.</div></div>

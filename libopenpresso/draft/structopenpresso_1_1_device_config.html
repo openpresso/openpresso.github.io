@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -143,7 +143,8 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Complete device configuration for creating an openpresso Core. </p>
 <p>Contains all information needed to initialize a complete espresso machine control system: component definitions, inter-dependencies, and global settings.</p>
-<h3>Usage: </h3>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
+Usage:</h3>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="structopenpresso_1_1_device_config.html">DeviceConfig</a> config;</div>
 <div class="line">config.<a class="code hl_variable" href="#a81313de39e44fe7103a94f572cf61551">components</a>[<span class="stringliteral">&quot;pressure_sensor&quot;</span>] = <a class="code hl_struct" href="structopenpresso_1_1_ads1115_pressure_sensor_config.html">Ads1115PressureSensorConfig</a>{...};</div>
 <div class="line">config.<a class="code hl_variable" href="#a81313de39e44fe7103a94f572cf61551">components</a>[<span class="stringliteral">&quot;temp_sensor&quot;</span>] = <a class="code hl_struct" href="structopenpresso_1_1_max6675_temperature_sensor_config.html">Max6675TemperatureSensorConfig</a>{...};</div>
@@ -152,27 +153,21 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="keyword">auto</span> core = <a class="code hl_function" href="namespaceopenpresso.html#a8a29f6320997e3c0d19ca9cb5ae0fa2e">openpresso::getCore</a>(config);</div>
 <div class="ttc" id="anamespaceopenpresso_html_a8a29f6320997e3c0d19ca9cb5ae0fa2e"><div class="ttname"><a href="namespaceopenpresso.html#a8a29f6320997e3c0d19ca9cb5ae0fa2e">openpresso::getCore</a></div><div class="ttdeci">std::shared_ptr&lt; interfaces::OpenpressoCore &gt; getCore(const DeviceConfig &amp;config)</div><div class="ttdoc">Creates and initializes the openpresso core instance.</div></div>
 <div class="ttc" id="astructopenpresso_1_1_ads1115_pressure_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_ads1115_pressure_sensor_config.html">openpresso::Ads1115PressureSensorConfig</a></div><div class="ttdoc">Configuration for ADS1115 I2C analog pressure sensor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:34</div></div>
-<div class="ttc" id="astructopenpresso_1_1_device_config_html"><div class="ttname"><a href="structopenpresso_1_1_device_config.html">openpresso::DeviceConfig</a></div><div class="ttdoc">Complete device configuration for creating an openpresso Core.</div><div class="ttdef"><b>Definition</b> config.hpp:112</div></div>
-<div class="ttc" id="astructopenpresso_1_1_device_config_html_a81313de39e44fe7103a94f572cf61551"><div class="ttname"><a href="#a81313de39e44fe7103a94f572cf61551">openpresso::DeviceConfig::components</a></div><div class="ttdeci">components_map_t components</div><div class="ttdoc">All component configurations indexed by their unique labels.</div><div class="ttdef"><b>Definition</b> config.hpp:124</div></div>
-<div class="ttc" id="astructopenpresso_1_1_device_config_html_a9adaacb0951d2f2d6b7862fdb37d54aa"><div class="ttname"><a href="#a9adaacb0951d2f2d6b7862fdb37d54aa">openpresso::DeviceConfig::watchdog</a></div><div class="ttdeci">std::optional&lt; WatchdogConfig &gt; watchdog</div><div class="ttdoc">System watchdog configuration (optional).</div><div class="ttdef"><b>Definition</b> config.hpp:148</div></div>
-<div class="ttc" id="astructopenpresso_1_1_max6675_temperature_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_max6675_temperature_sensor_config.html">openpresso::Max6675TemperatureSensorConfig</a></div><div class="ttdoc">Configuration for MAX6675 SPI thermocouple amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:209</div></div>
-</div><!-- fragment --><h3>Component Labels: </h3>
-<p>Labels are arbitrary strings that uniquely identify each component instance. They serve three purposes:</p><ol type="1">
-<li>Configuration lookup by the Core when creating components</li>
-<li>Dependency references in other component configs</li>
-<li>Component retrieval from the OpenpressoCore interface</li>
-</ol>
-<p>Example labels: "main_pressure", "steam_temp", "pump_controller", "power_button"</p>
-<h3>Dependencies: </h3>
-<p>Many components depend on other components. Dependencies are expressed by including the label of the dependency in the component's config struct. The Core resolves these lazily on first access.</p>
+<div class="ttc" id="astructopenpresso_1_1_device_config_html"><div class="ttname"><a href="structopenpresso_1_1_device_config.html">openpresso::DeviceConfig</a></div><div class="ttdoc">Complete device configuration for creating an openpresso Core.</div><div class="ttdef"><b>Definition</b> config.hpp:94</div></div>
+<div class="ttc" id="astructopenpresso_1_1_device_config_html_a81313de39e44fe7103a94f572cf61551"><div class="ttname"><a href="#a81313de39e44fe7103a94f572cf61551">openpresso::DeviceConfig::components</a></div><div class="ttdeci">components_map_t components</div><div class="ttdoc">All component configurations indexed by their unique labels.</div><div class="ttdef"><b>Definition</b> config.hpp:102</div></div>
+<div class="ttc" id="astructopenpresso_1_1_device_config_html_a9adaacb0951d2f2d6b7862fdb37d54aa"><div class="ttname"><a href="#a9adaacb0951d2f2d6b7862fdb37d54aa">openpresso::DeviceConfig::watchdog</a></div><div class="ttdeci">std::optional&lt; WatchdogConfig &gt; watchdog</div><div class="ttdoc">System watchdog configuration (optional).</div><div class="ttdef"><b>Definition</b> config.hpp:124</div></div>
+<div class="ttc" id="astructopenpresso_1_1_max6675_temperature_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_max6675_temperature_sensor_config.html">openpresso::Max6675TemperatureSensorConfig</a></div><div class="ttdoc">Configuration for MAX6675 SPI thermocouple amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:212</div></div>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Components dependencies:</h3>
+<p>Many components depend on other components. Dependencies are expressed by including the label of the dependency in the component's config struct. The Core resolves these during component creation.</p>
 <p>Example dependency chain: </p><div class="fragment"><div class="line"><span class="comment">// TemperaturePidControllerConfig depends on a sensor and power controller</span></div>
 <div class="line"><a class="code hl_struct" href="structopenpresso_1_1_temperature_pid_controller_config.html">TemperaturePidControllerConfig</a> tc{</div>
-<div class="line">    .powerController = <span class="stringliteral">&quot;heater_pwm&quot;</span>,      <span class="comment">// reference to another component</span></div>
+<div class="line">    .powerController = <span class="stringliteral">&quot;heater_pdm&quot;</span>,      <span class="comment">// reference to another component</span></div>
 <div class="line">    .sensor = <span class="stringliteral">&quot;boiler_temp&quot;</span>,              <span class="comment">// reference to another component</span></div>
 <div class="line">    .pidSettings = {...},</div>
 <div class="line">    ...</div>
 <div class="line">};</div>
-<div class="ttc" id="astructopenpresso_1_1_temperature_pid_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_temperature_pid_controller_config.html">openpresso::TemperaturePidControllerConfig</a></div><div class="ttdoc">Configuration for PID-based temperature controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:242</div></div>
+<div class="ttc" id="astructopenpresso_1_1_temperature_pid_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_temperature_pid_controller_config.html">openpresso::TemperaturePidControllerConfig</a></div><div class="ttdoc">Configuration for PID-based temperature controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:245</div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="#a81313de39e44fe7103a94f572cf61551" title="All component configurations indexed by their unique labels.">DeviceConfig::components</a>, <a class="el" href="#a9adaacb0951d2f2d6b7862fdb37d54aa" title="System watchdog configuration (optional).">DeviceConfig::watchdog</a> </dd>
 <dd>
 <a class="el" href="namespaceopenpresso.html#a8a29f6320997e3c0d19ca9cb5ae0fa2e" title="Creates and initializes the openpresso core instance.">openpresso::getCore()</a>, <a class="el" href="component__config_8hpp.html" title="Configuration structures for all espresso machine components.">component_config.hpp</a> </dd></dl>
@@ -190,8 +185,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>All component configurations indexed by their unique labels. </p>
-<p>Maps each component's label to its configuration struct. The Core uses these configs to create component instances on demand and cache them for subsequent accesses.</p>
-<dl class="section note"><dt>Note</dt><dd>Components are created lazily on first access, not during Core initialization. This allows for optional components and more flexible system architectures. </dd></dl>
+<p>Maps each component's label to its configuration struct. The Core uses these configs to create component instances on demand and cache them for subsequent accesses. </p>
 
 </div>
 </div>
@@ -208,16 +202,15 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>System watchdog configuration (optional). </p>
-<p>If present, initializes a watchdog timer that monitors system health and triggers hardware reset if not periodically refreshed.</p>
+<p>If present, initializes a watchdog timer that monitors system health and triggers hardware reset if health check fails.</p>
 <p>Watchdog triggers reset in scenarios like:</p><ul>
 <li><b>Application hang</b>: If watchdog is not kicked within timeout period</li>
-<li><b>Sensor malfunction</b>: Detected by control loops or watchdog observers</li>
-<li><b>Temperature runaway</b>: If temperature exceeds safe limits</li>
-<li><b>GPIO failures</b>: If critical output pins (heaters) cannot be controlled</li>
+<li><b>Sensor malfunction</b>: If sensor stops sending values or values run out of allowed range</li>
+<li><b>GPIO failures</b>: If changing output pin state fails</li>
 <li><b>Uncaught exceptions</b>: Application exits abnormally</li>
 </ul>
 <p>The watchdog is a global component (doesn't require a label) since the system only needs one main watchdog timer.</p>
-<dl class="section note"><dt>Note</dt><dd>If std::nullopt, watchdog is disabled. This is only recommended for development/debugging. Production systems should always configure the watchdog for safety.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If std::nullopt, watchdog is disabled. This is not recommended for production use, but is neccessary for debugging.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structopenpresso_1_1_watchdog_config.html" title="Configuration for system watchdog timer.">WatchdogConfig</a> </dd></dl>
 
 </div>

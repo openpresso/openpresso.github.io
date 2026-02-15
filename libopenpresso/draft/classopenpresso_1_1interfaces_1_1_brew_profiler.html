@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -182,7 +182,9 @@ virtual&#160;</td><td class="memItemRight"><b>~ControllerBase</b> ()=default</td
 <div class="textblock"><p>Interface for automated brew profile execution with step-based control flow. </p>
 <p>Performs execution of user-defined brewing profiles with mutliple steps, each with a specific control target (constant pressure or constant flow) and advancement condition (weight reached, time elapsed, etc.).</p>
 <p>Inherits activation control from <a class="el" href="classopenpresso_1_1interfaces_1_1_controller_base.html" title="Abstract base interface for all controllable devices.">ControllerBase</a>. While active, notifies clients of step changes via callbacks.</p>
-<dl class="section note"><dt>Note</dt><dd>When activated, <a class="el" href="classopenpresso_1_1interfaces_1_1_brew_profiler.html" title="Interface for automated brew profile execution with step-based control flow.">BrewProfiler</a> tares the associated weight sensor</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_brew_profiler_config.html" title="Configuration for automated brew profile executor.">BrewProfilerConfig</a></dd>
+<dd>
+When activated, <a class="el" href="classopenpresso_1_1interfaces_1_1_brew_profiler.html" title="Interface for automated brew profile execution with step-based control flow.">BrewProfiler</a> tares the associated weight sensor</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classopenpresso_1_1interfaces_1_1_controller_base.html" title="Abstract base interface for all controllable devices.">ControllerBase</a>, <a class="el" href="brew__steps__data_8hpp.html" title="Brew profile step definitions and transition conditions.">brew_steps_data.hpp</a> </dd></dl>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="a8848d9d029a691c02d33d51c87c8c6c1" name="a8848d9d029a691c02d33d51c87c8c6c1"></a>

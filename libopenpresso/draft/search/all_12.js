@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['w_0',['w',['../structopenpresso_1_1_pid_settings.html#a8d34b046c5f1e301bb408af5379b36a8',1,'openpresso::PidSettings']]],
-  ['watchdog_1',['watchdog',['../structopenpresso_1_1_device_config.html#a9adaacb0951d2f2d6b7862fdb37d54aa',1,'openpresso::DeviceConfig']]],
-  ['watchdogconfig_2',['WatchdogConfig',['../structopenpresso_1_1_watchdog_config.html',1,'openpresso']]],
-  ['watchdogdev_3',['watchdogDev',['../structopenpresso_1_1_watchdog_config.html#a981351ee3b20621ecf2597dee5ab716f',1,'openpresso::WatchdogConfig']]],
-  ['wdecay_4',['wDecay',['../structopenpresso_1_1_pid_settings.html#ad40c424ac2fc41d48fa128905b9798ee',1,'openpresso::PidSettings']]],
-  ['weight_5',['weight',['../structopenpresso_1_1brew__step__advence__conditions_1_1_on_weight.html#ae66f38ffe84d0c5fae88e49fb595f9a8',1,'openpresso::brew_step_advence_conditions::OnWeight']]],
-  ['weight_5fsensor_2ehpp_6',['weight_sensor.hpp',['../weight__sensor_8hpp.html',1,'']]],
-  ['weightsensor_7',['WeightSensor',['../classopenpresso_1_1interfaces_1_1_weight_sensor.html',1,'openpresso::interfaces']]],
-  ['weightsensor_8',['weightSensor',['../structopenpresso_1_1_brew_profiler_config.html#a810c5c231734e086b17a395d730e1ced',1,'openpresso::BrewProfilerConfig']]]
+  ['rate_0',['rate',['../structopenpresso_1_1brew__step__targets_1_1_constant_flow.html#a8658515c7be6b515af3be23a0ec57082',1,'openpresso::brew_step_targets::ConstantFlow']]],
+  ['recommended_1',['Option 1: Conan (Recommended)',['../md_quick__start.html#autotoc_md12',1,'']]],
+  ['refillflow_2',['refillFlow',['../structopenpresso_1_1_steam_controller_config.html#a34a0338e2a2f6ebf034bf11a0cc56df5',1,'openpresso::SteamControllerConfig']]],
+  ['refillupdateperiod_3',['refillUpdatePeriod',['../structopenpresso_1_1_steam_controller_config.html#a5528b93e4509bb1a3085a1a180de73c6',1,'openpresso::SteamControllerConfig']]],
+  ['registercallback_4',['registerCallback',['../classopenpresso_1_1interfaces_1_1_logical_input.html#ade2e8fb17534e373bd05f07f369eb8fc',1,'openpresso::interfaces::LogicalInput::registerCallback()'],['../classopenpresso_1_1interfaces_1_1_pressure_sensor.html#a45ceb631b7c14c9c627f511ceba40f71',1,'openpresso::interfaces::PressureSensor::registerCallback()'],['../classopenpresso_1_1interfaces_1_1_temperature_sensor.html#a436d5034d02465c84db0d5c8386269ca',1,'openpresso::interfaces::TemperatureSensor::registerCallback()'],['../classopenpresso_1_1interfaces_1_1_weight_sensor.html#a0666dd5cbb49dc71fb3095ed3da35496',1,'openpresso::interfaces::WeightSensor::registerCallback()']]],
+  ['registerstepchangecallback_5',['registerStepChangeCallback',['../classopenpresso_1_1interfaces_1_1_brew_profiler.html#a9322e6032a8849dae0c889c47c258a9f',1,'openpresso::interfaces::BrewProfiler']]],
+  ['rejection_20brewing_6',['Phase 2: Disturbance Rejection (Brewing)',['../pid_tuning.html#autotoc_md82',1,'']]],
+  ['resource_20safety_7',['Callback Resource Safety',['../md_usage.html#autotoc_md65',1,'']]],
+  ['run_20cmake_20config_20and_20build_8',['Run CMake config and build',['../md_crosscompiling.html#autotoc_md95',1,'']]]
 ];

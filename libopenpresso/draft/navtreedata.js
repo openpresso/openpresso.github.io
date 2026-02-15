@@ -25,7 +25,110 @@
 var NAVTREE =
 [
   [ "Libopenpresso", "index.html", [
-    [ "Features", "index.html#autotoc_md3", null ],
+    [ "Project overview", "index.html#autotoc_md5", null ],
+    [ "Features", "index.html#autotoc_md6", null ],
+    [ "Getting started", "index.html#autotoc_md7", null ],
+    [ "Quick Start", "md_quick__start.html", [
+      [ "Prerequisites", "md_quick__start.html#autotoc_md9", null ],
+      [ "Installation", "md_quick__start.html#autotoc_md11", [
+        [ "Option 1: Conan (Recommended)", "md_quick__start.html#autotoc_md12", null ],
+        [ "Option 2: CMake FetchContent (Simplest)", "md_quick__start.html#autotoc_md13", null ]
+      ] ],
+      [ "Basic Usage", "md_quick__start.html#autotoc_md15", [
+        [ "1. Configure Components", "md_quick__start.html#autotoc_md16", null ],
+        [ "2. Initialize Core", "md_quick__start.html#autotoc_md17", null ],
+        [ "3. Perform brew", "md_quick__start.html#autotoc_md18", null ]
+      ] ],
+      [ "Advanced Usage", "md_quick__start.html#autotoc_md20", null ],
+      [ "What's Next?", "md_quick__start.html#autotoc_md22", null ]
+    ] ],
+    [ "Installation", "md_installation.html", [
+      [ "Conan package (preferred)", "md_installation.html#install-with-conan", null ],
+      [ "CMake FetchContent", "md_installation.html#install-cmake-fetchcontent", null ],
+      [ "CMake subdirectory", "md_installation.html#install-cmake-subdirectory", null ],
+      [ "Precompiled binaries", "md_installation.html#install-prebuilt-binaries", null ],
+      [ "Build from sources", "md_installation.html#install-build-from-sources", null ]
+    ] ],
+    [ "Device Configuration", "device_config.html", [
+      [ "Overview", "device_config.html#autotoc_md30", null ],
+      [ "The Components Map", "device_config.html#autotoc_md32", null ],
+      [ "Understanding Dependencies", "device_config.html#autotoc_md34", null ],
+      [ "Component overview", "device_config.html#autotoc_md36", [
+        [ "High-Level Automation", "device_config.html#autotoc_md37", [
+          [ "BrewProfiler", "device_config.html#autotoc_md38", null ],
+          [ "SteamControllerConfig", "device_config.html#autotoc_md39", null ]
+        ] ],
+        [ "Controllers", "device_config.html#autotoc_md41", [
+          [ "TemperaturePidControllerConfig", "device_config.html#temperature-controller-config", null ],
+          [ "PulsePressureControllerConfig", "device_config.html#pressure-controller-config", null ]
+        ] ],
+        [ "Sensors", "device_config.html#autotoc_md43", [
+          [ "Pressure: Ads1115PressureSensorConfig", "device_config.html#autotoc_md44", null ],
+          [ "Temperature Sensors", "device_config.html#autotoc_md45", null ],
+          [ "Weight Sensors", "device_config.html#autotoc_md46", null ]
+        ] ],
+        [ "Logical Inputs &amp; Outputs", "device_config.html#autotoc_md48", [
+          [ "LogicalInputPinConfig", "device_config.html#autotoc_md49", null ],
+          [ "LogicalOutputPinConfig", "device_config.html#autotoc_md50", null ]
+        ] ]
+      ] ],
+      [ "Watchdog Configuration", "device_config.html#autotoc_md52", null ],
+      [ "Complete Example", "device_config.html#autotoc_md54", null ],
+      [ "See Also", "device_config.html#autotoc_md56", null ]
+    ] ],
+    [ "API Usage", "md_usage.html", [
+      [ "OpenpressoCore &amp; Component Access", "md_usage.html#autotoc_md58", [
+        [ "Lazy Factory Pattern", "md_usage.html#autotoc_md59", null ]
+      ] ],
+      [ "Lifetime Management", "md_usage.html#autotoc_md60", [
+        [ "Automatic Cleanup", "md_usage.html#autotoc_md61", null ],
+        [ "Controllers deactivation and sensors callbacks unregister", "md_usage.html#autotoc_md62", null ],
+        [ "Dependencies", "md_usage.html#autotoc_md63", null ],
+        [ "Safe Core Destruction", "md_usage.html#autotoc_md64", null ],
+        [ "Callback Resource Safety", "md_usage.html#autotoc_md65", null ]
+      ] ],
+      [ "Thread Safety", "md_usage.html#autotoc_md66", [
+        [ "OpenpressoCore", "md_usage.html#autotoc_md67", null ],
+        [ "Sensors", "md_usage.html#autotoc_md68", null ],
+        [ "Controllers", "md_usage.html#autotoc_md69", null ]
+      ] ],
+      [ "Controller Architecture", "md_usage.html#autotoc_md70", [
+        [ "Activation Model", "md_usage.html#autotoc_md71", null ],
+        [ "Unique Write Access", "md_usage.html#autotoc_md72", null ],
+        [ "Hardware Sharing", "md_usage.html#autotoc_md73", null ]
+      ] ]
+    ] ],
+    [ "PID Tuning", "pid_tuning.html", [
+      [ "Overview", "pid_tuning.html#autotoc_md74", null ],
+      [ "Configuration Parameters", "pid_tuning.html#autotoc_md75", [
+        [ "Standard Terms", "pid_tuning.html#autotoc_md76", null ],
+        [ "Advanced Stabilizing Terms", "pid_tuning.html#autotoc_md77", null ],
+        [ "Feedforward Terms (Brewing Compensation)", "pid_tuning.html#autotoc_md78", null ]
+      ] ],
+      [ "Tuning Procedure", "pid_tuning.html#autotoc_md79", [
+        [ "Prerequisites", "pid_tuning.html#autotoc_md80", null ],
+        [ "Phase 1: Stabilization (Static Heating)", "pid_tuning.html#autotoc_md81", null ],
+        [ "Phase 2: Disturbance Rejection (Brewing)", "pid_tuning.html#autotoc_md82", null ]
+      ] ],
+      [ "Tune for steam mode", "pid_tuning.html#autotoc_md83", null ]
+    ] ],
+    [ "Internal Flow Tuning", "md_flow__sensor__tuning.html", [
+      [ "How it Works", "md_flow__sensor__tuning.html#autotoc_md85", null ],
+      [ "Configuration Parameters", "md_flow__sensor__tuning.html#autotoc_md86", null ],
+      [ "Tuning Procedure", "md_flow__sensor__tuning.html#autotoc_md87", [
+        [ "Phase 1: Zero Backpressure Tuning", "md_flow__sensor__tuning.html#autotoc_md88", null ],
+        [ "Phase 2: High Pressure Tuning", "md_flow__sensor__tuning.html#autotoc_md89", null ]
+      ] ],
+      [ "Accuracy and precision", "md_flow__sensor__tuning.html#autotoc_md90", null ],
+      [ "See Also", "md_flow__sensor__tuning.html#autotoc_md91", null ]
+    ] ],
+    [ "Cross-Compiling", "md_crosscompiling.html", [
+      [ "Build environment for cross compilation", "md_crosscompiling.html#autotoc_md93", null ],
+      [ "Creation of build profiles", "md_crosscompiling.html#autotoc_md94", null ],
+      [ "Generation of CMake Toolchain from conan profile", "md_crosscompiling.html#cross-compiling-conan-install-step", null ],
+      [ "Run CMake config and build", "md_crosscompiling.html#autotoc_md95", null ],
+      [ "Using prebuilt containers", "md_crosscompiling.html#autotoc_md96", null ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -55,7 +158,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structopenpresso_1_1_device_config.html"
+"namespacemembers_enum.html",
+"structopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time.html#ac7d8df117791b6355b84a9f4f245aa49"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

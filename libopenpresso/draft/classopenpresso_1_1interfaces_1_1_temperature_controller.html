@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -162,6 +162,7 @@ virtual&#160;</td><td class="memItemRight"><b>~ControllerBase</b> ()=default</td
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for temperature regulation with setpoint control. </p>
 <p>Controls system temperature toward a target setpoint by modulating heating elements or actuators. Inherits activation control from <a class="el" href="classopenpresso_1_1interfaces_1_1_controller_base.html" title="Abstract base interface for all controllable devices.">ControllerBase</a>.</p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_temperature_pid_controller_config.html" title="Configuration for PID-based temperature controller.">TemperaturePidControllerConfig</a></dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classopenpresso_1_1interfaces_1_1_controller_base.html" title="Abstract base interface for all controllable devices.">ControllerBase</a> </dd></dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aef138960ffe1397c1cc9ac4d2fed43c4" name="aef138960ffe1397c1cc9ac4d2fed43c4"></a>

@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -152,16 +152,16 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a5528b93e4509bb1a3085a1a180de73c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">How often to check if refill is needed (usually 250-500ms is sufficient). <br /></td></tr>
 <tr class="memitem:af3a543a1a1e6ba02f61f15041291f8ce" id="r_af3a543a1a1e6ba02f61f15041291f8ce"><td class="memItemLeft"><a id="af3a543a1a1e6ba02f61f15041291f8ce" name="af3a543a1a1e6ba02f61f15041291f8ce"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>preheatController</b></td></tr>
-<tr class="memdesc:af3a543a1a1e6ba02f61f15041291f8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should be suitable for call <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html#a6f8e76a2c489fd1f87ac43dd0e18be06" title="Retrieves or creates the temperature controller with the specified label.">interfaces::OpenpressoCore::getTemperatureController()</a>. <br /></td></tr>
+<tr class="memdesc:af3a543a1a1e6ba02f61f15041291f8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to any component config that implements <a class="el" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html" title="Interface for temperature regulation with setpoint control.">interfaces::TemperatureController</a>. <br /></td></tr>
 <tr class="memitem:ad4540b73571e0b804ecd0d4f6cafcc26" id="r_ad4540b73571e0b804ecd0d4f6cafcc26"><td class="memItemLeft"><a id="ad4540b73571e0b804ecd0d4f6cafcc26" name="ad4540b73571e0b804ecd0d4f6cafcc26"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>steamingTemperatureController</b></td></tr>
-<tr class="memdesc:ad4540b73571e0b804ecd0d4f6cafcc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should be suitable for call <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html#a6f8e76a2c489fd1f87ac43dd0e18be06" title="Retrieves or creates the temperature controller with the specified label.">interfaces::OpenpressoCore::getTemperatureController()</a>. <br /></td></tr>
+<tr class="memdesc:ad4540b73571e0b804ecd0d4f6cafcc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to any component config that implements <a class="el" href="classopenpresso_1_1interfaces_1_1_temperature_controller.html" title="Interface for temperature regulation with setpoint control.">interfaces::TemperatureController</a>. <br /></td></tr>
 <tr class="memitem:a261b38e5844bc1b58b0fbd0de9371b45" id="r_a261b38e5844bc1b58b0fbd0de9371b45"><td class="memItemLeft"><a id="a261b38e5844bc1b58b0fbd0de9371b45" name="a261b38e5844bc1b58b0fbd0de9371b45"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>temperatureSensor</b></td></tr>
-<tr class="memdesc:a261b38e5844bc1b58b0fbd0de9371b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should be suitable for call <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html#a92a4fe361b890df13936fc7b787a7579" title="Retrieves or creates the temperature sensor with the specified label.">interfaces::OpenpressoCore::getTemperatureSensor()</a>. <br /></td></tr>
+<tr class="memdesc:a261b38e5844bc1b58b0fbd0de9371b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to any component config that implements <a class="el" href="classopenpresso_1_1interfaces_1_1_temperature_sensor.html" title="Interface for temperature measurement with callback support.">interfaces::TemperatureSensor</a>. <br /></td></tr>
 <tr class="memitem:a41690aaf0719c496b5158b7771ac895f" id="r_a41690aaf0719c496b5158b7771ac895f"><td class="memItemLeft"><a id="a41690aaf0719c496b5158b7771ac895f" name="a41690aaf0719c496b5158b7771ac895f"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>pressureSensor</b></td></tr>
-<tr class="memdesc:a41690aaf0719c496b5158b7771ac895f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should be suitable for call <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html#acf5a3745b8bf4ac7fdb7768cf3e890ce" title="Retrieves or creates the pressure sensor with the specified label.">interfaces::OpenpressoCore::getPressureSensor()</a>. <br /></td></tr>
+<tr class="memdesc:a41690aaf0719c496b5158b7771ac895f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to any component config that implements <a class="el" href="classopenpresso_1_1interfaces_1_1_pressure_sensor.html" title="Interface for pressure measurement with callback support.">interfaces::PressureSensor</a>. <br /></td></tr>
 <tr class="memitem:aa01913aac8c7bf97ef087155704ce511" id="r_aa01913aac8c7bf97ef087155704ce511"><td class="memItemLeft"><a id="aa01913aac8c7bf97ef087155704ce511" name="aa01913aac8c7bf97ef087155704ce511"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>flowRateController</b></td></tr>
 <tr class="memdesc:aa01913aac8c7bf97ef087155704ce511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to <a class="el" href="structopenpresso_1_1_virbro_pump_flow_controller.html" title="Configuration for vibro pump flow controller.">VirbroPumpFlowController</a> only!!! <br /></td></tr>

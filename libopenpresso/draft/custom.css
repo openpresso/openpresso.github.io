@@ -42,3 +42,17 @@
         animation: octocat-wave 560ms ease-in-out
     }
 }
+
+
+#light-logo {
+  display: block;
+}
+#dark-logo {
+  display: none;
+}
+.dark-mode #light-logo {
+  display: none;
+}
+.dark-mode #dark-logo {
+  display: block;
+}

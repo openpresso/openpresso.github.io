@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -151,7 +151,8 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for digital input with callback support. </p>
-<p>Represents binary input devices like buttons, switches, or digital sensors that report their state (high/low) with optional callback notifications. </p>
+<p>Represents binary input devices like buttons, switches, or digital sensors that report their state (high/low) with optional callback notifications.</p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_logical_input_pin_config.html" title="Configuration for logical input pin with debouncing.">LogicalInputPinConfig</a>, <a class="el" href="structopenpresso_1_1_ac_zero_cross_sensor_config.html" title="Configuration for AC zero-crossing detection sensor.">AcZeroCrossSensorConfig</a> </dd></dl>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="ab4d42ecc667875da4e5e6f386395af04" name="ab4d42ecc667875da4e5e6f386395af04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab4d42ecc667875da4e5e6f386395af04">&#9670;&#160;</a></span>callback_t</h2>

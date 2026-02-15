@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -293,32 +293,24 @@ Functions</h2></td></tr>
 <div class="line">   <a class="code hl_struct" href="structopenpresso_1_1_nau7802_weight_sensor_config.html">Nau7802WeightSensorConfig</a>&gt;</div>
 <div class="ttc" id="astructopenpresso_1_1_ac_zero_cross_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_ac_zero_cross_sensor_config.html">openpresso::AcZeroCrossSensorConfig</a></div><div class="ttdoc">Configuration for AC zero-crossing detection sensor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:50</div></div>
 <div class="ttc" id="astructopenpresso_1_1_ads1115_pressure_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_ads1115_pressure_sensor_config.html">openpresso::Ads1115PressureSensorConfig</a></div><div class="ttdoc">Configuration for ADS1115 I2C analog pressure sensor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:34</div></div>
-<div class="ttc" id="astructopenpresso_1_1_brew_profiler_config_html"><div class="ttname"><a href="structopenpresso_1_1_brew_profiler_config.html">openpresso::BrewProfilerConfig</a></div><div class="ttdoc">Configuration for automated brew profile executor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:295</div></div>
-<div class="ttc" id="astructopenpresso_1_1_integral_flow_rate_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_integral_flow_rate_controller_config.html">openpresso::IntegralFlowRateControllerConfig</a></div><div class="ttdoc">Configuration for integral flow rate controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:177</div></div>
-<div class="ttc" id="astructopenpresso_1_1_logical_input_pin_config_html"><div class="ttname"><a href="structopenpresso_1_1_logical_input_pin_config.html">openpresso::LogicalInputPinConfig</a></div><div class="ttdoc">Configuration for logical input pin with debouncing.</div><div class="ttdef"><b>Definition</b> component_config.hpp:259</div></div>
-<div class="ttc" id="astructopenpresso_1_1_logical_output_pin_config_html"><div class="ttname"><a href="structopenpresso_1_1_logical_output_pin_config.html">openpresso::LogicalOutputPinConfig</a></div><div class="ttdoc">Configuration for logical output pin.</div><div class="ttdef"><b>Definition</b> component_config.hpp:272</div></div>
-<div class="ttc" id="astructopenpresso_1_1_max31856_temperature_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_max31856_temperature_sensor_config.html">openpresso::Max31856TemperatureSensorConfig</a></div><div class="ttdoc">Configuration for MAX31856 SPI thermocouple amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:222</div></div>
-<div class="ttc" id="astructopenpresso_1_1_max6675_temperature_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_max6675_temperature_sensor_config.html">openpresso::Max6675TemperatureSensorConfig</a></div><div class="ttdoc">Configuration for MAX6675 SPI thermocouple amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:209</div></div>
-<div class="ttc" id="astructopenpresso_1_1_nau7802_weight_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_nau7802_weight_sensor_config.html">openpresso::Nau7802WeightSensorConfig</a></div><div class="ttdoc">Configuration for NAU7802 I2C load cell amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:140</div></div>
+<div class="ttc" id="astructopenpresso_1_1_brew_profiler_config_html"><div class="ttname"><a href="structopenpresso_1_1_brew_profiler_config.html">openpresso::BrewProfilerConfig</a></div><div class="ttdoc">Configuration for automated brew profile executor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:298</div></div>
+<div class="ttc" id="astructopenpresso_1_1_integral_flow_rate_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_integral_flow_rate_controller_config.html">openpresso::IntegralFlowRateControllerConfig</a></div><div class="ttdoc">Configuration for integral flow rate controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:180</div></div>
+<div class="ttc" id="astructopenpresso_1_1_logical_input_pin_config_html"><div class="ttname"><a href="structopenpresso_1_1_logical_input_pin_config.html">openpresso::LogicalInputPinConfig</a></div><div class="ttdoc">Configuration for logical input pin with debouncing.</div><div class="ttdef"><b>Definition</b> component_config.hpp:262</div></div>
+<div class="ttc" id="astructopenpresso_1_1_logical_output_pin_config_html"><div class="ttname"><a href="structopenpresso_1_1_logical_output_pin_config.html">openpresso::LogicalOutputPinConfig</a></div><div class="ttdoc">Configuration for logical output pin.</div><div class="ttdef"><b>Definition</b> component_config.hpp:275</div></div>
+<div class="ttc" id="astructopenpresso_1_1_max31856_temperature_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_max31856_temperature_sensor_config.html">openpresso::Max31856TemperatureSensorConfig</a></div><div class="ttdoc">Configuration for MAX31856 SPI thermocouple amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:225</div></div>
+<div class="ttc" id="astructopenpresso_1_1_max6675_temperature_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_max6675_temperature_sensor_config.html">openpresso::Max6675TemperatureSensorConfig</a></div><div class="ttdoc">Configuration for MAX6675 SPI thermocouple amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:212</div></div>
+<div class="ttc" id="astructopenpresso_1_1_nau7802_weight_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_nau7802_weight_sensor_config.html">openpresso::Nau7802WeightSensorConfig</a></div><div class="ttdoc">Configuration for NAU7802 I2C load cell amplifier.</div><div class="ttdef"><b>Definition</b> component_config.hpp:143</div></div>
 <div class="ttc" id="astructopenpresso_1_1_pulse_controlled_device_config_html"><div class="ttname"><a href="structopenpresso_1_1_pulse_controlled_device_config.html">openpresso::PulseControlledDeviceConfig</a></div><div class="ttdoc">Configuration for pulse-controlled AC device (heater, vibro-pump).</div><div class="ttdef"><b>Definition</b> component_config.hpp:66</div></div>
 <div class="ttc" id="astructopenpresso_1_1_pulse_power_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_pulse_power_controller_config.html">openpresso::PulsePowerControllerConfig</a></div><div class="ttdoc">Configuration for pulse density modulation power controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:84</div></div>
-<div class="ttc" id="astructopenpresso_1_1_pulse_pressure_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_pulse_pressure_controller_config.html">openpresso::PulsePressureControllerConfig</a></div><div class="ttdoc">Configuration for pulse-based pressure controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:195</div></div>
-<div class="ttc" id="astructopenpresso_1_1_steam_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_steam_controller_config.html">openpresso::SteamControllerConfig</a></div><div class="ttdoc">Configuration for steam mode controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:313</div></div>
-<div class="ttc" id="astructopenpresso_1_1_temperature_pid_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_temperature_pid_controller_config.html">openpresso::TemperaturePidControllerConfig</a></div><div class="ttdoc">Configuration for PID-based temperature controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:242</div></div>
-<div class="ttc" id="astructopenpresso_1_1_virbro_pump_flow_controller_html"><div class="ttname"><a href="structopenpresso_1_1_virbro_pump_flow_controller.html">openpresso::VirbroPumpFlowController</a></div><div class="ttdoc">Configuration for vibro pump flow controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:160</div></div>
+<div class="ttc" id="astructopenpresso_1_1_pulse_pressure_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_pulse_pressure_controller_config.html">openpresso::PulsePressureControllerConfig</a></div><div class="ttdoc">Configuration for pulse-based pressure controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:198</div></div>
+<div class="ttc" id="astructopenpresso_1_1_steam_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_steam_controller_config.html">openpresso::SteamControllerConfig</a></div><div class="ttdoc">Configuration for steam mode controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:316</div></div>
+<div class="ttc" id="astructopenpresso_1_1_temperature_pid_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_temperature_pid_controller_config.html">openpresso::TemperaturePidControllerConfig</a></div><div class="ttdoc">Configuration for PID-based temperature controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:245</div></div>
+<div class="ttc" id="astructopenpresso_1_1_virbro_pump_flow_controller_html"><div class="ttname"><a href="structopenpresso_1_1_virbro_pump_flow_controller.html">openpresso::VirbroPumpFlowController</a></div><div class="ttdoc">Configuration for vibro pump flow controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:163</div></div>
 <div class="ttc" id="astructopenpresso_1_1_virbro_pump_flow_sensor_html"><div class="ttname"><a href="structopenpresso_1_1_virbro_pump_flow_sensor.html">openpresso::VirbroPumpFlowSensor</a></div><div class="ttdoc">Configuration for vibro pump flow sensor using pressure-based measurement.</div><div class="ttdef"><b>Definition</b> component_config.hpp:108</div></div>
-<div class="ttc" id="astructopenpresso_1_1_virtual_weight_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_virtual_weight_sensor_config.html">openpresso::VirtualWeightSensorConfig</a></div><div class="ttdoc">Configuration for virtual weight sensor derived from flow rate.</div><div class="ttdef"><b>Definition</b> component_config.hpp:126</div></div>
+<div class="ttc" id="astructopenpresso_1_1_virtual_weight_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_virtual_weight_sensor_config.html">openpresso::VirtualWeightSensorConfig</a></div><div class="ttdoc">Configuration for virtual weight sensor derived from flow rate.</div><div class="ttdef"><b>Definition</b> component_config.hpp:129</div></div>
 </div><!-- fragment -->
 <p>Variant type holding all supported component configuration types. </p>
-<p>This discriminated union allows heterogeneous collections of component configurations to be stored in maps and processed polymorphically.</p>
-<p>Each configuration type corresponds to a specific component implementation:</p><ul>
-<li>Pressure sensors: <a class="el" href="structopenpresso_1_1_ads1115_pressure_sensor_config.html" title="Configuration for ADS1115 I2C analog pressure sensor.">Ads1115PressureSensorConfig</a></li>
-<li>Temperature sensors: <a class="el" href="structopenpresso_1_1_max6675_temperature_sensor_config.html" title="Configuration for MAX6675 SPI thermocouple amplifier.">Max6675TemperatureSensorConfig</a>, <a class="el" href="structopenpresso_1_1_max31856_temperature_sensor_config.html" title="Configuration for MAX31856 SPI thermocouple amplifier.">Max31856TemperatureSensorConfig</a></li>
-<li>Weight sensors: <a class="el" href="structopenpresso_1_1_nau7802_weight_sensor_config.html" title="Configuration for NAU7802 I2C load cell amplifier.">Nau7802WeightSensorConfig</a>, <a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="Configuration for virtual weight sensor derived from flow rate.">VirtualWeightSensorConfig</a></li>
-<li>Controllers: Various pressure, temperature, flow controllers</li>
-<li>I/O: <a class="el" href="structopenpresso_1_1_logical_input_pin_config.html" title="Configuration for logical input pin with debouncing.">LogicalInputPinConfig</a>, <a class="el" href="structopenpresso_1_1_logical_output_pin_config.html" title="Configuration for logical output pin.">LogicalOutputPinConfig</a></li>
-<li>And more... see <a class="el" href="component__config_8hpp.html" title="Configuration structures for all espresso machine components.">component_config.hpp</a> </li>
-</ul>
+<p>Serves for storing different config types into <a class="el" href="structopenpresso_1_1_device_config.html" title="Complete device configuration for creating an openpresso Core.">DeviceConfig</a> components map </p>
 
 </div>
 </div>

@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -140,7 +140,7 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a4f6fe511c9f1d30dbe718db5f8754687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to <a class="el" href="structopenpresso_1_1_pulse_power_controller_config.html" title="Configuration for pulse density modulation power controller.">PulsePowerControllerConfig</a>. <br /></td></tr>
 <tr class="memitem:af6c52dec448c1358bb20e3758e5e2f09" id="r_af6c52dec448c1358bb20e3758e5e2f09"><td class="memItemLeft"><a id="af6c52dec448c1358bb20e3758e5e2f09" name="af6c52dec448c1358bb20e3758e5e2f09"></a>
 <a class="el" href="namespaceopenpresso.html#a188738323c067c1fe93dbf40422b89e7">component_label_t</a>&#160;</td><td class="memItemRight"><b>sensor</b></td></tr>
-<tr class="memdesc:af6c52dec448c1358bb20e3758e5e2f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should be suitable for call <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html#abfa631e05c50faec3df51d567243b74d" title="Retrieves or creates the weight sensor component with the specified label.">interfaces::OpenpressoCore::getWeightSensor()</a>. <br /></td></tr>
+<tr class="memdesc:af6c52dec448c1358bb20e3758e5e2f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dependency component label, should point to any component config that implements <a class="el" href="classopenpresso_1_1interfaces_1_1_weight_sensor.html" title="Interface for weight measurement with callback support.">interfaces::WeightSensor</a>. <br /></td></tr>
 <tr class="memitem:a7ea044df0ed4de7f144fc76e45d8dc42" id="r_a7ea044df0ed4de7f144fc76e45d8dc42"><td class="memItemLeft"><a id="a7ea044df0ed4de7f144fc76e45d8dc42" name="a7ea044df0ed4de7f144fc76e45d8dc42"></a>
 <a class="el" href="namespaceopenpresso.html#acef409de4c1b24c4ed09f17e4f5c77f7">pid_coeffs_t</a>&#160;</td><td class="memItemRight"><b>feedbackCoef</b></td></tr>
 <tr class="memdesc:a7ea044df0ed4de7f144fc76e45d8dc42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integral feedback coefficient. <br /></td></tr>

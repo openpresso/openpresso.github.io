@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -161,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract component factory interface for libopenpresso components. </p>
 <p><a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html" title="Abstract component factory interface for libopenpresso components.">OpenpressoCore</a> is the central component access point that implements a lazy factory pattern. All top-level components (those who implement some interface from <a class="el" href="namespaceopenpresso_1_1interfaces.html" title="Holds interfaces for interacting with top-level library components.">openpresso::interfaces</a>) are created on-demand when first accessed and cached for subsequent requests.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 Component Access:</h3>
 <ul>
 <li>Accept a <code class="param">label</code> unique identifier (string) from <a class="el" href="structopenpresso_1_1_device_config.html" title="Complete device configuration for creating an openpresso Core.">DeviceConfig</a></li>
@@ -173,7 +173,7 @@ Component Access:</h3>
 <div class="line"><span class="keyword">auto</span> pressure = core-&gt;getPressureSensor(<span class="stringliteral">&quot;group_pressure&quot;</span>);</div>
 <div class="line"><span class="keyword">auto</span> pump = core-&gt;getPressureController(<span class="stringliteral">&quot;pump_ctrl&quot;</span>);</div>
 <div class="ttc" id="anamespaceopenpresso_html_a8a29f6320997e3c0d19ca9cb5ae0fa2e"><div class="ttname"><a href="namespaceopenpresso.html#a8a29f6320997e3c0d19ca9cb5ae0fa2e">openpresso::getCore</a></div><div class="ttdeci">std::shared_ptr&lt; interfaces::OpenpressoCore &gt; getCore(const DeviceConfig &amp;config)</div><div class="ttdoc">Creates and initializes the openpresso core instance.</div></div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 Lifetime Management:</h3>
 <ul>
 <li>All the components ever requsted will remain alive at least as long as <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html" title="Abstract component factory interface for libopenpresso components.">OpenpressoCore</a> is alive</li>
@@ -259,7 +259,7 @@ Lifetime Management:</h3>
 <li>Notifying clients of step changes via callbacks</li>
 </ul>
 <p>Enables reproducible extraction profiles for consistent quality.</p>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_brew_profiler_config.html" title="Configuration for automated brew profile executor.">BrewProfilerConfig</a></p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_brew_profiler_config.html" title="Configuration for automated brew profile executor.">BrewProfilerConfig</a></dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classopenpresso_1_1interfaces_1_1_brew_profiler.html" title="Interface for automated brew profile execution with step-based control flow.">BrewProfiler</a>, <a class="el" href="structopenpresso_1_1_brew_profiler_config.html" title="Configuration for automated brew profile executor.">BrewProfilerConfig</a>, <a class="el" href="brew__steps__data_8hpp.html" title="Brew profile step definitions and transition conditions.">brew_steps_data.hpp</a> </dd></dl>
 
 </div>
@@ -311,7 +311,7 @@ Lifetime Management:</h3>
 <li>Solenoid valve opening</li>
 <li>Proportional valve position</li>
 </ul>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_virbro_pump_flow_controller.html" title="Configuration for vibro pump flow controller.">VirbroPumpFlowController</a>, <a class="el" href="structopenpresso_1_1_integral_flow_rate_controller_config.html" title="Configuration for integral flow rate controller.">IntegralFlowRateControllerConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_virbro_pump_flow_controller.html" title="Configuration for vibro pump flow controller.">VirbroPumpFlowController</a>, <a class="el" href="structopenpresso_1_1_integral_flow_rate_controller_config.html" title="Configuration for integral flow rate controller.">IntegralFlowRateControllerConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ Lifetime Management:</h3>
 <li>AC mains zero-crossing detection</li>
 </ul>
 <p>Provides debounced state with event callbacks.</p>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_logical_input_pin_config.html" title="Configuration for logical input pin with debouncing.">LogicalInputPinConfig</a>, <a class="el" href="structopenpresso_1_1_ac_zero_cross_sensor_config.html" title="Configuration for AC zero-crossing detection sensor.">AcZeroCrossSensorConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_logical_input_pin_config.html" title="Configuration for logical input pin with debouncing.">LogicalInputPinConfig</a>, <a class="el" href="structopenpresso_1_1_ac_zero_cross_sensor_config.html" title="Configuration for AC zero-crossing detection sensor.">AcZeroCrossSensorConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ Lifetime Management:</h3>
 <li>Pump enable/disable</li>
 <li>LED indicators</li>
 </ul>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_logical_output_pin_config.html" title="Configuration for logical output pin.">LogicalOutputPinConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_logical_output_pin_config.html" title="Configuration for logical output pin.">LogicalOutputPinConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -467,7 +467,7 @@ Lifetime Management:</h3>
 <li>Adjusting proportional valve position</li>
 </ul>
 <p>Uses pressure sensor readings feedback-loop control.</p>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_pulse_pressure_controller_config.html" title="Configuration for pulse-based pressure controller.">PulsePressureControllerConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_pulse_pressure_controller_config.html" title="Configuration for pulse-based pressure controller.">PulsePressureControllerConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -518,7 +518,7 @@ Lifetime Management:</h3>
 <li>Boiler pressure (steam or brew)</li>
 <li>Pump outlet pipe pressure</li>
 </ul>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_ads1115_pressure_sensor_config.html" title="Configuration for ADS1115 I2C analog pressure sensor.">Ads1115PressureSensorConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_ads1115_pressure_sensor_config.html" title="Configuration for ADS1115 I2C analog pressure sensor.">Ads1115PressureSensorConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -570,7 +570,7 @@ Lifetime Management:</h3>
 <li>Water refill logic and flow control</li>
 <li>Pressure/temperature interlocks for safety Coordinates multiple sub-controllers for complete steam system operation.</li>
 </ul>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_steam_controller_config.html" title="Configuration for steam mode controller.">SteamControllerConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_steam_controller_config.html" title="Configuration for steam mode controller.">SteamControllerConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -621,7 +621,7 @@ Lifetime Management:</h3>
 <li>PID + feed forward control algorithms</li>
 </ul>
 <p>Uses temperature sensor readings feedback-loop control.</p>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_temperature_pid_controller_config.html" title="Configuration for PID-based temperature controller.">TemperaturePidControllerConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_temperature_pid_controller_config.html" title="Configuration for PID-based temperature controller.">TemperaturePidControllerConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -673,7 +673,7 @@ Lifetime Management:</h3>
 <li>Group head temperature</li>
 <li>Other thermal zones</li>
 </ul>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_max6675_temperature_sensor_config.html" title="Configuration for MAX6675 SPI thermocouple amplifier.">Max6675TemperatureSensorConfig</a>, <a class="el" href="structopenpresso_1_1_max31856_temperature_sensor_config.html" title="Configuration for MAX31856 SPI thermocouple amplifier.">Max31856TemperatureSensorConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_max6675_temperature_sensor_config.html" title="Configuration for MAX6675 SPI thermocouple amplifier.">Max6675TemperatureSensorConfig</a>, <a class="el" href="structopenpresso_1_1_max31856_temperature_sensor_config.html" title="Configuration for MAX31856 SPI thermocouple amplifier.">Max31856TemperatureSensorConfig</a> </dd></dl>
 
 </div>
 </div>
@@ -724,7 +724,7 @@ Lifetime Management:</h3>
 <li>Water weight pumped from the reservoir (rough estimate using pump pulses counting)</li>
 <li>Flow rate (derived from weight change over time)</li>
 </ul>
-<p>Supported implementation configs: <a class="el" href="structopenpresso_1_1_nau7802_weight_sensor_config.html" title="Configuration for NAU7802 I2C load cell amplifier.">Nau7802WeightSensorConfig</a>, <a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="Configuration for virtual weight sensor derived from flow rate.">VirtualWeightSensorConfig</a> </p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_nau7802_weight_sensor_config.html" title="Configuration for NAU7802 I2C load cell amplifier.">Nau7802WeightSensorConfig</a>, <a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="Configuration for virtual weight sensor derived from flow rate.">VirtualWeightSensorConfig</a> </dd></dl>
 
 </div>
 </div>

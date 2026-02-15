@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -144,7 +144,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration for virtual weight sensor derived from flow rate. </p>
-<p>Calculates weight and flow rate using callbacks from <a class="el" href="structopenpresso_1_1_virbro_pump_flow_sensor.html" title="Configuration for vibro pump flow sensor using pressure-based measurement.">VirbroPumpFlowSensor</a>.</p>
+<p>This virtual sensor calculates weight and flow rate knowing a mass that pump pushes with one pulse and assumes that this mass lineary decreases when pressure grows. This information is sent with callbacks from <a class="el" href="structopenpresso_1_1_virbro_pump_flow_sensor.html" title="Configuration for vibro pump flow sensor using pressure-based measurement.">VirbroPumpFlowSensor</a> where actual calculations happen.</p>
 <dl class="section note"><dt>Note</dt><dd>Call <a class="el" href="classopenpresso_1_1interfaces_1_1_openpresso_core.html#abfa631e05c50faec3df51d567243b74d" title="Retrieves or creates the weight sensor component with the specified label.">interfaces::OpenpressoCore::getWeightSensor()</a> with the label of this config to get configured component instance.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structopenpresso_1_1_virbro_pump_flow_sensor.html" title="Configuration for vibro pump flow sensor using pressure-based measurement.">VirbroPumpFlowSensor</a> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>

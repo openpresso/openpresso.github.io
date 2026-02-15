@@ -12,14 +12,10 @@
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
 <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
-<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
 <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
-<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
 <script type="text/javascript">
-    DoxygenAwesomeFragmentCopyButton.init()
     DoxygenAwesomeDarkModeToggle.init()
     DoxygenAwesomeParagraphLink.init()
-    DoxygenAwesomeInteractiveToc.init()
 </script>
 <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
@@ -60,10 +56,14 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo">
+    <img id="light-logo" alt="Logo" src="logo-light.svg"/>
+    <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
+  </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.196.edf0b68</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
    </div>
-   <div id="projectbrief">DIY smart espresso machine control library</div>
+   <div id="projectbrief">Smart espresso machine control library</div>
   </td>
  </tr>
  </tbody>
@@ -158,7 +158,8 @@ virtual&#160;</td><td class="memItemRight"><b>~WeightSensor</b> ()=default</td><
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface for weight measurement with callback support. </p>
-<p>Provides weight value readings, flow rate calculation, tare functionality, and callback notifications for measurement updates. </p>
+<p>Provides weight value readings, flow rate calculation, tare functionality, and callback notifications for measurement updates.</p>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structopenpresso_1_1_nau7802_weight_sensor_config.html" title="Configuration for NAU7802 I2C load cell amplifier.">Nau7802WeightSensorConfig</a>, <a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="Configuration for virtual weight sensor derived from flow rate.">VirtualWeightSensorConfig</a> </dd></dl>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="ab555286fcd39b7223e916af7d7b8862e" name="ab555286fcd39b7223e916af7d7b8862e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab555286fcd39b7223e916af7d7b8862e">&#9670;&#160;</a></span>callback_t</h2>
