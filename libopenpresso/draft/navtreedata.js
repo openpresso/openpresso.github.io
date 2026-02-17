@@ -77,7 +77,7 @@ var NAVTREE =
       [ "See Also", "device_config.html#autotoc_md56", null ]
     ] ],
     [ "API Usage", "md_usage.html", [
-      [ "OpenpressoCore &amp; Component Access", "md_usage.html#autotoc_md58", [
+      [ "LibopenpressoCore &amp; Component Access", "md_usage.html#autotoc_md58", [
         [ "Lazy Factory Pattern", "md_usage.html#autotoc_md59", null ]
       ] ],
       [ "Lifetime Management", "md_usage.html#autotoc_md60", [
@@ -88,7 +88,7 @@ var NAVTREE =
         [ "Callback Resource Safety", "md_usage.html#autotoc_md65", null ]
       ] ],
       [ "Thread Safety", "md_usage.html#autotoc_md66", [
-        [ "OpenpressoCore", "md_usage.html#autotoc_md67", null ],
+        [ "LibopenpressoCore", "md_usage.html#autotoc_md67", null ],
         [ "Sensors", "md_usage.html#autotoc_md68", null ],
         [ "Controllers", "md_usage.html#autotoc_md69", null ]
       ] ],
@@ -158,8 +158,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"namespacemembers_enum.html",
-"structopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time.html#ac7d8df117791b6355b84a9f4f245aa49"
+"md_usage.html#autotoc_md71",
+"structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_total_time.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

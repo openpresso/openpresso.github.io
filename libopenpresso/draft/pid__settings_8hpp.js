@@ -1,4 +1,4 @@
 var pid__settings_8hpp =
 [
-    [ "openpresso::PidSettings", "structopenpresso_1_1_pid_settings.html", "structopenpresso_1_1_pid_settings" ]
+    [ "libopenpresso::PidSettings", "structlibopenpresso_1_1_pid_settings.html", "structlibopenpresso_1_1_pid_settings" ]
 ];

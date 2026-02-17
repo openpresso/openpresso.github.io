@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Libopenpresso: openpresso/types.hpp File Reference</title>
+<title>Libopenpresso: libopenpresso/types.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.224.312731c</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -140,53 +140,53 @@ $(function(){initNavTree('types_8hpp.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:openpresso" id="r_openpresso"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceopenpresso.html">openpresso</a></td></tr>
-<tr class="memdesc:namespaceopenpresso"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top level libopenpresso namespace where all the entities are defined. <br /></td></tr>
+<tr class="memitem:libopenpresso" id="r_libopenpresso"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacelibopenpresso.html">libopenpresso</a></td></tr>
+<tr class="memdesc:namespacelibopenpresso"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top level libopenpresso namespace where all the entities are defined. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:acef409de4c1b24c4ed09f17e4f5c77f7" id="r_acef409de4c1b24c4ed09f17e4f5c77f7"><td class="memItemLeft"><a id="acef409de4c1b24c4ed09f17e4f5c77f7" name="acef409de4c1b24c4ed09f17e4f5c77f7"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::pid_coeffs_t</b> = float</td></tr>
-<tr class="memdesc:acef409de4c1b24c4ed09f17e4f5c77f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used for PID controller tune settings. <br /></td></tr>
-<tr class="memitem:a753f1aab2c6b7b78f2d93158960e2736" id="r_a753f1aab2c6b7b78f2d93158960e2736"><td class="memItemLeft"><a id="a753f1aab2c6b7b78f2d93158960e2736" name="a753f1aab2c6b7b78f2d93158960e2736"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::callback_descriptor_t</b> = size_t</td></tr>
-<tr class="memdesc:a753f1aab2c6b7b78f2d93158960e2736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor of the registered callback, serves for unregistering this callback when needed. <br /></td></tr>
-<tr class="memitem:a440963bd11d7f6522f514a0d4da3c48d" id="r_a440963bd11d7f6522f514a0d4da3c48d"><td class="memItemLeft"><a id="a440963bd11d7f6522f514a0d4da3c48d" name="a440963bd11d7f6522f514a0d4da3c48d"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::millibars_t</b> = uint32_t</td></tr>
-<tr class="memdesc:a440963bd11d7f6522f514a0d4da3c48d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pressure units type. <br /></td></tr>
-<tr class="memitem:aa467d05402d29eed04c4a1695785fd75" id="r_aa467d05402d29eed04c4a1695785fd75"><td class="memItemLeft"><a id="aa467d05402d29eed04c4a1695785fd75" name="aa467d05402d29eed04c4a1695785fd75"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::millidegrees_t</b> = int32_t</td></tr>
-<tr class="memdesc:aa467d05402d29eed04c4a1695785fd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature units type. Celsius assumed. <br /></td></tr>
-<tr class="memitem:a2a1ff74e4f6119b293b4f7c09d53b1b3" id="r_a2a1ff74e4f6119b293b4f7c09d53b1b3"><td class="memItemLeft"><a id="a2a1ff74e4f6119b293b4f7c09d53b1b3" name="a2a1ff74e4f6119b293b4f7c09d53b1b3"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::microgramms_t</b> = uint32_t</td></tr>
-<tr class="memdesc:a2a1ff74e4f6119b293b4f7c09d53b1b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight units type used in flow sensors where milligrams could be not enought. <br /></td></tr>
-<tr class="memitem:a10f931cf00f02a5d792a08a6ff35bef5" id="r_a10f931cf00f02a5d792a08a6ff35bef5"><td class="memItemLeft"><a id="a10f931cf00f02a5d792a08a6ff35bef5" name="a10f931cf00f02a5d792a08a6ff35bef5"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::milligramms_t</b> = int32_t</td></tr>
-<tr class="memdesc:a10f931cf00f02a5d792a08a6ff35bef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight units type used everywhere except flow sensors. <br /></td></tr>
-<tr class="memitem:a027f929215f184084d55958cdfb791e3" id="r_a027f929215f184084d55958cdfb791e3"><td class="memItemLeft"><a id="a027f929215f184084d55958cdfb791e3" name="a027f929215f184084d55958cdfb791e3"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::milligramms_p_second_t</b> = int32_t</td></tr>
-<tr class="memdesc:a027f929215f184084d55958cdfb791e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flow rate units type. <br /></td></tr>
-<tr class="memitem:a15b0d11cb8849d9c731c856ca3f2390d" id="r_a15b0d11cb8849d9c731c856ca3f2390d"><td class="memItemLeft"><a id="a15b0d11cb8849d9c731c856ca3f2390d" name="a15b0d11cb8849d9c731c856ca3f2390d"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::pin_number_t</b> = uint16_t</td></tr>
-<tr class="memdesc:a15b0d11cb8849d9c731c856ca3f2390d"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO BCM pin number. <br /></td></tr>
-<tr class="memitem:a34de4d4c90556d6d0286ccfd65164ac1" id="r_a34de4d4c90556d6d0286ccfd65164ac1"><td class="memItemLeft"><a id="a34de4d4c90556d6d0286ccfd65164ac1" name="a34de4d4c90556d6d0286ccfd65164ac1"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::i2c_dev_addr_t</b> = uint8_t</td></tr>
-<tr class="memdesc:a34de4d4c90556d6d0286ccfd65164ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">7-bit I2C device address <br /></td></tr>
-<tr class="memitem:a8ec6841532a79d78d222759f40f562ef" id="r_a8ec6841532a79d78d222759f40f562ef"><td class="memItemLeft"><a id="a8ec6841532a79d78d222759f40f562ef" name="a8ec6841532a79d78d222759f40f562ef"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::unix_dev_addr_t</b> = std::filesystem::path</td></tr>
-<tr class="memdesc:a8ec6841532a79d78d222759f40f562ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the unix character device, normally starts with /dev. <br /></td></tr>
-<tr class="memitem:aa18435956e36ba17d2cf254bebf17129" id="r_aa18435956e36ba17d2cf254bebf17129"><td class="memItemLeft"><a id="aa18435956e36ba17d2cf254bebf17129" name="aa18435956e36ba17d2cf254bebf17129"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::pid_calc_t</b> = float</td></tr>
-<tr class="memdesc:aa18435956e36ba17d2cf254bebf17129"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used for PID controller internal calculations. <br /></td></tr>
-<tr class="memitem:a146bd334dc2e13332b4e57c5c4d4f097" id="r_a146bd334dc2e13332b4e57c5c4d4f097"><td class="memItemLeft"><a id="a146bd334dc2e13332b4e57c5c4d4f097" name="a146bd334dc2e13332b4e57c5c4d4f097"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::power_units_t</b> = uint8_t</td></tr>
-<tr class="memdesc:a146bd334dc2e13332b4e57c5c4d4f097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Units are meaningless, value representing 100% power is signalled by openpresso::gpio::PowerController::powerMax(). <br /></td></tr>
-<tr class="memitem:ae98588f011bfb9de09861f04d8240c0e" id="r_ae98588f011bfb9de09861f04d8240c0e"><td class="memItemLeft"><a id="ae98588f011bfb9de09861f04d8240c0e" name="ae98588f011bfb9de09861f04d8240c0e"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::time_delta_t</b> = std::chrono::steady_clock::duration</td></tr>
-<tr class="memdesc:ae98588f011bfb9de09861f04d8240c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for representing time intervals. <br /></td></tr>
-<tr class="memitem:a188738323c067c1fe93dbf40422b89e7" id="r_a188738323c067c1fe93dbf40422b89e7"><td class="memItemLeft"><a id="a188738323c067c1fe93dbf40422b89e7" name="a188738323c067c1fe93dbf40422b89e7"></a>
-using&#160;</td><td class="memItemRight"><b>openpresso::component_label_t</b> = std::string</td></tr>
-<tr class="memdesc:a188738323c067c1fe93dbf40422b89e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for component labels in the <a class="el" href="structopenpresso_1_1_device_config.html" title="Complete device configuration for creating an openpresso Core.">DeviceConfig</a>. <br /></td></tr>
+<tr class="memitem:a6017238587821616207a79dac02a1869" id="r_a6017238587821616207a79dac02a1869"><td class="memItemLeft"><a id="a6017238587821616207a79dac02a1869" name="a6017238587821616207a79dac02a1869"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::pid_coeffs_t</b> = float</td></tr>
+<tr class="memdesc:a6017238587821616207a79dac02a1869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used for PID controller tune settings. <br /></td></tr>
+<tr class="memitem:a34e67c718c9879e0cb7620f2c293ae64" id="r_a34e67c718c9879e0cb7620f2c293ae64"><td class="memItemLeft"><a id="a34e67c718c9879e0cb7620f2c293ae64" name="a34e67c718c9879e0cb7620f2c293ae64"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::callback_descriptor_t</b> = size_t</td></tr>
+<tr class="memdesc:a34e67c718c9879e0cb7620f2c293ae64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Descriptor of the registered callback, serves for unregistering this callback when needed. <br /></td></tr>
+<tr class="memitem:a5551957d23c3e3a879c4535ce8e866b4" id="r_a5551957d23c3e3a879c4535ce8e866b4"><td class="memItemLeft"><a id="a5551957d23c3e3a879c4535ce8e866b4" name="a5551957d23c3e3a879c4535ce8e866b4"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::millibars_t</b> = uint32_t</td></tr>
+<tr class="memdesc:a5551957d23c3e3a879c4535ce8e866b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pressure units type. <br /></td></tr>
+<tr class="memitem:a57b3fbc43e7307724ab37f83c59cf008" id="r_a57b3fbc43e7307724ab37f83c59cf008"><td class="memItemLeft"><a id="a57b3fbc43e7307724ab37f83c59cf008" name="a57b3fbc43e7307724ab37f83c59cf008"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::millidegrees_t</b> = int32_t</td></tr>
+<tr class="memdesc:a57b3fbc43e7307724ab37f83c59cf008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature units type. Celsius assumed. <br /></td></tr>
+<tr class="memitem:a9cb8609d1f31c7adda43727d2e347c2c" id="r_a9cb8609d1f31c7adda43727d2e347c2c"><td class="memItemLeft"><a id="a9cb8609d1f31c7adda43727d2e347c2c" name="a9cb8609d1f31c7adda43727d2e347c2c"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::micrograms_t</b> = uint32_t</td></tr>
+<tr class="memdesc:a9cb8609d1f31c7adda43727d2e347c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight units type used in flow sensors where milligrams could be not enough. <br /></td></tr>
+<tr class="memitem:a05a079f7e30b92be2bc50dc949cb97d4" id="r_a05a079f7e30b92be2bc50dc949cb97d4"><td class="memItemLeft"><a id="a05a079f7e30b92be2bc50dc949cb97d4" name="a05a079f7e30b92be2bc50dc949cb97d4"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::milligrams_t</b> = int32_t</td></tr>
+<tr class="memdesc:a05a079f7e30b92be2bc50dc949cb97d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight units type used everywhere except flow sensors. <br /></td></tr>
+<tr class="memitem:aca92f80a0063a134f1c7e5b92649f28e" id="r_aca92f80a0063a134f1c7e5b92649f28e"><td class="memItemLeft"><a id="aca92f80a0063a134f1c7e5b92649f28e" name="aca92f80a0063a134f1c7e5b92649f28e"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::milligrams_p_second_t</b> = int32_t</td></tr>
+<tr class="memdesc:aca92f80a0063a134f1c7e5b92649f28e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flow rate units type. <br /></td></tr>
+<tr class="memitem:a60112d1e7b4648d1a3a128ecf3402d67" id="r_a60112d1e7b4648d1a3a128ecf3402d67"><td class="memItemLeft"><a id="a60112d1e7b4648d1a3a128ecf3402d67" name="a60112d1e7b4648d1a3a128ecf3402d67"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::pin_number_t</b> = uint16_t</td></tr>
+<tr class="memdesc:a60112d1e7b4648d1a3a128ecf3402d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO BCM pin number. <br /></td></tr>
+<tr class="memitem:a7f50bbfb8b56057d65702373a81aec67" id="r_a7f50bbfb8b56057d65702373a81aec67"><td class="memItemLeft"><a id="a7f50bbfb8b56057d65702373a81aec67" name="a7f50bbfb8b56057d65702373a81aec67"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::i2c_dev_addr_t</b> = uint8_t</td></tr>
+<tr class="memdesc:a7f50bbfb8b56057d65702373a81aec67"><td class="mdescLeft">&#160;</td><td class="mdescRight">7-bit I2C device address <br /></td></tr>
+<tr class="memitem:aa6928cdd96c3e137dcb1f7f6aedf2301" id="r_aa6928cdd96c3e137dcb1f7f6aedf2301"><td class="memItemLeft"><a id="aa6928cdd96c3e137dcb1f7f6aedf2301" name="aa6928cdd96c3e137dcb1f7f6aedf2301"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::unix_dev_addr_t</b> = std::filesystem::path</td></tr>
+<tr class="memdesc:aa6928cdd96c3e137dcb1f7f6aedf2301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to the unix character device, normally starts with /dev. <br /></td></tr>
+<tr class="memitem:abc269a3ee66967eb4d650092681da49f" id="r_abc269a3ee66967eb4d650092681da49f"><td class="memItemLeft"><a id="abc269a3ee66967eb4d650092681da49f" name="abc269a3ee66967eb4d650092681da49f"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::pid_calc_t</b> = float</td></tr>
+<tr class="memdesc:abc269a3ee66967eb4d650092681da49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type used for PID controller internal calculations. <br /></td></tr>
+<tr class="memitem:a70fd3e767192aedc8fdc268fa0399ba0" id="r_a70fd3e767192aedc8fdc268fa0399ba0"><td class="memItemLeft"><a id="a70fd3e767192aedc8fdc268fa0399ba0" name="a70fd3e767192aedc8fdc268fa0399ba0"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::power_units_t</b> = uint8_t</td></tr>
+<tr class="memdesc:a70fd3e767192aedc8fdc268fa0399ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Units are meaningless, value representing 100% power is signalled by openpresso::gpio::PowerController::powerMax(). <br /></td></tr>
+<tr class="memitem:a075fd8e34d400b3b550be2cbdcac1265" id="r_a075fd8e34d400b3b550be2cbdcac1265"><td class="memItemLeft"><a id="a075fd8e34d400b3b550be2cbdcac1265" name="a075fd8e34d400b3b550be2cbdcac1265"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::time_delta_t</b> = std::chrono::steady_clock::duration</td></tr>
+<tr class="memdesc:a075fd8e34d400b3b550be2cbdcac1265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for representing time intervals. <br /></td></tr>
+<tr class="memitem:ae2f9204b381602762a1266d2c344d6d4" id="r_ae2f9204b381602762a1266d2c344d6d4"><td class="memItemLeft"><a id="ae2f9204b381602762a1266d2c344d6d4" name="ae2f9204b381602762a1266d2c344d6d4"></a>
+using&#160;</td><td class="memItemRight"><b>libopenpresso::component_label_t</b> = std::string</td></tr>
+<tr class="memdesc:ae2f9204b381602762a1266d2c344d6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for component labels in the <a class="el" href="structlibopenpresso_1_1_device_config.html" title="Complete device configuration for creating an libopenpresso Core.">DeviceConfig</a>. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Type definitions and aliases for espresso machine control. </p>
@@ -204,7 +204,7 @@ using&#160;</td><td class="memItemRight"><b>openpresso::component_label_t</b> = 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>openpresso</b></li><li class="navelem"><a href="types_8hpp.html">types.hpp</a></li>
+    <li class="navelem"><b>libopenpresso</b></li><li class="navelem"><a href="types_8hpp.html">types.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
   </ul>
 </div>

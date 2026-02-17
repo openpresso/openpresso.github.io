@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.224.312731c</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -130,7 +130,7 @@ $(function(){initNavTree('pid_tuning.html','',''); });
 <div class="textblock"><p><a class="anchor" id="md_pid__tuning"></a></p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md74"></a>
 Overview</h1>
-<p>The Libppenpresso PID temperature controller is designed specifically for espresso machine boilers, which are characterized by high thermal inertia and significant delay between applying power and seeing a temperature change.</p>
+<p>The Libopenpresso PID temperature controller is designed specifically for espresso machine boilers, which are characterized by high thermal inertia and significant delay between applying power and seeing a temperature change.</p>
 <p>To handle these specific challenges, the controller extends the standard PID algorithm with:</p><ul>
 <li><b>Relaxed D-term</b>: Reduces derivative kick and allows faster approach by lessening damping when far from the setpoint.</li>
 <li><b>Relaxed I-term</b>: Prevents integral windup during large temperature changes (like initial heat-up) without complex conditional logic.</li>
@@ -138,7 +138,7 @@ Overview</h1>
 </ul>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md75"></a>
 Configuration Parameters</h1>
-<p>The controller is configured via the <span class="tt">PidSettings</span> struct. Detailed unit descriptions are available in the <a class="el" href="structopenpresso_1_1_pid_settings.html" title="openpresso::PidSettings">API Reference</a>, but here is a functional overview:</p>
+<p>The controller is configured via the <span class="tt">PidSettings</span> struct. Detailed unit descriptions are available in the <a class="el" href="structlibopenpresso_1_1_pid_settings.html" title="libopenpresso::PidSettings">API Reference</a>, but here is a functional overview:</p>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md76"></a>
 Standard Terms</h2>
 <ul>
@@ -195,7 +195,7 @@ Phase 1: Stabilization (Static Heating)</h2>
 </ul>
 </li>
 <li><b>Tune D (Derivative) &amp; Filter</b><ul>
-<li>Set <span class="tt">dFilterTime</span> to approx 5-10x your sensor update period (e.g., if sensor updates every 100ms, set filter to 500ms-1s). You can reduce this timing while you don't see significant noize in D-term.</li>
+<li>Set <span class="tt">dFilterTime</span> to approx 5-10x your sensor update period (e.g., if sensor updates every 100ms, set filter to 500ms-1s). You can reduce this timing while you don't see significant noise in D-term.</li>
 <li>Good starting point is to make controller reduce power by 10% per 1 °C/s temperature rise (<span class="tt">d = 0.1</span>).</li>
 <li>Increase <span class="tt">d</span> to dampen the oscillations from the P-term.</li>
 <li>After introducing D-term you may need to increase P-term again.</li>
@@ -206,7 +206,7 @@ Phase 1: Stabilization (Static Heating)</h2>
 <li><b>Tune I (Integral) &amp; I-Relax</b><ul>
 <li>As a starting point set <span class="tt">iTermRelax</span> to 1.0 what will mean that I-term starts to impact when P+D don't drive heater to full power.</li>
 <li>Add <span class="tt">i</span> to eliminate constant error like heat loss to surrounding.</li>
-<li>Increase per <span class="tt">0.0005f</span> until you see that temperature doesn't drift and stabilizes after at max one full oscilation after passing the set point.</li>
+<li>Increase per <span class="tt">0.0005f</span> until you see that temperature doesn't drift and stabilizes after at max one full oscillation after passing the set point.</li>
 <li>Now you can try to play with all three coefficients to find the best possible balance.</li>
 </ul>
 </li>
@@ -243,9 +243,9 @@ Phase 2: Disturbance Rejection (Brewing)</h2>
 </ol>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md83"></a>
 Tune for steam mode</h1>
-<p>When you already have well tuned controller for brewing temperature, you can use these settings as a starting point to controll steam temperature. <br  />
+<p>When you already have well tuned controller for brewing temperature, you can use these settings as a starting point to control steam temperature. <br  />
  This scenario doesn't need any feed-forward features, so you can set <span class="tt">f</span>, <span class="tt">w</span> and <span class="tt">wDecay</span> to 0. <span class="tt">flowCounter</span> field also can be empty. <br  />
- Standard <span class="tt">p</span>, <span class="tt">i</span> and <span class="tt">d</span> can be increased slightly for the controller that holds steam temperature in idle state, and increased about 2 times for the controller that will handle active steaming. Steam controller will switch two temperature controllers automatically, what especially helpfull to prevent I-term overshoot after steam valve was closed. </p>
+ Standard <span class="tt">p</span>, <span class="tt">i</span> and <span class="tt">d</span> can be increased slightly for the controller that holds steam temperature in idle state, and increased about 2 times for the controller that will handle active steaming. Steam controller will switch two temperature controllers automatically, which is especially helpful to prevent I-term overshoot after steam valve was closed. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

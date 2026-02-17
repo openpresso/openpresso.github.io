@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bus_0',['bus',['../structopenpresso_1_1_i2c_addr.html#ad42917e1009241f633dba930773ffb95',1,'openpresso::I2cAddr']]]
+  ['bus_0',['bus',['../structlibopenpresso_1_1_i2c_addr.html#a905f73304a68cd95a080dcf2048e8ede',1,'libopenpresso::I2cAddr']]]
 ];

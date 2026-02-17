@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['access_0',['Access',['../md_usage.html#autotoc_md58',1,'OpenpressoCore &amp;amp; Component Access'],['../md_usage.html#autotoc_md72',1,'Unique Write Access']]],
-  ['access_3a_1',['Component Access:',['../classopenpresso_1_1interfaces_1_1_openpresso_core.html#autotoc_md2',1,'']]],
+  ['access_0',['Access',['../md_usage.html#autotoc_md58',1,'LibopenpressoCore &amp;amp; Component Access'],['../md_usage.html#autotoc_md72',1,'Unique Write Access']]],
+  ['access_3a_1',['Component Access:',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#autotoc_md2',1,'']]],
   ['accuracy_20and_20precision_2',['Accuracy and precision',['../md_flow__sensor__tuning.html#autotoc_md90',1,'']]],
   ['activation_20model_3',['Activation Model',['../md_usage.html#autotoc_md71',1,'']]],
   ['ads1115pressuresensorconfig_4',['Pressure: Ads1115PressureSensorConfig',['../device_config.html#autotoc_md44',1,'']]],

@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.224.312731c</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -137,8 +137,8 @@ How it Works</h1>
 </p>
 <p>Where:</p><ul>
 <li>\(P\) is the current pressure (in millibars)</li>
-<li>\(P_{\text{stall}}\) is the <a class="el" href="structopenpresso_1_1_virbro_pump_flow_sensor.html#a778fad232ab6c649809f3eb99206868d" title="openpresso::VirbroPumpFlowSensor::pumpStallPressure">VirbroPumpFlowSensor::pumpStallPressure</a></li>
-<li>\(V_{\text{pulse}}\) is the <a class="el" href="structopenpresso_1_1_virbro_pump_flow_sensor.html#aaefd9e50b308dcf259014122a154a070" title="openpresso::VirbroPumpFlowSensor::volumePerPulse">VirbroPumpFlowSensor::volumePerPulse</a></li>
+<li>\(P_{\text{stall}}\) is the <a class="el" href="structlibopenpresso_1_1_vibro_pump_flow_sensor.html#a6cc9bbda63de2795852e015dd25e4e68" title="libopenpresso::VibroPumpFlowSensor::pumpStallPressure">VibroPumpFlowSensor::pumpStallPressure</a></li>
+<li>\(V_{\text{pulse}}\) is the <a class="el" href="structlibopenpresso_1_1_vibro_pump_flow_sensor.html#a641f98ac5bd764076cbaa8e86c5ca67b" title="libopenpresso::VibroPumpFlowSensor::volumePerPulse">VibroPumpFlowSensor::volumePerPulse</a></li>
 <li>\(N_{\text{pulses}}\) is the number of pump pulses since the last callback</li>
 </ul>
 <p>Essentially, the flow is highest when pressure is low and decreases linearly as pressure increases, reaching zero at the stall pressure. <br  />
@@ -173,7 +173,7 @@ Phase 1: Zero Backpressure Tuning</h2>
 <p><b>Step 2: Fine-tune <span class="tt">volumePerPulse</span></b></p>
 <ol type="1">
 <li>Repeat the free flow test with the new setting.</li>
-<li>Compare the mass reported by <a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="openpresso::VirtualWeightSensorConfig">virtual weight sensor</a> against the actual weight on the scale. Adjust volumePerPulse with the following formula: <p class="formulaDsp">
+<li>Compare the mass reported by <a class="el" href="structlibopenpresso_1_1_virtual_weight_sensor_config.html" title="libopenpresso::VirtualWeightSensorConfig">virtual weight sensor</a> against the actual weight on the scale. Adjust volumePerPulse with the following formula: <p class="formulaDsp">
 \[ V_{\text{pulse new}} = V_{\text{pulse old}} \times \frac{\text{Real Weight}}{\text{Virtual Sensor Weight}} \]
 </p>
 </li>
@@ -194,8 +194,8 @@ Phase 2: High Pressure Tuning</h2>
 <p><b>Step 4: Fine-tune <span class="tt">pumpStallPressure</span></b></p>
 <ol type="1">
 <li>Prepare a setup that generates high pressure but allows some flow. Use <b>portafilter with a coffee pack</b> or a flow restrictor if available. Make a runs to fully saturate the coffee or fill the portafilter with water.</li>
-<li>Without removing portafilter after saturating run, perform another one with <a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="openpresso::VirtualWeightSensorConfig">virtual weight sensor</a>.</li>
-<li>Compare the mass reported by <a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="openpresso::VirtualWeightSensorConfig">virtual weight sensor</a> against the actual weight on the scale. Adjust pumpStallPressure with the following formula: <p class="formulaDsp">
+<li>Without removing portafilter after saturating run, perform another one with <a class="el" href="structlibopenpresso_1_1_virtual_weight_sensor_config.html" title="libopenpresso::VirtualWeightSensorConfig">virtual weight sensor</a>.</li>
+<li>Compare the mass reported by <a class="el" href="structlibopenpresso_1_1_virtual_weight_sensor_config.html" title="libopenpresso::VirtualWeightSensorConfig">virtual weight sensor</a> against the actual weight on the scale. Adjust pumpStallPressure with the following formula: <p class="formulaDsp">
 \[ P_{\text{stall new}} = P_{\text{stall old}} \times \frac{\text{Real Weight}}{\text{Virtual Sensor Weight}} \]
 </p>
 </li>
@@ -203,14 +203,14 @@ Phase 2: High Pressure Tuning</h2>
 </ol>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md90"></a>
 Accuracy and precision</h1>
-<p>This is the simplest mathematical bilinear model. It is quite far from the real process phisics where it can be considered linear very very approximately. Given that, precision will vary when you move away from pulse density or pressure which was used during tuning. This model should be used for scenarios where we need to know how much water comes into the boiler, but not comes out of the group head: feed-forward term of the temperature controller and boiler refill during steaming. It also can be used to automatically stop brewing at specific espresso shot weight, but in this case an approximate water mass needed to saturate the coffee pack should be added to target weight.</p>
+<p>This is the simplest mathematical bilinear model. It is quite far from the real process physics where it can be considered linear very very approximately. Given that, precision will vary when you move away from pulse density or pressure which was used during tuning. This model should be used for scenarios where we need to know how much water comes into the boiler, but not comes out of the group head: feed-forward term of the temperature controller and boiler refill during steaming. It also can be used to automatically stop brewing at specific espresso shot weight, but in this case an approximate water mass needed to saturate the coffee pack should be added to target weight.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md91"></a>
 See Also</h1>
 <ul>
 <li><a class="el" href="device_config.html#md_device__config" title="device_config.md">Device Configuration</a> — how to configure the flow sensor in the components map</li>
 <li><a class="el" href="pid_tuning.html#md_pid__tuning" title="pid_tuning.md">PID Tuning Guide</a> — tuning temperature controllers which may use flow feedforward</li>
-<li><a class="el" href="structopenpresso_1_1_virbro_pump_flow_sensor.html" title="openpresso::VirbroPumpFlowSensor">VirbroPumpFlowSensor</a> — API reference</li>
-<li><a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html" title="openpresso::VirtualWeightSensorConfig">VirtualWeightSensorConfig</a> — API reference </li>
+<li><a class="el" href="structlibopenpresso_1_1_vibro_pump_flow_sensor.html" title="libopenpresso::VibroPumpFlowSensor">VibroPumpFlowSensor</a> — API reference</li>
+<li><a class="el" href="structlibopenpresso_1_1_virtual_weight_sensor_config.html" title="libopenpresso::VirtualWeightSensorConfig">VirtualWeightSensorConfig</a> — API reference </li>
 </ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

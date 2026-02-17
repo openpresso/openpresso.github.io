@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tare_0',['tare',['../classopenpresso_1_1interfaces_1_1_weight_sensor.html#ace180c0af50a551fbae57638d3d943bc',1,'openpresso::interfaces::WeightSensor']]]
+  ['tare_0',['tare',['../classlibopenpresso_1_1interfaces_1_1_weight_sensor.html#af33144219a5aa50113950052faea50ae',1,'libopenpresso::interfaces::WeightSensor']]]
 ];

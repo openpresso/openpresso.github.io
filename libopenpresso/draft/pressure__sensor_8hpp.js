@@ -1,4 +1,4 @@
 var pressure__sensor_8hpp =
 [
-    [ "openpresso::interfaces::PressureSensor", "classopenpresso_1_1interfaces_1_1_pressure_sensor.html", "classopenpresso_1_1interfaces_1_1_pressure_sensor" ]
+    [ "libopenpresso::interfaces::PressureSensor", "classlibopenpresso_1_1interfaces_1_1_pressure_sensor.html", "classlibopenpresso_1_1interfaces_1_1_pressure_sensor" ]
 ];

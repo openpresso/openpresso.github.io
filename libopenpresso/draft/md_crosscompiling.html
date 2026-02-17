@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.224.312731c</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -130,11 +130,11 @@ $(function(){initNavTree('md_crosscompiling.html','',''); });
 <div class="textblock"><p><a class="anchor" id="autotoc_md92"></a></p>
 <p>Since Libopenpresso mainly targets embedded systems and single-board computers with limited computing power, it could be useful to cross-compile it for the target architecture on more powerful host device. <br  />
  This guide also can be used to compile applications that use libopenpresso as a dependency. It's even better to have libopenpresso sources included into your project build tree and built final application according to this guide. <br  />
- We will demonstrate setup and build process for armv8 target as an example. To see what changes for different architectures check <a href="https://github.com/openpresso/openpresso-toolchain">openpresso toolchains repo</a> which setups build environment in container. You will find agrument sets that are passed to build a container image for different target architectures in github workflow file.</p>
+ We will demonstrate setup and build process for armv8 target as an example. To see what changes for different architectures check <a href="https://github.com/openpresso/openpresso-toolchain">openpresso toolchains repo</a> which sets up build environment in container. You will find argument sets that are passed to build a container image for different target architectures in github workflow file.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md93"></a>
 Build environment for cross compilation</h1>
 <p>To be able to build Libopenpresso for target architecture you will need:</p><ul>
-<li><b>Conan package manager</b>: recommended to manage build toolchain profiles, may became strongly required if libopenpresso will depend on other libraries in future. Conan is written with python, here is a list of packages needed to enable all conan features. <div class="fragment"><div class="line">apt-get install python3 python3-dev python3-pip python3-venv pkg-config</div>
+<li><b>Conan package manager</b>: recommended to manage build toolchain profiles, may become strongly required if libopenpresso will depend on other libraries in future. Conan is written with python, here is a list of packages needed to enable all conan features. <div class="fragment"><div class="line">apt-get install python3 python3-dev python3-pip python3-venv pkg-config</div>
 </div><!-- fragment --> If you're building isolated environment like Docker image, you can skip creation of python venv and install conan system wide: <div class="fragment"><div class="line">pip install conan --break-system-packages</div>
 </div><!-- fragment --> For general case better to use python virtual environment (do this in your project root folder): <div class="fragment"><div class="line">python -m venv .venv</div>
 <div class="line">source .venv/bin/activate</div>
@@ -164,13 +164,13 @@ Creation of build profiles</h1>
 <div class="line">CC=aarch64-linux-gnu-gcc</div>
 <div class="line">CXX=aarch64-linux-gnu-g++</div>
 <div class="line">LD=aarch64-linux-gnu-ld&quot; &gt; ~/.conan2/profiles/target</div>
-</div><!-- fragment --><p>In conan naming convetion profiles for local builds reffered as build profiles, and for target devices as host profiles. We can set our newly created profile as a default host profile by adding it in global conan config. By doing this we won't need to specify profiles explicitly when calling conan cli commands.</p>
+</div><!-- fragment --><p>In conan naming convention profiles for local builds referred as build profiles, and for target devices as host profiles. We can set our newly created profile as a default host profile by adding it in global conan config. By doing this we won't need to specify profiles explicitly when calling conan cli commands.</p>
 <div class="fragment"><div class="line">echo &quot;core:default_profile=target&quot; &gt;&gt; ~/.conan2/global.conf</div>
 <div class="line">echo &quot;core:default_build_profile=default&quot; &gt;&gt; ~/.conan2/global.conf</div>
 </div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="cross-compiling-conan-install-step"></a>
 Generation of CMake Toolchain from conan profile</h1>
-<p>Libopenpresso already has conanfile.py that asks conan to generate <span class="tt">.cmake</span> file with properly configured toolchain settings. This will point cmake to the compliler and linker we added to our profile. If you build your own project with this method, it's recommended to add <span class="tt">CMakeDeps</span> and <span class="tt">CMakeToolchain</span> generators to your conanfile, and use <span class="tt">cmake_layout</span> to let conan create <span class="tt">CMakeUserPresets.json</span> in the project root foolder. <br  />
- After creating of your conanfile, call: </p><div class="fragment"><div class="line">conan install . --build=missing</div>
+<p>Libopenpresso already has conanfile.py that asks conan to generate <span class="tt">.cmake</span> file with properly configured toolchain settings. This will point cmake to the compliler and linker we added to our profile. If you build your own project with this method, it's recommended to add <span class="tt">CMakeDeps</span> and <span class="tt">CMakeToolchain</span> generators to your conanfile, and use <span class="tt">cmake_layout</span> to let conan create <span class="tt">CMakeUserPresets.json</span> in the project root folder. <br  />
+ After creation of your conanfile, call: </p><div class="fragment"><div class="line">conan install . --build=missing</div>
 </div><!-- fragment --><p> to install all the listed dependencies and generate cmake toolchain files. Check that <span class="tt">CMakeUserPresets.json</span> was created:</p>
 <div class="fragment"><div class="line">cat ./CMakeUserPresets.json</div>
 </div><!-- fragment --><dl class="section remark"><dt>Remarks</dt><dd>See methods <b>generate</b> and <b>layout</b> in <b>conanfile.py</b> in the libopenresso root folder for reference and <a href="https://docs.conan.io/2/reference/tools/cmake.html">conan cmake tools reference</a>.</dd></dl>

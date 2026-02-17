@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Libopenpresso: openpresso/component_config.hpp File Reference</title>
+<title>Libopenpresso: libopenpresso/component_config.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.224.312731c</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -132,56 +132,56 @@ $(function(){initNavTree('component__config_8hpp.html','',''); });
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;list&gt;</code><br />
 <code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;<a class="el" href="i2c__info_8hpp_source.html">openpresso/i2c_info.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="pin__info_8hpp_source.html">openpresso/pin_info.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="types_8hpp_source.html">openpresso/types.hpp</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="pid__settings_8hpp_source.html">openpresso/pid_settings.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="i2c__info_8hpp_source.html">libopenpresso/i2c_info.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pin__info_8hpp_source.html">libopenpresso/pin_info.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="types_8hpp_source.html">libopenpresso/types.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="pid__settings_8hpp_source.html">libopenpresso/pid_settings.hpp</a>&gt;</code><br />
 </div>
 <p><a href="component__config_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:openpresso_3A_3AAds1115PressureSensorConfig" id="r_openpresso_3A_3AAds1115PressureSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_ads1115_pressure_sensor_config.html">openpresso::Ads1115PressureSensorConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for ADS1115 I2C analog pressure sensor.  <a href="structopenpresso_1_1_ads1115_pressure_sensor_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AAcZeroCrossSensorConfig" id="r_openpresso_3A_3AAcZeroCrossSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_ac_zero_cross_sensor_config.html">openpresso::AcZeroCrossSensorConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for AC zero-crossing detection sensor.  <a href="structopenpresso_1_1_ac_zero_cross_sensor_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3APulseControlledDeviceConfig" id="r_openpresso_3A_3APulseControlledDeviceConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_pulse_controlled_device_config.html">openpresso::PulseControlledDeviceConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for pulse-controlled AC device (heater, vibro-pump).  <a href="structopenpresso_1_1_pulse_controlled_device_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3APulsePowerControllerConfig" id="r_openpresso_3A_3APulsePowerControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_pulse_power_controller_config.html">openpresso::PulsePowerControllerConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for pulse density modulation power controller.  <a href="structopenpresso_1_1_pulse_power_controller_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AVirbroPumpFlowSensor" id="r_openpresso_3A_3AVirbroPumpFlowSensor"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_virbro_pump_flow_sensor.html">openpresso::VirbroPumpFlowSensor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for vibro pump flow sensor using pressure-based measurement.  <a href="structopenpresso_1_1_virbro_pump_flow_sensor.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AVirtualWeightSensorConfig" id="r_openpresso_3A_3AVirtualWeightSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_virtual_weight_sensor_config.html">openpresso::VirtualWeightSensorConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for virtual weight sensor derived from flow rate.  <a href="structopenpresso_1_1_virtual_weight_sensor_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3ANau7802WeightSensorConfig" id="r_openpresso_3A_3ANau7802WeightSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_nau7802_weight_sensor_config.html">openpresso::Nau7802WeightSensorConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for NAU7802 I2C load cell amplifier.  <a href="structopenpresso_1_1_nau7802_weight_sensor_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AVirbroPumpFlowController" id="r_openpresso_3A_3AVirbroPumpFlowController"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_virbro_pump_flow_controller.html">openpresso::VirbroPumpFlowController</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for vibro pump flow controller.  <a href="structopenpresso_1_1_virbro_pump_flow_controller.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AIntegralFlowRateControllerConfig" id="r_openpresso_3A_3AIntegralFlowRateControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_integral_flow_rate_controller_config.html">openpresso::IntegralFlowRateControllerConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for integral flow rate controller.  <a href="structopenpresso_1_1_integral_flow_rate_controller_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3APulsePressureControllerConfig" id="r_openpresso_3A_3APulsePressureControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_pulse_pressure_controller_config.html">openpresso::PulsePressureControllerConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for pulse-based pressure controller.  <a href="structopenpresso_1_1_pulse_pressure_controller_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AMax6675TemperatureSensorConfig" id="r_openpresso_3A_3AMax6675TemperatureSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_max6675_temperature_sensor_config.html">openpresso::Max6675TemperatureSensorConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for MAX6675 SPI thermocouple amplifier.  <a href="structopenpresso_1_1_max6675_temperature_sensor_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AMax31856TemperatureSensorConfig" id="r_openpresso_3A_3AMax31856TemperatureSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_max31856_temperature_sensor_config.html">openpresso::Max31856TemperatureSensorConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for MAX31856 SPI thermocouple amplifier.  <a href="structopenpresso_1_1_max31856_temperature_sensor_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3ATemperaturePidControllerConfig" id="r_openpresso_3A_3ATemperaturePidControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_temperature_pid_controller_config.html">openpresso::TemperaturePidControllerConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for PID-based temperature controller.  <a href="structopenpresso_1_1_temperature_pid_controller_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3ALogicalInputPinConfig" id="r_openpresso_3A_3ALogicalInputPinConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_logical_input_pin_config.html">openpresso::LogicalInputPinConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for logical input pin with debouncing.  <a href="structopenpresso_1_1_logical_input_pin_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3ALogicalOutputPinConfig" id="r_openpresso_3A_3ALogicalOutputPinConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_logical_output_pin_config.html">openpresso::LogicalOutputPinConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for logical output pin.  <a href="structopenpresso_1_1_logical_output_pin_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3ABrewProfilerConfig" id="r_openpresso_3A_3ABrewProfilerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_brew_profiler_config.html">openpresso::BrewProfilerConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for automated brew profile executor.  <a href="structopenpresso_1_1_brew_profiler_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3ASteamControllerConfig" id="r_openpresso_3A_3ASteamControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_steam_controller_config.html">openpresso::SteamControllerConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for steam mode controller.  <a href="structopenpresso_1_1_steam_controller_config.html#details">More...</a><br /></td></tr>
-<tr class="memitem:openpresso_3A_3AWatchdogConfig" id="r_openpresso_3A_3AWatchdogConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structopenpresso_1_1_watchdog_config.html">openpresso::WatchdogConfig</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for system watchdog timer.  <a href="structopenpresso_1_1_watchdog_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AAds1115PressureSensorConfig" id="r_libopenpresso_3A_3AAds1115PressureSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_ads1115_pressure_sensor_config.html">libopenpresso::Ads1115PressureSensorConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for ADS1115 I2C analog pressure sensor.  <a href="structlibopenpresso_1_1_ads1115_pressure_sensor_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AAcZeroCrossSensorConfig" id="r_libopenpresso_3A_3AAcZeroCrossSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_ac_zero_cross_sensor_config.html">libopenpresso::AcZeroCrossSensorConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for AC zero-crossing detection sensor.  <a href="structlibopenpresso_1_1_ac_zero_cross_sensor_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3APulseControlledDeviceConfig" id="r_libopenpresso_3A_3APulseControlledDeviceConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_pulse_controlled_device_config.html">libopenpresso::PulseControlledDeviceConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for pulse-controlled AC device (heater, vibro-pump).  <a href="structlibopenpresso_1_1_pulse_controlled_device_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3APulsePowerControllerConfig" id="r_libopenpresso_3A_3APulsePowerControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_pulse_power_controller_config.html">libopenpresso::PulsePowerControllerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for pulse density modulation power controller.  <a href="structlibopenpresso_1_1_pulse_power_controller_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AVibroPumpFlowSensor" id="r_libopenpresso_3A_3AVibroPumpFlowSensor"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_vibro_pump_flow_sensor.html">libopenpresso::VibroPumpFlowSensor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for vibro pump flow sensor using pressure-based measurement.  <a href="structlibopenpresso_1_1_vibro_pump_flow_sensor.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AVirtualWeightSensorConfig" id="r_libopenpresso_3A_3AVirtualWeightSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_virtual_weight_sensor_config.html">libopenpresso::VirtualWeightSensorConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for virtual weight sensor derived from flow rate.  <a href="structlibopenpresso_1_1_virtual_weight_sensor_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3ANau7802WeightSensorConfig" id="r_libopenpresso_3A_3ANau7802WeightSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_nau7802_weight_sensor_config.html">libopenpresso::Nau7802WeightSensorConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for NAU7802 I2C load cell amplifier.  <a href="structlibopenpresso_1_1_nau7802_weight_sensor_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AVibroPumpFlowController" id="r_libopenpresso_3A_3AVibroPumpFlowController"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_vibro_pump_flow_controller.html">libopenpresso::VibroPumpFlowController</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for vibro pump flow controller.  <a href="structlibopenpresso_1_1_vibro_pump_flow_controller.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AIntegralFlowRateControllerConfig" id="r_libopenpresso_3A_3AIntegralFlowRateControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_integral_flow_rate_controller_config.html">libopenpresso::IntegralFlowRateControllerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for integral flow rate controller.  <a href="structlibopenpresso_1_1_integral_flow_rate_controller_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3APulsePressureControllerConfig" id="r_libopenpresso_3A_3APulsePressureControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_pulse_pressure_controller_config.html">libopenpresso::PulsePressureControllerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for pulse-based pressure controller.  <a href="structlibopenpresso_1_1_pulse_pressure_controller_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AMax6675TemperatureSensorConfig" id="r_libopenpresso_3A_3AMax6675TemperatureSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_max6675_temperature_sensor_config.html">libopenpresso::Max6675TemperatureSensorConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for MAX6675 SPI thermocouple amplifier.  <a href="structlibopenpresso_1_1_max6675_temperature_sensor_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AMax31856TemperatureSensorConfig" id="r_libopenpresso_3A_3AMax31856TemperatureSensorConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_max31856_temperature_sensor_config.html">libopenpresso::Max31856TemperatureSensorConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for MAX31856 SPI thermocouple amplifier.  <a href="structlibopenpresso_1_1_max31856_temperature_sensor_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3ATemperaturePidControllerConfig" id="r_libopenpresso_3A_3ATemperaturePidControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_temperature_pid_controller_config.html">libopenpresso::TemperaturePidControllerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for PID-based temperature controller.  <a href="structlibopenpresso_1_1_temperature_pid_controller_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3ALogicalInputPinConfig" id="r_libopenpresso_3A_3ALogicalInputPinConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_logical_input_pin_config.html">libopenpresso::LogicalInputPinConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for logical input pin with debouncing.  <a href="structlibopenpresso_1_1_logical_input_pin_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3ALogicalOutputPinConfig" id="r_libopenpresso_3A_3ALogicalOutputPinConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_logical_output_pin_config.html">libopenpresso::LogicalOutputPinConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for logical output pin.  <a href="structlibopenpresso_1_1_logical_output_pin_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3ABrewProfilerConfig" id="r_libopenpresso_3A_3ABrewProfilerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_brew_profiler_config.html">libopenpresso::BrewProfilerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for automated brew profile executor.  <a href="structlibopenpresso_1_1_brew_profiler_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3ASteamControllerConfig" id="r_libopenpresso_3A_3ASteamControllerConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_steam_controller_config.html">libopenpresso::SteamControllerConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for steam mode controller.  <a href="structlibopenpresso_1_1_steam_controller_config.html#details">More...</a><br /></td></tr>
+<tr class="memitem:libopenpresso_3A_3AWatchdogConfig" id="r_libopenpresso_3A_3AWatchdogConfig"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structlibopenpresso_1_1_watchdog_config.html">libopenpresso::WatchdogConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for system watchdog timer.  <a href="structlibopenpresso_1_1_watchdog_config.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:openpresso" id="r_openpresso"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceopenpresso.html">openpresso</a></td></tr>
-<tr class="memdesc:namespaceopenpresso"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top level libopenpresso namespace where all the entities are defined. <br /></td></tr>
+<tr class="memitem:libopenpresso" id="r_libopenpresso"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacelibopenpresso.html">libopenpresso</a></td></tr>
+<tr class="memdesc:namespacelibopenpresso"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top level libopenpresso namespace where all the entities are defined. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration structures for all espresso machine components. </p>
@@ -199,7 +199,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>openpresso</b></li><li class="navelem"><a href="component__config_8hpp.html">component_config.hpp</a></li>
+    <li class="navelem"><b>libopenpresso</b></li><li class="navelem"><a href="component__config_8hpp.html">component_config.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.0 </li>
   </ul>
 </div>

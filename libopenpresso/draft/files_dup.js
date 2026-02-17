@@ -1,4 +1,4 @@
 var files_dup =
 [
-    [ "openpresso", "dir_295f95831aad6c7c9f5d31f0883ffc5d.html", "dir_295f95831aad6c7c9f5d31f0883ffc5d" ]
+    [ "libopenpresso", "dir_51a0d8631afc9f402d8fcd5d294fbd59.html", "dir_51a0d8631afc9f402d8fcd5d294fbd59" ]
 ];

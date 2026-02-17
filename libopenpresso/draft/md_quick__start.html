@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.213.40eb1cf</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+master.224.312731c</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -146,7 +146,7 @@ Option 1: Conan (Recommended)</h2>
 <div class="fragment"><div class="line">conan remote add openpresso https://conan.cloudsmith.io/openpresso/conan/</div>
 </div><!-- fragment --><p>Add to your <span class="tt">conanfile.txt</span>:</p>
 <div class="fragment"><div class="line">[requires]</div>
-<div class="line">libopenpresso/0.0.0+master.213.40eb1cf</div>
+<div class="line">libopenpresso/0.0.0+master.224.312731c</div>
 <div class="line"> </div>
 <div class="line">[generators]</div>
 <div class="line">CMakeDeps</div>
@@ -180,36 +180,36 @@ Basic Usage</h1>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 1. Configure Components</h2>
 <p>Let's first define a function that makes a <span class="tt">DeviceConfig</span> with all the components listed above.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="openpresso_8hpp.html">openpresso/openpresso.hpp</a>&gt;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="libopenpresso_8hpp.html">libopenpresso/libopenpresso.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_struct" href="structopenpresso_1_1_device_config.html">openpresso::DeviceConfig</a> makeConfig()</div>
+<div class="line"><a class="code hl_struct" href="structlibopenpresso_1_1_device_config.html">libopenpresso::DeviceConfig</a> makeConfig()</div>
 <div class="line">{</div>
-<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceopenpresso.html">openpresso</a>;</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelibopenpresso.html">libopenpresso</a>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceopenpresso.html#a8ec6841532a79d78d222759f40f562ef">unix_dev_addr_t</a> i2cBus = <span class="stringliteral">&quot;/dev/i2c-0&quot;</span>;</div>
-<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceopenpresso.html#a8ec6841532a79d78d222759f40f562ef">unix_dev_addr_t</a> gpioChip = <span class="stringliteral">&quot;/dev/gpiochip0&quot;</span>;</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacelibopenpresso.html#aa6928cdd96c3e137dcb1f7f6aedf2301">unix_dev_addr_t</a> i2cBus = <span class="stringliteral">&quot;/dev/i2c-0&quot;</span>;</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespacelibopenpresso.html#aa6928cdd96c3e137dcb1f7f6aedf2301">unix_dev_addr_t</a> gpioChip = <span class="stringliteral">&quot;/dev/gpiochip0&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_struct" href="structopenpresso_1_1_device_config.html">DeviceConfig</a> config;</div>
-<div class="line">    config.<a class="code hl_variable" href="structopenpresso_1_1_device_config.html#a81313de39e44fe7103a94f572cf61551">components</a>[<span class="stringliteral">&quot;ac_sensor&quot;</span>] = <a class="code hl_struct" href="structopenpresso_1_1_ac_zero_cross_sensor_config.html">AcZeroCrossSensorConfig</a>{</div>
+<div class="line">    <a class="code hl_struct" href="structlibopenpresso_1_1_device_config.html">DeviceConfig</a> config;</div>
+<div class="line">    config.<a class="code hl_variable" href="structlibopenpresso_1_1_device_config.html#aea434a18baabaf8c080cee3b795a83e3">components</a>[<span class="stringliteral">&quot;ac_sensor&quot;</span>] = <a class="code hl_struct" href="structlibopenpresso_1_1_ac_zero_cross_sensor_config.html">AcZeroCrossSensorConfig</a>{</div>
 <div class="line">        .signalPin = {.chip = gpioChip, .pin = 17}</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    config.<a class="code hl_variable" href="structopenpresso_1_1_device_config.html#a81313de39e44fe7103a94f572cf61551">components</a>[<span class="stringliteral">&quot;pump_driver&quot;</span>] = <a class="code hl_struct" href="structopenpresso_1_1_pulse_controlled_device_config.html">PulseControlledDeviceConfig</a>{</div>
+<div class="line">    config.<a class="code hl_variable" href="structlibopenpresso_1_1_device_config.html#aea434a18baabaf8c080cee3b795a83e3">components</a>[<span class="stringliteral">&quot;pump_driver&quot;</span>] = <a class="code hl_struct" href="structlibopenpresso_1_1_pulse_controlled_device_config.html">PulseControlledDeviceConfig</a>{</div>
 <div class="line">        .pulsePin = {.chip = gpioChip, .pin = 27}</div>
 <div class="line">        .acZeroCrossSensor = <span class="stringliteral">&quot;ac_sensor&quot;</span></div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    config.<a class="code hl_variable" href="structopenpresso_1_1_device_config.html#a81313de39e44fe7103a94f572cf61551">components</a>[<span class="stringliteral">&quot;pressure_sensor&quot;</span>] = <a class="code hl_struct" href="structopenpresso_1_1_ads1115_pressure_sensor_config.html">Ads1115PressureSensorConfig</a>{</div>
+<div class="line">    config.<a class="code hl_variable" href="structlibopenpresso_1_1_device_config.html#aea434a18baabaf8c080cee3b795a83e3">components</a>[<span class="stringliteral">&quot;pressure_sensor&quot;</span>] = <a class="code hl_struct" href="structlibopenpresso_1_1_ads1115_pressure_sensor_config.html">Ads1115PressureSensorConfig</a>{</div>
 <div class="line">        .addr = {.bus = i2cBus, .dev = 0x48},</div>
 <div class="line">        .signalPin = {.chip = gpioChip, .pin = 4}</div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    config.<a class="code hl_variable" href="structopenpresso_1_1_device_config.html#a81313de39e44fe7103a94f572cf61551">components</a>[<span class="stringliteral">&quot;pressure_ctrl&quot;</span>] = <a class="code hl_struct" href="structopenpresso_1_1_pulse_pressure_controller_config.html">PulsePressureControllerConfig</a>{</div>
+<div class="line">    config.<a class="code hl_variable" href="structlibopenpresso_1_1_device_config.html#aea434a18baabaf8c080cee3b795a83e3">components</a>[<span class="stringliteral">&quot;pressure_ctrl&quot;</span>] = <a class="code hl_struct" href="structlibopenpresso_1_1_pulse_pressure_controller_config.html">PulsePressureControllerConfig</a>{</div>
 <div class="line">        .pulseController = <span class="stringliteral">&quot;pump_driver&quot;</span>,</div>
 <div class="line">        .sensor = <span class="stringliteral">&quot;pressure_sensor&quot;</span> </div>
 <div class="line">    };</div>
 <div class="line"> </div>
-<div class="line">    config.<a class="code hl_variable" href="structopenpresso_1_1_device_config.html#a81313de39e44fe7103a94f572cf61551">components</a>[<span class="stringliteral">&quot;group_valve&quot;</span>] = <a class="code hl_struct" href="structopenpresso_1_1_logical_output_pin_config.html">LogicalOutputPinConfig</a>{</div>
+<div class="line">    config.<a class="code hl_variable" href="structlibopenpresso_1_1_device_config.html#aea434a18baabaf8c080cee3b795a83e3">components</a>[<span class="stringliteral">&quot;group_valve&quot;</span>] = <a class="code hl_struct" href="structlibopenpresso_1_1_logical_output_pin_config.html">LogicalOutputPinConfig</a>{</div>
 <div class="line">        .addr = {.chip = gpioChip, .pin = 22},</div>
 <div class="line">        .initState = <span class="keyword">false</span>,</div>
 <div class="line">        .inverted = <span class="keyword">false</span>,</div>
@@ -217,25 +217,25 @@ Basic Usage</h1>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> config;</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespaceopenpresso_html"><div class="ttname"><a href="namespaceopenpresso.html">openpresso</a></div><div class="ttdoc">Top level libopenpresso namespace where all the entities are defined.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:19</div></div>
-<div class="ttc" id="anamespaceopenpresso_html_a8ec6841532a79d78d222759f40f562ef"><div class="ttname"><a href="namespaceopenpresso.html#a8ec6841532a79d78d222759f40f562ef">openpresso::unix_dev_addr_t</a></div><div class="ttdeci">std::filesystem::path unix_dev_addr_t</div><div class="ttdoc">Path to the unix character device, normally starts with /dev.</div><div class="ttdef"><b>Definition</b> types.hpp:28</div></div>
-<div class="ttc" id="aopenpresso_8hpp_html"><div class="ttname"><a href="openpresso_8hpp.html">openpresso.hpp</a></div><div class="ttdoc">Main entry point for libopenpresso initialization.</div></div>
-<div class="ttc" id="astructopenpresso_1_1_ac_zero_cross_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_ac_zero_cross_sensor_config.html">openpresso::AcZeroCrossSensorConfig</a></div><div class="ttdoc">Configuration for AC zero-crossing detection sensor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:50</div></div>
-<div class="ttc" id="astructopenpresso_1_1_ads1115_pressure_sensor_config_html"><div class="ttname"><a href="structopenpresso_1_1_ads1115_pressure_sensor_config.html">openpresso::Ads1115PressureSensorConfig</a></div><div class="ttdoc">Configuration for ADS1115 I2C analog pressure sensor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:34</div></div>
-<div class="ttc" id="astructopenpresso_1_1_device_config_html"><div class="ttname"><a href="structopenpresso_1_1_device_config.html">openpresso::DeviceConfig</a></div><div class="ttdoc">Complete device configuration for creating an openpresso Core.</div><div class="ttdef"><b>Definition</b> config.hpp:94</div></div>
-<div class="ttc" id="astructopenpresso_1_1_device_config_html_a81313de39e44fe7103a94f572cf61551"><div class="ttname"><a href="structopenpresso_1_1_device_config.html#a81313de39e44fe7103a94f572cf61551">openpresso::DeviceConfig::components</a></div><div class="ttdeci">components_map_t components</div><div class="ttdoc">All component configurations indexed by their unique labels.</div><div class="ttdef"><b>Definition</b> config.hpp:102</div></div>
-<div class="ttc" id="astructopenpresso_1_1_logical_output_pin_config_html"><div class="ttname"><a href="structopenpresso_1_1_logical_output_pin_config.html">openpresso::LogicalOutputPinConfig</a></div><div class="ttdoc">Configuration for logical output pin.</div><div class="ttdef"><b>Definition</b> component_config.hpp:275</div></div>
-<div class="ttc" id="astructopenpresso_1_1_pulse_controlled_device_config_html"><div class="ttname"><a href="structopenpresso_1_1_pulse_controlled_device_config.html">openpresso::PulseControlledDeviceConfig</a></div><div class="ttdoc">Configuration for pulse-controlled AC device (heater, vibro-pump).</div><div class="ttdef"><b>Definition</b> component_config.hpp:66</div></div>
-<div class="ttc" id="astructopenpresso_1_1_pulse_pressure_controller_config_html"><div class="ttname"><a href="structopenpresso_1_1_pulse_pressure_controller_config.html">openpresso::PulsePressureControllerConfig</a></div><div class="ttdoc">Configuration for pulse-based pressure controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:198</div></div>
+<div class="ttc" id="alibopenpresso_8hpp_html"><div class="ttname"><a href="libopenpresso_8hpp.html">libopenpresso.hpp</a></div><div class="ttdoc">Main entry point for libopenpresso initialization.</div></div>
+<div class="ttc" id="anamespacelibopenpresso_html"><div class="ttname"><a href="namespacelibopenpresso.html">libopenpresso</a></div><div class="ttdoc">Top level libopenpresso namespace where all the entities are defined.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:19</div></div>
+<div class="ttc" id="anamespacelibopenpresso_html_aa6928cdd96c3e137dcb1f7f6aedf2301"><div class="ttname"><a href="namespacelibopenpresso.html#aa6928cdd96c3e137dcb1f7f6aedf2301">libopenpresso::unix_dev_addr_t</a></div><div class="ttdeci">std::filesystem::path unix_dev_addr_t</div><div class="ttdoc">Path to the unix character device, normally starts with /dev.</div><div class="ttdef"><b>Definition</b> types.hpp:28</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1_ac_zero_cross_sensor_config_html"><div class="ttname"><a href="structlibopenpresso_1_1_ac_zero_cross_sensor_config.html">libopenpresso::AcZeroCrossSensorConfig</a></div><div class="ttdoc">Configuration for AC zero-crossing detection sensor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:50</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1_ads1115_pressure_sensor_config_html"><div class="ttname"><a href="structlibopenpresso_1_1_ads1115_pressure_sensor_config.html">libopenpresso::Ads1115PressureSensorConfig</a></div><div class="ttdoc">Configuration for ADS1115 I2C analog pressure sensor.</div><div class="ttdef"><b>Definition</b> component_config.hpp:34</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1_device_config_html"><div class="ttname"><a href="structlibopenpresso_1_1_device_config.html">libopenpresso::DeviceConfig</a></div><div class="ttdoc">Complete device configuration for creating an libopenpresso Core.</div><div class="ttdef"><b>Definition</b> config.hpp:94</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1_device_config_html_aea434a18baabaf8c080cee3b795a83e3"><div class="ttname"><a href="structlibopenpresso_1_1_device_config.html#aea434a18baabaf8c080cee3b795a83e3">libopenpresso::DeviceConfig::components</a></div><div class="ttdeci">components_map_t components</div><div class="ttdoc">All component configurations indexed by their unique labels.</div><div class="ttdef"><b>Definition</b> config.hpp:102</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1_logical_output_pin_config_html"><div class="ttname"><a href="structlibopenpresso_1_1_logical_output_pin_config.html">libopenpresso::LogicalOutputPinConfig</a></div><div class="ttdoc">Configuration for logical output pin.</div><div class="ttdef"><b>Definition</b> component_config.hpp:275</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1_pulse_controlled_device_config_html"><div class="ttname"><a href="structlibopenpresso_1_1_pulse_controlled_device_config.html">libopenpresso::PulseControlledDeviceConfig</a></div><div class="ttdoc">Configuration for pulse-controlled AC device (heater, vibro-pump).</div><div class="ttdef"><b>Definition</b> component_config.hpp:66</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1_pulse_pressure_controller_config_html"><div class="ttname"><a href="structlibopenpresso_1_1_pulse_pressure_controller_config.html">libopenpresso::PulsePressureControllerConfig</a></div><div class="ttdoc">Configuration for pulse-based pressure controller.</div><div class="ttdef"><b>Definition</b> component_config.hpp:198</div></div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 2. Initialize Core</h2>
 <p>The <span class="tt">getCore</span> function creates all components and wires their dependencies automatically.</p>
-<div class="fragment"><div class="line"><span class="keyword">auto</span> core = <a class="code hl_function" href="namespaceopenpresso.html#a8a29f6320997e3c0d19ca9cb5ae0fa2e">openpresso::getCore</a>(makeConfig());</div>
-<div class="ttc" id="anamespaceopenpresso_html_a8a29f6320997e3c0d19ca9cb5ae0fa2e"><div class="ttname"><a href="namespaceopenpresso.html#a8a29f6320997e3c0d19ca9cb5ae0fa2e">openpresso::getCore</a></div><div class="ttdeci">std::shared_ptr&lt; interfaces::OpenpressoCore &gt; getCore(const DeviceConfig &amp;config)</div><div class="ttdoc">Creates and initializes the openpresso core instance.</div></div>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> core = <a class="code hl_function" href="namespacelibopenpresso.html#a4b19e487a2bb537be5df23d8182c8d44">libopenpresso::getCore</a>(makeConfig());</div>
+<div class="ttc" id="anamespacelibopenpresso_html_a4b19e487a2bb537be5df23d8182c8d44"><div class="ttname"><a href="namespacelibopenpresso.html#a4b19e487a2bb537be5df23d8182c8d44">libopenpresso::getCore</a></div><div class="ttdeci">std::shared_ptr&lt; interfaces::LibopenpressoCore &gt; getCore(const DeviceConfig &amp;config)</div><div class="ttdoc">Creates and initializes the openpresso core instance.</div></div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 3. Perform brew</h2>
 <p>Now we can use the high-level interfaces to control the machine. Let's demonstrate how to pump water while targeting specific pressure and print actual pressure to standard output.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> testBrew(<span class="keyword">const</span> std::shared_ptr&lt;openpresso::interfaces::OpenpressoCore&gt;&amp; core)</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> testBrew(<span class="keyword">const</span> std::shared_ptr&lt;libopenpresso::interfaces::LibopenpressoCore&gt;&amp; core)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Get interfaces</span></div>
 <div class="line">    <span class="keyword">auto</span> pressureCtrl = core-&gt;getPressureController(<span class="stringliteral">&quot;pressure_ctrl&quot;</span>);</div>
@@ -243,9 +243,9 @@ Basic Usage</h1>
 <div class="line">    <span class="keyword">auto</span> valve = core-&gt;getLogicalOutput(<span class="stringliteral">&quot;group_valve&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Starting Brew Cycle...&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">    <span class="keyword">auto</span> printPressure = [](openpresso::millbars_t pressure) {</div>
+<div class="line">    <span class="keyword">auto</span> printPressure = [](libopenpresso::millbars_t pressure) {</div>
 <div class="line">        std::cout &lt;&lt; std::format(<span class="stringliteral">&quot;\rPressure: {:3.3f} bars&quot;</span>, 0.001f * pressure) &lt;&lt; std::flush;</div>
-<div class="line">    }</div>
+<div class="line">    };</div>
 <div class="line">    <span class="comment">//read pressure using getter method</span></div>
 <div class="line">    printPressure(pressureSensor-&gt;getPressure());</div>
 <div class="line">    <span class="comment">//subscribe to pressure change updates using callback</span></div>
@@ -286,14 +286,14 @@ Advanced Usage</h1>
 <li>Activate boiler preheat</li>
 <li>Print actual temperature while heating</li>
 <li>Start execution of predefined multi-step brew profile when target temperature is reached</li>
-<li>Stop brewing at 36 gramms of coffee in the cup.</li>
+<li>Stop brewing at 36 grams of coffee in the cup.</li>
 <li>Switch into steam mode when brew is finished</li>
 <li>Print actual boiler temperature while steaming</li>
 </ol>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> advancedBrew(<span class="keyword">const</span> std::shared_ptr&lt;openpresso::interfaces::OpenpressoCore&gt;&amp; core) {</div>
-<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceopenpresso.html">openpresso</a>;</div>
-<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceopenpresso_1_1brew__step__targets.html">openpresso::brew_step_targets</a>;</div>
-<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespaceopenpresso_1_1brew__step__advence__conditions.html">openpresso::brew_step_advence_conditions</a>;</div>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> advancedBrew(<span class="keyword">const</span> std::shared_ptr&lt;libopenpresso::interfaces::LibopenpressoCore&gt;&amp; core) {</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelibopenpresso.html">libopenpresso</a>;</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelibopenpresso_1_1brew__step__targets.html">libopenpresso::brew_step_targets</a>;</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacelibopenpresso_1_1brew__step__advance__conditions.html">libopenpresso::brew_step_advance_conditions</a>;</div>
 <div class="line">    <span class="keyword">using namespace </span>std::chrono_literals;</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> brewProfiler = core-&gt;getBrewProfiler(<span class="stringliteral">&quot;profiler&quot;</span>);</div>
@@ -302,15 +302,15 @@ Advanced Usage</h1>
 <div class="line">    <span class="keyword">auto</span> steamer = core-&gt;getSteamController(<span class="stringliteral">&quot;steamer&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    brewProfiler-&gt;setSteps({</div>
-<div class="line">        { <a class="code hl_struct" href="structopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 1&#39;500 }, <a class="code hl_struct" href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_weight.html">OnWeight</a>{ 1&#39;000 } },</div>
-<div class="line">        { <a class="code hl_struct" href="structopenpresso_1_1brew__step__targets_1_1_constant_flow.html">ConstantFlow</a> { 2&#39;500 }, <a class="code hl_struct" href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time.html">OnStepTime</a>{ 3s } },</div>
-<div class="line">        { <a class="code hl_struct" href="structopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 0 }, <a class="code hl_struct" href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time.html">OnStepTime</a>{ 4s } },</div>
-<div class="line">        { <a class="code hl_struct" href="structopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 3&#39;000 }, <a class="code hl_struct" href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time.html">OnStepTime</a>{ 2s } },</div>
-<div class="line">        { <a class="code hl_struct" href="structopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 6&#39;000 }, <a class="code hl_struct" href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time.html">OnStepTime</a>{ 2s } },</div>
-<div class="line">        { <a class="code hl_struct" href="structopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 9&#39;000 }, <a class="code hl_struct" href="structopenpresso_1_1brew__step__advence__conditions_1_1_never.html">Never</a>{} }</div>
+<div class="line">        { <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 1&#39;500 }, <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_weight.html">OnWeight</a>{ 1&#39;000 } },</div>
+<div class="line">        { <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__targets_1_1_constant_flow.html">ConstantFlow</a> { 2&#39;500 }, <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time.html">OnStepTime</a>{ 3s } },</div>
+<div class="line">        { <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 0 }, <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time.html">OnStepTime</a>{ 4s } },</div>
+<div class="line">        { <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 3&#39;000 }, <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time.html">OnStepTime</a>{ 2s } },</div>
+<div class="line">        { <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 6&#39;000 }, <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time.html">OnStepTime</a>{ 2s } },</div>
+<div class="line">        { <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 9&#39;000 }, <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_never.html">Never</a>{} }</div>
 <div class="line">    });</div>
 <div class="line"> </div>
-<div class="line">    brewProfiler-&gt;setAutoStopCondition(<a class="code hl_struct" href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_weight.html">OnWeight</a>{ 36&#39;000 });</div>
+<div class="line">    brewProfiler-&gt;setAutoStopCondition(<a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_weight.html">OnWeight</a>{ 36&#39;000 });</div>
 <div class="line"> </div>
 <div class="line">    std::atomic&lt;bool&gt; brewFinished = <span class="keyword">false</span>;</div>
 <div class="line"> </div>
@@ -325,7 +325,7 @@ Advanced Usage</h1>
 <div class="line"> </div>
 <div class="line">    std::atomic&lt;bool&gt; brewTemperatureReached = <span class="keyword">false</span>;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> temperatureCallback = [&amp;brewTemperatureReached](<a class="code hl_typedef" href="namespaceopenpresso.html#aa467d05402d29eed04c4a1695785fd75">millidegrees_t</a> temperature) {</div>
+<div class="line">    <span class="keyword">auto</span> temperatureCallback = [&amp;brewTemperatureReached](<a class="code hl_typedef" href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">millidegrees_t</a> temperature) {</div>
 <div class="line">        <span class="keywordflow">if</span>(!brewTemperatureReached.load() &amp;&amp; temperature &gt;= 95&#39;000) {</div>
 <div class="line">            brewTemperatureReached = <span class="keyword">true</span>;</div>
 <div class="line">            brewTemperatureReached.notify_one();</div>
@@ -350,20 +350,20 @@ Advanced Usage</h1>
 <div class="line">    brewTemperatureController-&gt;deactivate(); <span class="comment">// steam controller will take care about boiler temperature</span></div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Brew finished. Switching to Steam Mode&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">    temperatureSensor-&gt;registerCallback([](<a class="code hl_typedef" href="namespaceopenpresso.html#aa467d05402d29eed04c4a1695785fd75">millidegrees_t</a> temperature) {</div>
+<div class="line">    temperatureSensor-&gt;registerCallback([](<a class="code hl_typedef" href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">millidegrees_t</a> temperature) {</div>
 <div class="line">        std::cout &lt;&lt; std::format(<span class="stringliteral">&quot;\rTemperature: {:3.3f} °C    &quot;</span>, 0.001f * temperature) &lt;&lt; std::flush;</div>
 <div class="line">    });</div>
 <div class="line">    </div>
 <div class="line">    steamer-&gt;activate();</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespaceopenpresso_1_1brew__step__advence__conditions_html"><div class="ttname"><a href="namespaceopenpresso_1_1brew__step__advence__conditions.html">openpresso::brew_step_advence_conditions</a></div><div class="ttdoc">Brew profile conditions for advancing to the next step.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:19</div></div>
-<div class="ttc" id="anamespaceopenpresso_1_1brew__step__targets_html"><div class="ttname"><a href="namespaceopenpresso_1_1brew__step__targets.html">openpresso::brew_step_targets</a></div><div class="ttdoc">Brew profile step targets.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:65</div></div>
-<div class="ttc" id="anamespaceopenpresso_html_aa467d05402d29eed04c4a1695785fd75"><div class="ttname"><a href="namespaceopenpresso.html#aa467d05402d29eed04c4a1695785fd75">openpresso::millidegrees_t</a></div><div class="ttdeci">int32_t millidegrees_t</div><div class="ttdoc">Temperature units type. Celsius assumed.</div><div class="ttdef"><b>Definition</b> types.hpp:22</div></div>
-<div class="ttc" id="astructopenpresso_1_1brew__step__advence__conditions_1_1_never_html"><div class="ttname"><a href="structopenpresso_1_1brew__step__advence__conditions_1_1_never.html">openpresso::brew_step_advence_conditions::Never</a></div><div class="ttdoc">Transition condition: step continues indefinitely.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:57</div></div>
-<div class="ttc" id="astructopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time_html"><div class="ttname"><a href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_step_time.html">openpresso::brew_step_advence_conditions::OnStepTime</a></div><div class="ttdoc">Transition condition: proceed after step duration expires.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:37</div></div>
-<div class="ttc" id="astructopenpresso_1_1brew__step__advence__conditions_1_1_on_weight_html"><div class="ttname"><a href="structopenpresso_1_1brew__step__advence__conditions_1_1_on_weight.html">openpresso::brew_step_advence_conditions::OnWeight</a></div><div class="ttdoc">Transition condition: proceed when target weight is reached.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:27</div></div>
-<div class="ttc" id="astructopenpresso_1_1brew__step__targets_1_1_constant_flow_html"><div class="ttname"><a href="structopenpresso_1_1brew__step__targets_1_1_constant_flow.html">openpresso::brew_step_targets::ConstantFlow</a></div><div class="ttdoc">Step target: maintain constant flow rate.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:83</div></div>
-<div class="ttc" id="astructopenpresso_1_1brew__step__targets_1_1_constant_pressure_html"><div class="ttname"><a href="structopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">openpresso::brew_step_targets::ConstantPressure</a></div><div class="ttdoc">Step target: maintain constant pressure.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:73</div></div>
+<div class="ttc" id="anamespacelibopenpresso_1_1brew__step__advance__conditions_html"><div class="ttname"><a href="namespacelibopenpresso_1_1brew__step__advance__conditions.html">libopenpresso::brew_step_advance_conditions</a></div><div class="ttdoc">Brew profile conditions for advancing to the next step.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:19</div></div>
+<div class="ttc" id="anamespacelibopenpresso_1_1brew__step__targets_html"><div class="ttname"><a href="namespacelibopenpresso_1_1brew__step__targets.html">libopenpresso::brew_step_targets</a></div><div class="ttdoc">Brew profile step targets.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:65</div></div>
+<div class="ttc" id="anamespacelibopenpresso_html_a57b3fbc43e7307724ab37f83c59cf008"><div class="ttname"><a href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">libopenpresso::millidegrees_t</a></div><div class="ttdeci">int32_t millidegrees_t</div><div class="ttdoc">Temperature units type. Celsius assumed.</div><div class="ttdef"><b>Definition</b> types.hpp:22</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1brew__step__advance__conditions_1_1_never_html"><div class="ttname"><a href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_never.html">libopenpresso::brew_step_advance_conditions::Never</a></div><div class="ttdoc">Transition condition: step continues indefinitely.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:57</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time_html"><div class="ttname"><a href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time.html">libopenpresso::brew_step_advance_conditions::OnStepTime</a></div><div class="ttdoc">Transition condition: proceed after step duration expires.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:37</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1brew__step__advance__conditions_1_1_on_weight_html"><div class="ttname"><a href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_weight.html">libopenpresso::brew_step_advance_conditions::OnWeight</a></div><div class="ttdoc">Transition condition: proceed when target weight is reached.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:27</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1brew__step__targets_1_1_constant_flow_html"><div class="ttname"><a href="structlibopenpresso_1_1brew__step__targets_1_1_constant_flow.html">libopenpresso::brew_step_targets::ConstantFlow</a></div><div class="ttdoc">Step target: maintain constant flow rate.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:83</div></div>
+<div class="ttc" id="astructlibopenpresso_1_1brew__step__targets_1_1_constant_pressure_html"><div class="ttname"><a href="structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">libopenpresso::brew_step_targets::ConstantPressure</a></div><div class="ttdoc">Step target: maintain constant pressure.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:73</div></div>
 </div><!-- fragment --><p>See the <a class="el" href="device_config.html#md_device__config" title="device_config.md">Device Config Guide</a> for how to build a machine configuration for just demonstrated usage.</p>
 <hr  />
 <h1 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
@@ -371,7 +371,7 @@ What's Next?</h1>
 <ul>
 <li><b><a class="el" href="md_installation.html" title="Installation">Installation Guide</a></b>: Detailed installation options.</li>
 <li><b><a class="el" href="device_config.html#md_device__config" title="device_config.md">Device Config Guide</a></b>: Detailed description of the component configurations.</li>
-<li><b><a class="el" href="namespaceopenpresso_1_1interfaces.html" title="openpresso::interfaces">Interfaces API reference</a></b>: List of all available interfaces with detailed methods description.</li>
+<li><b><a class="el" href="namespacelibopenpresso_1_1interfaces.html" title="libopenpresso::interfaces">Interfaces API reference</a></b>: List of all available interfaces with detailed methods description.</li>
 <li><b><a class="el" href="md_usage.html" title="API Usage">Usage Guide</a></b>: API reference for controlling the machine.</li>
 <li><b><a class="el" href="pid_tuning.html#md_pid__tuning" title="pid_tuning.md">PID Tuning</a></b>: How to tune your temperature controllers. </li>
 </ul>
