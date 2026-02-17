@@ -8,18 +8,24 @@
     <title>OpenPresso Project</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="redirect.js"></script>
+    <script type="text/javascript" src="libopenpresso/redirect.js"></script>
+    <script type="text/javascript">
+        async function setHref() {
+            logoLink.href=await getDefaultVersionPath('libopenpresso'); 
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="logo-container">
-            <a href="#" id="logo-link">
+            <a href="/libopenpresso" id="logoLink">
                 <img src="logo.svg" alt="OpenPresso Logo" class="logo-svg logo">
             </a>
         </div>
         <h1>Welcome to <span class="accent">OpenPresso</span></h1>
         <p class="subtitle">Coming soon</p>
     </div>
+    <script type="text/javascript">setHref();</script>
 </body>
 </html>
 
