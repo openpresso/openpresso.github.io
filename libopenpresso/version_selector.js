@@ -24,14 +24,14 @@ async function loadVersions() {
    const selectElement = document.createElement('select');
    selectElement.id="versionSelector";
 
-   if(versions.draft) {
+   if(versions.canary) {
       const option = document.createElement('option');
-      option.value = 'draft';
-      option.textContent = versions.draft + ' (draft)';
+      option.value = 'canary';
+      option.textContent = versions.canary + ' (canary)';
       selectElement.appendChild(option);
    }
 
-   for (const [i, version] of versions.releases.reverse().entries()) {
+   for (const [i, version] of versions.stable.reverse().entries()) {
       const option = document.createElement('option');
       option.value = version;
       option.textContent = version + (i == 0 ? ' (latest)' : '');
@@ -44,9 +44,8 @@ async function loadVersions() {
    selectElement.value = currentVersion;
    selectElement.addEventListener('change', redirectToVersion);
 
-   const projectNumber = document.getElementById('projectnumber');
-   projectNumber.innerHTML = '';
-   projectNumber.appendChild(selectElement);
+   projectnumber.innerHTML = '';
+   projectnumber.appendChild(selectElement);
 }
 
 function addBackButton() {

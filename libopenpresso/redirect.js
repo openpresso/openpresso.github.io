@@ -3,11 +3,11 @@ async function getDefaultVersionPath(versionsParentPath = '.') {
     if (!response.ok) return;
 
     const versions = await response.json();
-    if (versions.releases && versions.releases.length) {
-        return versionsParentPath + '/' + versions.releases[versions.releases.length - 1];
+    if (versions.stable && versions.stable.length) {
+        return versionsParentPath + '/' + versions.stable[versions.stable.length - 1];
     }
-    else if (versions.draft) {
-        return versionsParentPath + '/draft';
+    else if (versions.canary) {
+        return versionsParentPath + '/canary';
     }
     else {
         throw new Error('no versions found');
