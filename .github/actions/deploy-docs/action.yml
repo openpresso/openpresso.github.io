@@ -1,0 +1,67 @@
+name: 'Deploy pages version'
+description: 'Composite action to checkout pages repo and deploy documentation'
+inputs:
+  commit_message:
+    description: Commit message
+    required: false
+    default: Documents deployment
+  repository:
+    description: 'Repository where deploy pages'
+    required: true
+  deployment_key:
+    description: 'SSH key with repo write access'
+    required: true
+  source_dir:
+    description: 'Path to built documentation in the runner'
+    required: true
+  checkout_path:
+    description: 'Path where to checkout pages repository'
+    required: false
+    default: "."
+  target_dir:
+    description: 'Path to versioned documentation in the taget repo'
+    required: true
+  version:
+    description: 'Documentation version string'
+    required: true
+  verion_type:
+    description: 'Whether this version is stable or canary'
+    required: true
+    
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout pages repository
+      uses: actions/checkout@v6
+      with:
+        repository: ${{ inputs.repository }}
+        ssh-key: ${{ inputs.deployment_key }}
+        path: ${{ inputs.checkout_path }}
+
+    - name: Process release version
+      if: ${{ inputs.verion_type == 'release' }}
+      shell: bash
+      run: |
+        UPDATED_VERSIONS=$(jq '.stable += ["${{ inputs.version }}"]' "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json")
+        echo "$UPDATED_VERSIONS" > "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json"
+        echo "DEPLOY_PATH=${{ inputs.checkout_path }}/${{ inputs.target_dir }}/${{ inputs.version }}" >> $GITHUB_ENV
+
+    - name: Process canary version
+      if: ${{ inputs.verion_type == 'canary' }}
+      shell: bash
+      run: |
+        UPDATED_VERSIONS=$(jq '.canary = "${{ inputs.version }}"' "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json")
+        echo "$UPDATED_VERSIONS" > "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json"
+        echo "DEPLOY_PATH=${{ inputs.checkout_path }}/${{ inputs.target_dir }}/canary" >> $GITHUB_ENV
+
+    - name: Copy pages files
+      shell: bash
+      run: |
+        rm -rf "$DEPLOY_PATH"
+        cp -r "${{ inputs.source_dir }}" "$DEPLOY_PATH"
+
+    - name: Commit and push
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: ${{ inputs.commit_message }}
+        repository: ${{ inputs.checkout_path }}
