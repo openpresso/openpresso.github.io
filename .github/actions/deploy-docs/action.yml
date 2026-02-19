@@ -38,8 +38,8 @@ runs:
         ssh-key: ${{ inputs.deployment_key }}
         path: ${{ inputs.checkout_path }}
 
-    - name: Process release version
-      if: ${{ inputs.verion_type == 'release' }}
+    - name: Process stable version
+      if: ${{ inputs.verion_type == 'stable' }}
       shell: bash
       run: |
         UPDATED_VERSIONS=$(jq '.stable += ["${{ inputs.version }}"]' "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json")
