@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0+ci/build-workflow.234.acac93e</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.1-main.3+1d3bfd5</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -143,10 +143,10 @@ Installation</h1>
 <h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
 Option 1: Conan (Recommended)</h2>
 <p>Install libopenpresso using Conan for automatic dependency management:</p>
-<div class="fragment"><div class="line">conan remote add openpresso https://conan.cloudsmith.io/openpresso/conan/</div>
+<div class="fragment"><div class="line">conan remote add openpresso https://conan.cloudsmith.io/openpresso/testing</div>
 </div><!-- fragment --><p>Add to your <span class="tt">conanfile.txt</span>:</p>
 <div class="fragment"><div class="line">[requires]</div>
-<div class="line">libopenpresso/0.0.0+ci/build-workflow.234.acac93e</div>
+<div class="line">libopenpresso/0.0.1-main.3+1d3bfd5</div>
 <div class="line"> </div>
 <div class="line">[generators]</div>
 <div class="line">CMakeDeps</div>
@@ -159,7 +159,7 @@ Option 2: CMake FetchContent (Simplest)</h2>
 <div class="line"> </div>
 <div class="line">FetchContent_Declare(</div>
 <div class="line">    libopenpresso</div>
-<div class="line">    GIT_REPOSITORY https://github.com/openpresso/openpresso_core.git</div>
+<div class="line">    GIT_REPOSITORY https://github.com/openpresso/libopenpresso.git</div>
 <div class="line">    GIT_TAG        main # Or specific tag</div>
 <div class="line">)</div>
 <div class="line"> </div>
