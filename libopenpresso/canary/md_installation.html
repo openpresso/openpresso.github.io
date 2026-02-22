@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.1-main.3+1d3bfd5</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.1.6+ddd7831</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -141,7 +141,7 @@ $(function(){initNavTree('md_installation.html','',''); });
 Conan package (preferred)</h1>
 <p>Use Conan package manager to install libopenpresso as a dependency to your project. This will make sure that all subdependencies are managed correctly and can be found by their consumers. Conan also provides a convenient way to manage build toolchain via profiles and CMakeToolchain generator, which is especially useful for cross-compiling.</p>
 <ol type="1">
-<li>Add openpresso official remote: <div class="fragment"><div class="line">conan remote add openpresso-conan https://conan.cloudsmith.io/openpresso/testing</div>
+<li>Add openpresso official remote: <div class="fragment"><div class="line">conan remote add openpresso-conan https://conan.cloudsmith.io/openpresso/canary</div>
 </div><!-- fragment --></li>
 <li>Add requires statement to your conan recipe:</li>
 </ol>
@@ -150,10 +150,10 @@ Conan package (preferred)</h1>
 <div class="line"> </div>
 <div class="line"><span class="keyword">class </span>ExampleRecipe(ConanFile):</div>
 <div class="line">    <span class="keyword">def </span>requirements(self):</div>
-<div class="line">        self.requires(<span class="stringliteral">&quot;libopenpresso/0.0.1-main.3+1d3bfd5&quot;</span>)</div>
+<div class="line">        self.requires(<span class="stringliteral">&quot;libopenpresso/0.0.1.6+ddd7831&quot;</span>)</div>
 </div><!-- fragment --></li>
 <li>conanfile.txt <div class="fragment"><div class="line">[requires]</div>
-<div class="line">libopenpresso/0.0.1-main.3+1d3bfd5</div>
+<div class="line">libopenpresso/0.0.1.6+ddd7831</div>
 </div><!-- fragment --></li>
 </ul>
 <p>Then in your cmake project simply write: </p><div class="fragment"><div class="line">find_package(libopenpresso)</div>
