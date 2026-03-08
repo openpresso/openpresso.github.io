@@ -1,22 +1,4 @@
 var searchData=
 [
-  ['getbrewprofiler_0',['getBrewProfiler',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a9f6262a2a40d4478f25367a401d435e8',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['getcore_1',['getCore',['../namespacelibopenpresso.html#a4b19e487a2bb537be5df23d8182c8d44',1,'libopenpresso']]],
-  ['getflowrate_2',['getFlowRate',['../classlibopenpresso_1_1interfaces_1_1_weight_sensor.html#a8e1517e855e8bb90ab624bc2136866f4',1,'libopenpresso::interfaces::WeightSensor']]],
-  ['getflowratecontroller_3',['getFlowRateController',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#aeeaca523b5b19c27d2d73227a3332022',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['getlogicalinput_4',['getLogicalInput',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#abd96539d2975dd8684ebfcf915e27aa1',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['getlogicaloutput_5',['getLogicalOutput',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a9a5beef8bbd98f5fcd961a5981e6e2fa',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['getpressure_6',['getPressure',['../classlibopenpresso_1_1interfaces_1_1_pressure_sensor.html#a44c8d771c38dabc7a30fda86bb80f3b9',1,'libopenpresso::interfaces::PressureSensor']]],
-  ['getpressurecontroller_7',['getPressureController',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a20b9358b260345a379901b0375f5accd',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['getpressuresensor_8',['getPressureSensor',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#ad60101a80cc87f4047662461fd4764a0',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['getstate_9',['getState',['../classlibopenpresso_1_1interfaces_1_1_logical_input.html#ac327fbcc6edb03175deecc7993c26d63',1,'libopenpresso::interfaces::LogicalInput::getState()'],['../classlibopenpresso_1_1interfaces_1_1_logical_output.html#a08dd594e80f601581e7443197e596111',1,'libopenpresso::interfaces::LogicalOutput::getState()']]],
-  ['getsteamcontroller_10',['getSteamController',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#ac8d64f5a159a147e26b1a7156f95d63e',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['gettargetpressure_11',['getTargetPressure',['../classlibopenpresso_1_1interfaces_1_1_pressure_controller.html#a03fa23cf0a84221c00da2954bba9c2cc',1,'libopenpresso::interfaces::PressureController']]],
-  ['gettargetrate_12',['getTargetRate',['../classlibopenpresso_1_1interfaces_1_1_flow_rate_controller.html#a1cc1631547082d6efdcfcaf393fa3322',1,'libopenpresso::interfaces::FlowRateController']]],
-  ['gettargettemperature_13',['getTargetTemperature',['../classlibopenpresso_1_1interfaces_1_1_temperature_controller.html#a112d96a293c2f2f2f2baf80e485708c6',1,'libopenpresso::interfaces::TemperatureController']]],
-  ['gettemperature_14',['getTemperature',['../classlibopenpresso_1_1interfaces_1_1_temperature_sensor.html#aedd49217240346df6aa8bd3413e2dfc5',1,'libopenpresso::interfaces::TemperatureSensor']]],
-  ['gettemperaturecontroller_15',['getTemperatureController',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a7735f071ea60f2341572650bae429a20',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['gettemperaturesensor_16',['getTemperatureSensor',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a4b2741c196edb3aa94480fdeacd70d1e',1,'libopenpresso::interfaces::LibopenpressoCore']]],
-  ['getweight_17',['getWeight',['../classlibopenpresso_1_1interfaces_1_1_weight_sensor.html#a159f7728deeb1aa1da3dd60c65de04bc',1,'libopenpresso::interfaces::WeightSensor']]],
-  ['getweightsensor_18',['getWeightSensor',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a26576208da02604a665209542aa74783',1,'libopenpresso::interfaces::LibopenpressoCore']]]
+  ['exception_0',['Exception',['../classlibopenpresso_1_1_exception.html#a51d07aea498679b7c1a1fdff65f3874b',1,'libopenpresso::Exception::Exception(const format_string_t&lt; Args... &gt; &amp;fmt, Args &amp;&amp;... args)'],['../classlibopenpresso_1_1_exception.html#ac622845a4f68ca7a7247fb13994a256e',1,'libopenpresso::Exception::Exception(const std::string &amp;message, std::source_location location=std::source_location::current())']]]
 ];

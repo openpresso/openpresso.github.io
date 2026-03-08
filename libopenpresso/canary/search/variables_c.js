@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['valvecontroller_0',['valveController',['../structlibopenpresso_1_1_brew_profiler_config.html#a0c64f54b86e61d434d757d864badc2a8',1,'libopenpresso::BrewProfilerConfig']]],
-  ['volumeperpulse_1',['volumePerPulse',['../structlibopenpresso_1_1_vibro_pump_flow_sensor.html#a641f98ac5bd764076cbaa8e86c5ca67b',1,'libopenpresso::VibroPumpFlowSensor']]]
+  ['temperaturesensor_0',['temperatureSensor',['../structlibopenpresso_1_1_steam_controller_config.html#ad8e6c06f254c3a1d0efaa97e951481cc',1,'libopenpresso::SteamControllerConfig']]],
+  ['temperaturethreshold_1',['temperatureThreshold',['../structlibopenpresso_1_1_steam_controller_config.html#a0d7750bcfa23ccf195a098147b72ae12',1,'libopenpresso::SteamControllerConfig']]],
+  ['time_2',['time',['../structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time.html#a09b61f91ce561ca65d30e613efba47f7',1,'libopenpresso::brew_step_advance_conditions::OnStepTime::time'],['../structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_total_time.html#a74a7974fbf20090a8500cc60b40dd6e9',1,'libopenpresso::brew_step_advance_conditions::OnTotalTime::time']]],
+  ['timeout_3',['timeout',['../structlibopenpresso_1_1_watchdog_config.html#a23624766a5d315f948827255dc4a501c',1,'libopenpresso::WatchdogConfig']]]
 ];

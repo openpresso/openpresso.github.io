@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['next_5fstep_5fcondition_5ft_0',['next_step_condition_t',['../namespacelibopenpresso.html#a66b593f5bffca48524d9c3609e5e1524',1,'libopenpresso']]]
+  ['i2c_5faddr_5ft_0',['i2c_addr_t',['../namespacelibopenpresso.html#a5fdf84203d210984410f56deb932fec6',1,'libopenpresso']]],
+  ['i2c_5fdev_5faddr_5ft_1',['i2c_dev_addr_t',['../namespacelibopenpresso.html#a7f50bbfb8b56057d65702373a81aec67',1,'libopenpresso']]]
 ];

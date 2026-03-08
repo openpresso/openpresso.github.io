@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['vibropumpflowcontroller_0',['VibroPumpFlowController',['../structlibopenpresso_1_1_vibro_pump_flow_controller.html',1,'libopenpresso']]],
-  ['vibropumpflowsensor_1',['VibroPumpFlowSensor',['../structlibopenpresso_1_1_vibro_pump_flow_sensor.html',1,'libopenpresso']]],
-  ['virtualweightsensorconfig_2',['VirtualWeightSensorConfig',['../structlibopenpresso_1_1_virtual_weight_sensor_config.html',1,'libopenpresso']]]
+  ['temperaturecontroller_0',['TemperatureController',['../classlibopenpresso_1_1interfaces_1_1_temperature_controller.html',1,'libopenpresso::interfaces']]],
+  ['temperaturepidcontrollerconfig_1',['TemperaturePidControllerConfig',['../structlibopenpresso_1_1_temperature_pid_controller_config.html',1,'libopenpresso']]],
+  ['temperaturesensor_2',['TemperatureSensor',['../classlibopenpresso_1_1interfaces_1_1_temperature_sensor.html',1,'libopenpresso::interfaces']]]
 ];

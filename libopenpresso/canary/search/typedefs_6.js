@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['time_5fdelta_5ft_0',['time_delta_t',['../namespacelibopenpresso.html#a075fd8e34d400b3b550be2cbdcac1265',1,'libopenpresso']]]
+  ['next_5fstep_5fcondition_5ft_0',['next_step_condition_t',['../namespacelibopenpresso.html#a539aa2540191a10c91a91df361cd113f',1,'libopenpresso']]]
 ];

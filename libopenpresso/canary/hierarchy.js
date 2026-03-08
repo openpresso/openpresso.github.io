@@ -13,6 +13,13 @@ var hierarchy =
       [ "libopenpresso::interfaces::TemperatureController", "classlibopenpresso_1_1interfaces_1_1_temperature_controller.html", null ]
     ] ],
     [ "libopenpresso::DeviceConfig", "structlibopenpresso_1_1_device_config.html", null ],
+    [ "std::exception", null, [
+      [ "std::runtime_error", null, [
+        [ "libopenpresso::Exception", "classlibopenpresso_1_1_exception.html", [
+          [ "libopenpresso::SystemError", "classlibopenpresso_1_1_system_error.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "libopenpresso::I2cAddr", "structlibopenpresso_1_1_i2c_addr.html", null ],
     [ "libopenpresso::IntegralFlowRateControllerConfig", "structlibopenpresso_1_1_integral_flow_rate_controller_config.html", null ],
     [ "libopenpresso::interfaces::LibopenpressoCore", "classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html", null ],

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['step_5findex_5ft_0',['step_index_t',['../classlibopenpresso_1_1interfaces_1_1_brew_profiler.html#a8d430d89786de3a0a727453015333e74',1,'libopenpresso::interfaces::BrewProfiler']]],
-  ['step_5ftarget_5ft_1',['step_target_t',['../namespacelibopenpresso.html#ad1c9686d22e40bb630518d807141e40c',1,'libopenpresso']]],
-  ['stopped_5fflag_5ft_2',['stopped_flag_t',['../classlibopenpresso_1_1interfaces_1_1_brew_profiler.html#a59b83549264b59b1c2f21b53c1f6fd6d',1,'libopenpresso::interfaces::BrewProfiler']]]
+  ['micrograms_5ft_0',['micrograms_t',['../namespacelibopenpresso.html#a9cb8609d1f31c7adda43727d2e347c2c',1,'libopenpresso']]],
+  ['millibars_5ft_1',['millibars_t',['../namespacelibopenpresso.html#a5551957d23c3e3a879c4535ce8e866b4',1,'libopenpresso']]],
+  ['millidegrees_5ft_2',['millidegrees_t',['../namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008',1,'libopenpresso']]],
+  ['milligrams_5fp_5fsecond_5ft_3',['milligrams_p_second_t',['../namespacelibopenpresso.html#aca92f80a0063a134f1c7e5b92649f28e',1,'libopenpresso']]],
+  ['milligrams_5ft_4',['milligrams_t',['../namespacelibopenpresso.html#a05a079f7e30b92be2bc50dc949cb97d4',1,'libopenpresso']]]
 ];

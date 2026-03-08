@@ -30,7 +30,8 @@ var searchData=
   ['steamingtemperaturecontroller_27',['steamingTemperatureController',['../structlibopenpresso_1_1_steam_controller_config.html#a71cfbc36f9121eaeceb00a84225fb163',1,'libopenpresso::SteamControllerConfig']]],
   ['steamtemperature_28',['steamTemperature',['../structlibopenpresso_1_1_steam_controller_config.html#af0087513ff90261f585bdb8ba6b729fb',1,'libopenpresso::SteamControllerConfig']]],
   ['step_5findex_5ft_29',['step_index_t',['../classlibopenpresso_1_1interfaces_1_1_brew_profiler.html#a8d430d89786de3a0a727453015333e74',1,'libopenpresso::interfaces::BrewProfiler']]],
-  ['step_5ftarget_5ft_30',['step_target_t',['../namespacelibopenpresso.html#ad1c9686d22e40bb630518d807141e40c',1,'libopenpresso']]],
+  ['step_5ftarget_5ft_30',['step_target_t',['../namespacelibopenpresso.html#ad3f816db82c8e2e91f8d7d187c678c7b',1,'libopenpresso']]],
   ['stopped_5fflag_5ft_31',['stopped_flag_t',['../classlibopenpresso_1_1interfaces_1_1_brew_profiler.html#a59b83549264b59b1c2f21b53c1f6fd6d',1,'libopenpresso::interfaces::BrewProfiler']]],
-  ['subdirectory_32',['CMake subdirectory',['../md_installation.html#install-cmake-subdirectory',1,'']]]
+  ['subdirectory_32',['CMake subdirectory',['../md_installation.html#install-cmake-subdirectory',1,'']]],
+  ['systemerror_33',['SystemError',['../classlibopenpresso_1_1_system_error.html',1,'libopenpresso::SystemError'],['../classlibopenpresso_1_1_system_error.html#a8b5f12a924350d186ff5a334b1506c1e',1,'libopenpresso::SystemError::SystemError(const format_string_t&lt; Args... &gt; &amp;fmt, Args &amp;&amp;... args)'],['../classlibopenpresso_1_1_system_error.html#a4159203f0f9a1a3d6726ecbc59f34109',1,'libopenpresso::SystemError::SystemError(const std::string &amp;message, std::source_location loc=std::source_location::current(), std::error_code err={errno, std::generic_category()})']]]
 ];

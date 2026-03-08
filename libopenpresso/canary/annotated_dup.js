@@ -44,6 +44,8 @@ var annotated_dup =
       [ "SteamControllerConfig", "structlibopenpresso_1_1_steam_controller_config.html", "structlibopenpresso_1_1_steam_controller_config" ],
       [ "WatchdogConfig", "structlibopenpresso_1_1_watchdog_config.html", "structlibopenpresso_1_1_watchdog_config" ],
       [ "DeviceConfig", "structlibopenpresso_1_1_device_config.html", "structlibopenpresso_1_1_device_config" ],
+      [ "Exception", "classlibopenpresso_1_1_exception.html", "classlibopenpresso_1_1_exception" ],
+      [ "SystemError", "classlibopenpresso_1_1_system_error.html", "classlibopenpresso_1_1_system_error" ],
       [ "I2cAddr", "structlibopenpresso_1_1_i2c_addr.html", "structlibopenpresso_1_1_i2c_addr" ],
       [ "PidSettings", "structlibopenpresso_1_1_pid_settings.html", "structlibopenpresso_1_1_pid_settings" ],
       [ "PinAddr", "structlibopenpresso_1_1_pin_addr.html", "structlibopenpresso_1_1_pin_addr" ]

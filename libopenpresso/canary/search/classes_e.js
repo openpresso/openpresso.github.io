@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['watchdogconfig_0',['WatchdogConfig',['../structlibopenpresso_1_1_watchdog_config.html',1,'libopenpresso']]],
-  ['weightsensor_1',['WeightSensor',['../classlibopenpresso_1_1interfaces_1_1_weight_sensor.html',1,'libopenpresso::interfaces']]]
+  ['vibropumpflowcontroller_0',['VibroPumpFlowController',['../structlibopenpresso_1_1_vibro_pump_flow_controller.html',1,'libopenpresso']]],
+  ['vibropumpflowsensor_1',['VibroPumpFlowSensor',['../structlibopenpresso_1_1_vibro_pump_flow_sensor.html',1,'libopenpresso']]],
+  ['virtualweightsensorconfig_2',['VirtualWeightSensorConfig',['../structlibopenpresso_1_1_virtual_weight_sensor_config.html',1,'libopenpresso']]]
 ];

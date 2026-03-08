@@ -14,10 +14,11 @@ var searchData=
   ['flowcounter_11',['flowCounter',['../structlibopenpresso_1_1_temperature_pid_controller_config.html#a2fd193aca51074745b3243fefa79dad3',1,'libopenpresso::TemperaturePidControllerConfig']]],
   ['flowratecontroller_12',['FlowRateController',['../classlibopenpresso_1_1interfaces_1_1_flow_rate_controller.html',1,'libopenpresso::interfaces']]],
   ['flowratecontroller_13',['flowRateController',['../structlibopenpresso_1_1_steam_controller_config.html#ab1b86d0aae44a655fdc638686849164b',1,'libopenpresso::SteamControllerConfig']]],
-  ['flowratesmoothingtime_14',['flowRateSmoothingTime',['../structlibopenpresso_1_1_virtual_weight_sensor_config.html#a573bf59c12616cd44f760e16953d8a38',1,'libopenpresso::VirtualWeightSensorConfig::flowRateSmoothingTime'],['../structlibopenpresso_1_1_nau7802_weight_sensor_config.html#aa7ba52c8acbb03f91f910df1ff749944',1,'libopenpresso::Nau7802WeightSensorConfig::flowRateSmoothingTime']]],
-  ['for_20cross_20compilation_15',['Build environment for cross compilation',['../md_crosscompiling.html#autotoc_md93',1,'']]],
-  ['for_20steam_20mode_16',['Tune for steam mode',['../pid_tuning.html#autotoc_md83',1,'']]],
-  ['from_20conan_20profile_17',['Generation of CMake Toolchain from conan profile',['../md_crosscompiling.html#cross-compiling-conan-install-step',1,'']]],
-  ['from_20sources_18',['Build from sources',['../md_installation.html#install-build-from-sources',1,'']]],
-  ['fterm_19',['fTerm',['../classlibopenpresso_1_1interfaces_1_1_pid_controller_state.html#a80da1a1e4174b796d2bf6b89526661bd',1,'libopenpresso::interfaces::PidControllerState']]]
+  ['flowratecontrollerptr_14',['FlowRateControllerPtr',['../namespacelibopenpresso.html#a18c79fcaeb22f24cde6977ecc64b3df4',1,'libopenpresso']]],
+  ['flowratesmoothingtime_15',['flowRateSmoothingTime',['../structlibopenpresso_1_1_virtual_weight_sensor_config.html#a573bf59c12616cd44f760e16953d8a38',1,'libopenpresso::VirtualWeightSensorConfig::flowRateSmoothingTime'],['../structlibopenpresso_1_1_nau7802_weight_sensor_config.html#aa7ba52c8acbb03f91f910df1ff749944',1,'libopenpresso::Nau7802WeightSensorConfig::flowRateSmoothingTime']]],
+  ['for_20cross_20compilation_16',['Build environment for cross compilation',['../md_crosscompiling.html#autotoc_md93',1,'']]],
+  ['for_20steam_20mode_17',['Tune for steam mode',['../pid_tuning.html#autotoc_md83',1,'']]],
+  ['from_20conan_20profile_18',['Generation of CMake Toolchain from conan profile',['../md_crosscompiling.html#cross-compiling-conan-install-step',1,'']]],
+  ['from_20sources_19',['Build from sources',['../md_installation.html#install-build-from-sources',1,'']]],
+  ['fterm_20',['fTerm',['../classlibopenpresso_1_1interfaces_1_1_pid_controller_state.html#a80da1a1e4174b796d2bf6b89526661bd',1,'libopenpresso::interfaces::PidControllerState']]]
 ];

@@ -13,11 +13,14 @@ var searchData=
   ['libopenpressocore_20component_20access_10',['LibopenpressoCore &amp;amp; Component Access',['../md_usage.html#autotoc_md58',1,'']]],
   ['lifetime_20management_11',['Lifetime Management',['../md_usage.html#autotoc_md60',1,'']]],
   ['lifetime_20management_3a_12',['Lifetime Management:',['../classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#autotoc_md3',1,'']]],
-  ['logical_20inputs_20outputs_13',['Logical Inputs &amp;amp; Outputs',['../device_config.html#autotoc_md48',1,'']]],
-  ['logical_5finput_2ehpp_14',['logical_input.hpp',['../logical__input_8hpp.html',1,'']]],
-  ['logical_5foutput_2ehpp_15',['logical_output.hpp',['../logical__output_8hpp.html',1,'']]],
-  ['logicalinput_16',['LogicalInput',['../classlibopenpresso_1_1interfaces_1_1_logical_input.html',1,'libopenpresso::interfaces']]],
-  ['logicalinputpinconfig_17',['LogicalInputPinConfig',['../structlibopenpresso_1_1_logical_input_pin_config.html',1,'libopenpresso::LogicalInputPinConfig'],['../device_config.html#autotoc_md49',1,'LogicalInputPinConfig']]],
-  ['logicaloutput_18',['LogicalOutput',['../classlibopenpresso_1_1interfaces_1_1_logical_output.html',1,'libopenpresso::interfaces']]],
-  ['logicaloutputpinconfig_19',['LogicalOutputPinConfig',['../structlibopenpresso_1_1_logical_output_pin_config.html',1,'libopenpresso::LogicalOutputPinConfig'],['../device_config.html#autotoc_md50',1,'LogicalOutputPinConfig']]]
+  ['logger_13',['logger',['../structlibopenpresso_1_1_device_config.html#a8db604cde7ba97d21f89c747f42ecae0',1,'libopenpresso::DeviceConfig']]],
+  ['logical_20inputs_20outputs_14',['Logical Inputs &amp;amp; Outputs',['../device_config.html#autotoc_md48',1,'']]],
+  ['logical_5finput_2ehpp_15',['logical_input.hpp',['../logical__input_8hpp.html',1,'']]],
+  ['logical_5foutput_2ehpp_16',['logical_output.hpp',['../logical__output_8hpp.html',1,'']]],
+  ['logicalinput_17',['LogicalInput',['../classlibopenpresso_1_1interfaces_1_1_logical_input.html',1,'libopenpresso::interfaces']]],
+  ['logicalinputpinconfig_18',['LogicalInputPinConfig',['../structlibopenpresso_1_1_logical_input_pin_config.html',1,'libopenpresso::LogicalInputPinConfig'],['../device_config.html#autotoc_md49',1,'LogicalInputPinConfig']]],
+  ['logicalinputptr_19',['LogicalInputPtr',['../namespacelibopenpresso.html#ac5cf984dceac6552db5dea33da372823',1,'libopenpresso']]],
+  ['logicaloutput_20',['LogicalOutput',['../classlibopenpresso_1_1interfaces_1_1_logical_output.html',1,'libopenpresso::interfaces']]],
+  ['logicaloutputpinconfig_21',['LogicalOutputPinConfig',['../structlibopenpresso_1_1_logical_output_pin_config.html',1,'libopenpresso::LogicalOutputPinConfig'],['../device_config.html#autotoc_md50',1,'LogicalOutputPinConfig']]],
+  ['logicaloutputptr_22',['LogicalOutputPtr',['../namespacelibopenpresso.html#af110270d80bcb95cc215815806d996db',1,'libopenpresso']]]
 ];

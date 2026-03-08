@@ -1,4 +1,4 @@
 var libopenpresso_8hpp =
 [
-    [ "libopenpresso::getCore", "namespacelibopenpresso.html#a4b19e487a2bb537be5df23d8182c8d44", null ]
+    [ "libopenpresso::getCore", "namespacelibopenpresso.html#aa0be5c21e87724ac64db2152e0caeb70", null ]
 ];
