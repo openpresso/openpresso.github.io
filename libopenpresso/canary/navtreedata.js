@@ -162,6 +162,6 @@ var NAVTREEINDEX =
 "structlibopenpresso_1_1_temperature_pid_controller_config.html#a6146f52168f11e172c684ee2876c2867"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
-var LISTOFALLMEMBERS = 'List of all members';
+const SYNCONMSG = 'click to disable panel synchronization';
+const SYNCOFFMSG = 'click to enable panel synchronization';
+const LISTOFALLMEMBERS = 'List of all members';
