@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0-3-ga0e2302</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0-6-g2f5af31</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -169,7 +169,7 @@ Option 1: Conan (Recommended)</h2>
 <div class="fragment"><div class="line">conan remote add openpresso https://conan.cloudsmith.io/openpresso/canary</div>
 </div><!-- fragment --><p>Add to your <span class="tt">conanfile.txt</span>:</p>
 <div class="fragment"><div class="line">[requires]</div>
-<div class="line">libopenpresso/0.0.0-3-ga0e2302</div>
+<div class="line">libopenpresso/0.0.0-6-g2f5af31</div>
 <div class="line"> </div>
 <div class="line">[generators]</div>
 <div class="line">CMakeDeps</div>
@@ -322,7 +322,7 @@ Advanced Usage</h1>
 <div class="line">    <span class="keyword">auto</span> brewProfiler = core-&gt;getBrewProfiler(<span class="stringliteral">&quot;profiler&quot;</span>);</div>
 <div class="line">    <span class="keyword">auto</span> temperatureSensor = core-&gt;getTemperatureSensor(<span class="stringliteral">&quot;boiler_temp&quot;</span>);</div>
 <div class="line">    <span class="keyword">auto</span> brewTemperatureController = core-&gt;getTemperatureController(<span class="stringliteral">&quot;brewTempCtrl&quot;</span>);</div>
-<div class="line">    <span class="keyword">auto</span> steamer = core-&gt;getSteamController(<span class="stringliteral">&quot;steamer&quot;</span>);</div>
+<div class="line">    <span class="keyword">auto</span> steamer = core-&gt;getTemperatureController(<span class="stringliteral">&quot;steamer&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    brewProfiler-&gt;setSteps({</div>
 <div class="line">        { <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html">ConstantPressure</a>{ 1&#39;500 }, <a class="code hl_struct" href="structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_weight.html">OnWeight</a>{ 1&#39;000 } },</div>
@@ -377,6 +377,7 @@ Advanced Usage</h1>
 <div class="line">        std::cout &lt;&lt; std::format(<span class="stringliteral">&quot;\rTemperature: {:3.3f} °C    &quot;</span>, 0.001f * temperature) &lt;&lt; std::flush;</div>
 <div class="line">    });</div>
 <div class="line">    </div>
+<div class="line">    steamer-&gt;setTargetTemperature(155&#39;000);</div>
 <div class="line">    steamer-&gt;activate();</div>
 <div class="line">}</div>
 <div class="ttc" id="anamespacelibopenpresso_1_1brew__step__advance__conditions_html"><div class="ttname"><a href="namespacelibopenpresso_1_1brew__step__advance__conditions.html">libopenpresso::brew_step_advance_conditions</a></div><div class="ttdoc">Brew profile conditions for advancing to the next step.</div><div class="ttdef"><b>Definition</b> brew_steps_data.hpp:20</div></div>

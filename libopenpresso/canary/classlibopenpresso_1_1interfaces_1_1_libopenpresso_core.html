@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0-3-ga0e2302</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0-6-g2f5af31</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -176,8 +176,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adb3b0a56631ea18d408b4fdbe541bc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves or creates the logical input (sensor/button) with the specified label.  <br /></td></tr>
 <tr class="memitem:a1c38a5592e2da5f7acab0a0a1d3557d8" id="r_a1c38a5592e2da5f7acab0a0a1d3557d8"><td class="memItemLeft">virtual <a class="el" href="namespacelibopenpresso.html#ad31df19d48251dd6af7b0ed7713e8b93">BrewProfilerPtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1c38a5592e2da5f7acab0a0a1d3557d8">getBrewProfiler</a> (const <a class="el" href="namespacelibopenpresso.html#ae2f9204b381602762a1266d2c344d6d4">component_label_t</a> &amp;label)=0</td></tr>
 <tr class="memdesc:a1c38a5592e2da5f7acab0a0a1d3557d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves or creates the brew profiler with the specified label.  <br /></td></tr>
-<tr class="memitem:a6c4c5198e8184940ed5f8a291d9013cc" id="r_a6c4c5198e8184940ed5f8a291d9013cc"><td class="memItemLeft">virtual <a class="el" href="namespacelibopenpresso.html#ac4807f0dae3e30ccb73cd7c6c9cbfba8">ControllerBasePtr</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6c4c5198e8184940ed5f8a291d9013cc">getSteamController</a> (const <a class="el" href="namespacelibopenpresso.html#ae2f9204b381602762a1266d2c344d6d4">component_label_t</a> &amp;label)=0</td></tr>
-<tr class="memdesc:a6c4c5198e8184940ed5f8a291d9013cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves or creates the steam controller with the specified label.  <br /></td></tr>
 <tr class="memitem:a9c01fcfe04461e5ee1a7cc1d29061e43" id="r_a9c01fcfe04461e5ee1a7cc1d29061e43"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a9c01fcfe04461e5ee1a7cc1d29061e43">~LibopenpressoCore</a> ()=default</td></tr>
 <tr class="memdesc:a9c01fcfe04461e5ee1a7cc1d29061e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for polymorphic cleanup.  <br /></td></tr>
 </table>
@@ -545,58 +543,6 @@ Lifetime Management:</h3>
 
 </div>
 </div>
-<a id="a6c4c5198e8184940ed5f8a291d9013cc" name="a6c4c5198e8184940ed5f8a291d9013cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c4c5198e8184940ed5f8a291d9013cc">&#9670;&#160;</a></span>getSteamController()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacelibopenpresso.html#ac4807f0dae3e30ccb73cd7c6c9cbfba8">ControllerBasePtr</a> libopenpresso::interfaces::LibopenpressoCore::getSteamController </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacelibopenpresso.html#ae2f9204b381602762a1266d2c344d6d4">component_label_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>label</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieves or creates the steam controller with the specified label. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">label</td><td>Unique component identifier from <a class="el" href="structlibopenpresso_1_1_device_config.html" title="Complete device configuration for creating an libopenpresso Core.">DeviceConfig</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;<a class="el" href="classlibopenpresso_1_1interfaces_1_1_controller_base.html" title="ControllerBase">ControllerBase</a>&gt; Shared pointer to the steam controller. Returned as generic <a class="el" href="classlibopenpresso_1_1interfaces_1_1_controller_base.html" title="Abstract base interface for all controllable devices.">ControllerBase</a> since steam controller has no specific methods beyond activation control. Subsequent calls with the same label return cached instance.</dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">libopenpresso::Exception</td><td>if:<ul>
-<li>Label not found in <a class="el" href="structlibopenpresso_1_1_device_config.html" title="Complete device configuration for creating an libopenpresso Core.">DeviceConfig</a></li>
-<li>Config for this label cannot be used to create a steam controller</li>
-<li>Dependency component initialization fails</li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>The steam controller manages:</p><ul>
-<li>Steam boiler heating to target temperature</li>
-<li>Boiler pressure regulation</li>
-<li>Water refill logic and flow control</li>
-<li>Pressure/temperature interlocks for safety Coordinates multiple sub-controllers for complete steam system operation.</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structlibopenpresso_1_1_steam_controller_config.html" title="Configuration for steam mode controller.">SteamControllerConfig</a> </dd></dl>
-
-</div>
-</div>
 <a id="a6ea78424a993f791bf4f8218347d1a70" name="a6ea78424a993f791bf4f8218347d1a70"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ea78424a993f791bf4f8218347d1a70">&#9670;&#160;</a></span>getTemperatureController()</h2>
 
@@ -644,7 +590,7 @@ Lifetime Management:</h3>
 <li>PID + feed forward control algorithms</li>
 </ul>
 <p>Uses temperature sensor readings feedback-loop control.</p>
-<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structlibopenpresso_1_1_temperature_pid_controller_config.html" title="Configuration for PID-based temperature controller.">TemperaturePidControllerConfig</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Supported implementation configs: <a class="el" href="structlibopenpresso_1_1_temperature_pid_controller_config.html" title="Configuration for PID-based temperature controller.">TemperaturePidControllerConfig</a>, <a class="el" href="structlibopenpresso_1_1_steam_controller_config.html" title="Configuration for steam mode controller.">SteamControllerConfig</a> </dd></dl>
 
 </div>
 </div>

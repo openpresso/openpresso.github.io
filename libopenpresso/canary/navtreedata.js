@@ -158,8 +158,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"md_quick__start.html#autotoc_md20",
-"structlibopenpresso_1_1_temperature_pid_controller_config.html#a6146f52168f11e172c684ee2876c2867"
+"md_quick__start.html#autotoc_md9",
+"structlibopenpresso_1_1_temperature_pid_controller_config.html#aff65e2fb2119144b5bf937f8b4e218e6"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

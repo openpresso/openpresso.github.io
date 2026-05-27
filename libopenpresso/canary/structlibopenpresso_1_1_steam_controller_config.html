@@ -61,7 +61,7 @@ MathJax.Hub.Config({
     <img id="dark-logo" alt="Logo" src="logo-dark.svg"/>
   </td>
   <td id="projectalign">
-   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0-3-ga0e2302</span>
+   <div id="projectname">Libopenpresso<span id="projectnumber">&#160;0.0.0-6-g2f5af31</span>
    </div>
    <div id="projectbrief">Smart espresso machine control library</div>
   </td>
@@ -158,11 +158,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('structlibopenp
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af0087513ff90261f585bdb8ba6b729fb" id="r_af0087513ff90261f585bdb8ba6b729fb"><td class="memItemLeft"><a id="af0087513ff90261f585bdb8ba6b729fb" name="af0087513ff90261f585bdb8ba6b729fb"></a>
-<a class="el" href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">millidegrees_t</a>&#160;</td><td class="memItemRight"><b>steamTemperature</b></td></tr>
-<tr class="memdesc:af0087513ff90261f585bdb8ba6b729fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target steam boiler temperature. <br /></td></tr>
 <tr class="memitem:a8c016805187fd5d7bacf1441588aa376" id="r_a8c016805187fd5d7bacf1441588aa376"><td class="memItemLeft"><a class="el" href="namespacelibopenpresso.html#a5551957d23c3e3a879c4535ce8e866b4">millibars_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8c016805187fd5d7bacf1441588aa376">pressureThreshold</a></td></tr>
-<tr class="memitem:a0d7750bcfa23ccf195a098147b72ae12" id="r_a0d7750bcfa23ccf195a098147b72ae12"><td class="memItemLeft"><a class="el" href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">millidegrees_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0d7750bcfa23ccf195a098147b72ae12">temperatureThreshold</a></td></tr>
+<tr class="memitem:af2f99031400035258d8fb8e6b5647811" id="r_af2f99031400035258d8fb8e6b5647811"><td class="memItemLeft"><a class="el" href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">millidegrees_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#af2f99031400035258d8fb8e6b5647811">temperatureRelativeThreshold</a></td></tr>
 <tr class="memitem:a92764bdb1d33219fa0977c56ea4fc6ec" id="r_a92764bdb1d33219fa0977c56ea4fc6ec"><td class="memItemLeft"><a class="el" href="namespacelibopenpresso.html#aca92f80a0063a134f1c7e5b92649f28e">milligrams_p_second_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a92764bdb1d33219fa0977c56ea4fc6ec">refillFlow</a></td></tr>
 <tr class="memitem:afe6f156cc4b1ce4aa10a36de69dd6ef8" id="r_afe6f156cc4b1ce4aa10a36de69dd6ef8"><td class="memItemLeft"><a class="el" href="namespacelibopenpresso.html#a075fd8e34d400b3b550be2cbdcac1265">time_delta_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#afe6f156cc4b1ce4aa10a36de69dd6ef8">refillUpdatePeriod</a></td></tr>
 <tr class="memitem:a2c50dbb1d5e4257b6a22b74d6b8b9dc6" id="r_a2c50dbb1d5e4257b6a22b74d6b8b9dc6"><td class="memItemLeft"><a class="el" href="namespacelibopenpresso.html#ae2f9204b381602762a1266d2c344d6d4">component_label_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2c50dbb1d5e4257b6a22b74d6b8b9dc6">preheatController</a></td></tr>
@@ -174,7 +171,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration for steam mode controller. </p>
 <p>Manages steam boiler heating and refilling with fresh water to compensate water loss during steaming.</p>
-<dl class="section note"><dt>Note</dt><dd>Call <a class="el" href="classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a6c4c5198e8184940ed5f8a291d9013cc" title="Retrieves or creates the steam controller with the specified label.">interfaces::LibopenpressoCore::getSteamController()</a> with the label of this config to get configured component instance. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Call <a class="el" href="classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html#a6ea78424a993f791bf4f8218347d1a70" title="Retrieves or creates the temperature controller with the specified label.">interfaces::LibopenpressoCore::getTemperatureController()</a> with the label of this config to get configured component instance. </dd></dl>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="ab1b86d0aae44a655fdc638686849164b" name="ab1b86d0aae44a655fdc638686849164b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1b86d0aae44a655fdc638686849164b">&#9670;&#160;</a></span>flowRateController</h2>
@@ -281,6 +278,21 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af2f99031400035258d8fb8e6b5647811" name="af2f99031400035258d8fb8e6b5647811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f99031400035258d8fb8e6b5647811">&#9670;&#160;</a></span>temperatureRelativeThreshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">millidegrees_t</a> libopenpresso::SteamControllerConfig::temperatureRelativeThreshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Temperature threshold, refill is disabled when boiler temperature is lower than the target temperature by this offset (should be ~10°C) </p>
+
+</div>
+</div>
 <a id="ad8e6c06f254c3a1d0efaa97e951481cc" name="ad8e6c06f254c3a1d0efaa97e951481cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8e6c06f254c3a1d0efaa97e951481cc">&#9670;&#160;</a></span>temperatureSensor</h2>
 
@@ -293,21 +305,6 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Dependency component label, should point to any component config that implements <a class="el" href="classlibopenpresso_1_1interfaces_1_1_temperature_sensor.html" title="Interface for temperature measurement with callback support.">interfaces::TemperatureSensor</a> </p>
-
-</div>
-</div>
-<a id="a0d7750bcfa23ccf195a098147b72ae12" name="a0d7750bcfa23ccf195a098147b72ae12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d7750bcfa23ccf195a098147b72ae12">&#9670;&#160;</a></span>temperatureThreshold</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacelibopenpresso.html#a57b3fbc43e7307724ab37f83c59cf008">millidegrees_t</a> libopenpresso::SteamControllerConfig::temperatureThreshold</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Temperature threshold, refill is disabled below this temperature (should be ~10°C lower than steamTemperature) </p>
 
 </div>
 </div>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"md_quick__start.html#autotoc_md20":[3,3],
-"md_quick__start.html#autotoc_md22":[3,4],
 "md_quick__start.html#autotoc_md9":[3,0],
 "md_usage.html":[6],
 "md_usage.html#autotoc_md58":[6,0],
@@ -223,8 +221,6 @@ var NAVTREEINDEX1 =
 "structlibopenpresso_1_1_pulse_pressure_controller_config.html#af56578cfd74bfc2a894d5ae243403d39":[11,0,0,19,1],
 "structlibopenpresso_1_1_steam_controller_config.html":[10,0,0,20],
 "structlibopenpresso_1_1_steam_controller_config.html":[11,0,0,20],
-"structlibopenpresso_1_1_steam_controller_config.html#a0d7750bcfa23ccf195a098147b72ae12":[10,0,0,20,9],
-"structlibopenpresso_1_1_steam_controller_config.html#a0d7750bcfa23ccf195a098147b72ae12":[11,0,0,20,9],
 "structlibopenpresso_1_1_steam_controller_config.html#a2c50dbb1d5e4257b6a22b74d6b8b9dc6":[10,0,0,20,1],
 "structlibopenpresso_1_1_steam_controller_config.html#a2c50dbb1d5e4257b6a22b74d6b8b9dc6":[11,0,0,20,1],
 "structlibopenpresso_1_1_steam_controller_config.html#a47f0d2bc8591b8c44c98739ce3b77cbf":[10,0,0,20,2],
@@ -239,8 +235,8 @@ var NAVTREEINDEX1 =
 "structlibopenpresso_1_1_steam_controller_config.html#ab1b86d0aae44a655fdc638686849164b":[11,0,0,20,0],
 "structlibopenpresso_1_1_steam_controller_config.html#ad8e6c06f254c3a1d0efaa97e951481cc":[10,0,0,20,8],
 "structlibopenpresso_1_1_steam_controller_config.html#ad8e6c06f254c3a1d0efaa97e951481cc":[11,0,0,20,8],
-"structlibopenpresso_1_1_steam_controller_config.html#af0087513ff90261f585bdb8ba6b729fb":[10,0,0,20,7],
-"structlibopenpresso_1_1_steam_controller_config.html#af0087513ff90261f585bdb8ba6b729fb":[11,0,0,20,7],
+"structlibopenpresso_1_1_steam_controller_config.html#af2f99031400035258d8fb8e6b5647811":[10,0,0,20,7],
+"structlibopenpresso_1_1_steam_controller_config.html#af2f99031400035258d8fb8e6b5647811":[11,0,0,20,7],
 "structlibopenpresso_1_1_steam_controller_config.html#afe6f156cc4b1ce4aa10a36de69dd6ef8":[10,0,0,20,5],
 "structlibopenpresso_1_1_steam_controller_config.html#afe6f156cc4b1ce4aa10a36de69dd6ef8":[11,0,0,20,5],
 "structlibopenpresso_1_1_temperature_pid_controller_config.html":[10,0,0,22],
@@ -249,5 +245,9 @@ var NAVTREEINDEX1 =
 "structlibopenpresso_1_1_temperature_pid_controller_config.html#a2fd193aca51074745b3243fefa79dad3":[11,0,0,22,1],
 "structlibopenpresso_1_1_temperature_pid_controller_config.html#a5f4eff4969585fd8b6e113c1d6f2920d":[10,0,0,22,0],
 "structlibopenpresso_1_1_temperature_pid_controller_config.html#a5f4eff4969585fd8b6e113c1d6f2920d":[11,0,0,22,0],
-"structlibopenpresso_1_1_temperature_pid_controller_config.html#a6146f52168f11e172c684ee2876c2867":[10,0,0,22,2]
+"structlibopenpresso_1_1_temperature_pid_controller_config.html#a6146f52168f11e172c684ee2876c2867":[10,0,0,22,2],
+"structlibopenpresso_1_1_temperature_pid_controller_config.html#a6146f52168f11e172c684ee2876c2867":[11,0,0,22,2],
+"structlibopenpresso_1_1_temperature_pid_controller_config.html#aa35b497a15a6ad71aa6a9dfe81a96ca2":[10,0,0,22,3],
+"structlibopenpresso_1_1_temperature_pid_controller_config.html#aa35b497a15a6ad71aa6a9dfe81a96ca2":[11,0,0,22,3],
+"structlibopenpresso_1_1_temperature_pid_controller_config.html#aff65e2fb2119144b5bf937f8b4e218e6":[10,0,0,22,4]
 };

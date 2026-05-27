@@ -7,7 +7,6 @@ var structlibopenpresso_1_1_steam_controller_config =
     [ "refillFlow", "structlibopenpresso_1_1_steam_controller_config.html#a92764bdb1d33219fa0977c56ea4fc6ec", null ],
     [ "refillUpdatePeriod", "structlibopenpresso_1_1_steam_controller_config.html#afe6f156cc4b1ce4aa10a36de69dd6ef8", null ],
     [ "steamingTemperatureController", "structlibopenpresso_1_1_steam_controller_config.html#a71cfbc36f9121eaeceb00a84225fb163", null ],
-    [ "steamTemperature", "structlibopenpresso_1_1_steam_controller_config.html#af0087513ff90261f585bdb8ba6b729fb", null ],
-    [ "temperatureSensor", "structlibopenpresso_1_1_steam_controller_config.html#ad8e6c06f254c3a1d0efaa97e951481cc", null ],
-    [ "temperatureThreshold", "structlibopenpresso_1_1_steam_controller_config.html#a0d7750bcfa23ccf195a098147b72ae12", null ]
+    [ "temperatureRelativeThreshold", "structlibopenpresso_1_1_steam_controller_config.html#af2f99031400035258d8fb8e6b5647811", null ],
+    [ "temperatureSensor", "structlibopenpresso_1_1_steam_controller_config.html#ad8e6c06f254c3a1d0efaa97e951481cc", null ]
 ];
