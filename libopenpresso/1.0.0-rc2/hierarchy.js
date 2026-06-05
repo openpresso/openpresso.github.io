@@ -1,0 +1,51 @@
+var hierarchy =
+[
+    [ "libopenpresso::AcZeroCrossSensorConfig", "structlibopenpresso_1_1_ac_zero_cross_sensor_config.html", null ],
+    [ "libopenpresso::Ads1115PressureSensorConfig", "structlibopenpresso_1_1_ads1115_pressure_sensor_config.html", null ],
+    [ "libopenpresso::BrewProfilerConfig", "structlibopenpresso_1_1_brew_profiler_config.html", null ],
+    [ "libopenpresso::brew_step_targets::ConstantFlow", "structlibopenpresso_1_1brew__step__targets_1_1_constant_flow.html", null ],
+    [ "libopenpresso::brew_step_targets::ConstantPressure", "structlibopenpresso_1_1brew__step__targets_1_1_constant_pressure.html", null ],
+    [ "libopenpresso::interfaces::ControllerBase", "classlibopenpresso_1_1interfaces_1_1_controller_base.html", [
+      [ "libopenpresso::interfaces::BrewProfiler", "classlibopenpresso_1_1interfaces_1_1_brew_profiler.html", null ],
+      [ "libopenpresso::interfaces::FlowRateController", "classlibopenpresso_1_1interfaces_1_1_flow_rate_controller.html", null ],
+      [ "libopenpresso::interfaces::LogicalOutput", "classlibopenpresso_1_1interfaces_1_1_logical_output.html", null ],
+      [ "libopenpresso::interfaces::PressureController", "classlibopenpresso_1_1interfaces_1_1_pressure_controller.html", null ],
+      [ "libopenpresso::interfaces::TemperatureController", "classlibopenpresso_1_1interfaces_1_1_temperature_controller.html", null ]
+    ] ],
+    [ "libopenpresso::DeviceConfig", "structlibopenpresso_1_1_device_config.html", null ],
+    [ "std::exception", null, [
+      [ "std::runtime_error", null, [
+        [ "libopenpresso::Exception", "classlibopenpresso_1_1_exception.html", [
+          [ "libopenpresso::SystemError", "classlibopenpresso_1_1_system_error.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "libopenpresso::I2cAddr", "structlibopenpresso_1_1_i2c_addr.html", null ],
+    [ "libopenpresso::IntegralFlowRateControllerConfig", "structlibopenpresso_1_1_integral_flow_rate_controller_config.html", null ],
+    [ "libopenpresso::interfaces::LibopenpressoCore", "classlibopenpresso_1_1interfaces_1_1_libopenpresso_core.html", null ],
+    [ "libopenpresso::interfaces::LogicalInput", "classlibopenpresso_1_1interfaces_1_1_logical_input.html", null ],
+    [ "libopenpresso::LogicalInputPinConfig", "structlibopenpresso_1_1_logical_input_pin_config.html", null ],
+    [ "libopenpresso::LogicalOutputPinConfig", "structlibopenpresso_1_1_logical_output_pin_config.html", null ],
+    [ "libopenpresso::Max31856TemperatureSensorConfig", "structlibopenpresso_1_1_max31856_temperature_sensor_config.html", null ],
+    [ "libopenpresso::Max6675TemperatureSensorConfig", "structlibopenpresso_1_1_max6675_temperature_sensor_config.html", null ],
+    [ "libopenpresso::Nau7802WeightSensorConfig", "structlibopenpresso_1_1_nau7802_weight_sensor_config.html", null ],
+    [ "libopenpresso::brew_step_advance_conditions::Never", "structlibopenpresso_1_1brew__step__advance__conditions_1_1_never.html", null ],
+    [ "libopenpresso::brew_step_advance_conditions::OnStepTime", "structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_step_time.html", null ],
+    [ "libopenpresso::brew_step_advance_conditions::OnTotalTime", "structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_total_time.html", null ],
+    [ "libopenpresso::brew_step_advance_conditions::OnWeight", "structlibopenpresso_1_1brew__step__advance__conditions_1_1_on_weight.html", null ],
+    [ "libopenpresso::interfaces::PidControllerState", "classlibopenpresso_1_1interfaces_1_1_pid_controller_state.html", null ],
+    [ "libopenpresso::PidSettings", "structlibopenpresso_1_1_pid_settings.html", null ],
+    [ "libopenpresso::PinAddr", "structlibopenpresso_1_1_pin_addr.html", null ],
+    [ "libopenpresso::interfaces::PressureSensor", "classlibopenpresso_1_1interfaces_1_1_pressure_sensor.html", null ],
+    [ "libopenpresso::PulseControlledDeviceConfig", "structlibopenpresso_1_1_pulse_controlled_device_config.html", null ],
+    [ "libopenpresso::PulsePowerControllerConfig", "structlibopenpresso_1_1_pulse_power_controller_config.html", null ],
+    [ "libopenpresso::PulsePressureControllerConfig", "structlibopenpresso_1_1_pulse_pressure_controller_config.html", null ],
+    [ "libopenpresso::SteamControllerConfig", "structlibopenpresso_1_1_steam_controller_config.html", null ],
+    [ "libopenpresso::TemperaturePidControllerConfig", "structlibopenpresso_1_1_temperature_pid_controller_config.html", null ],
+    [ "libopenpresso::interfaces::TemperatureSensor", "classlibopenpresso_1_1interfaces_1_1_temperature_sensor.html", null ],
+    [ "libopenpresso::VibroPumpFlowController", "structlibopenpresso_1_1_vibro_pump_flow_controller.html", null ],
+    [ "libopenpresso::VibroPumpFlowSensor", "structlibopenpresso_1_1_vibro_pump_flow_sensor.html", null ],
+    [ "libopenpresso::VirtualWeightSensorConfig", "structlibopenpresso_1_1_virtual_weight_sensor_config.html", null ],
+    [ "libopenpresso::WatchdogConfig", "structlibopenpresso_1_1_watchdog_config.html", null ],
+    [ "libopenpresso::interfaces::WeightSensor", "classlibopenpresso_1_1interfaces_1_1_weight_sensor.html", null ]
+];
