@@ -1,0 +1,38 @@
+#projectnumber {
+  margin-left: var(--spacing-large);
+  vertical-align: middle;
+}
+
+#versionSelector {
+  padding: 2px 4px;
+  max-width: 6rem;
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--separator-color);
+  font-size: var(--toc-font-size);
+  font-family: var(--font-family);
+  background-color: var(--fragment-background);
+  color: var(--page-foreground-color);
+  cursor: pointer;
+  line-height: 1.2;
+
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+#versionSelector:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+#versionSelector:focus-visible {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+#versionSelector option:checked {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+}
