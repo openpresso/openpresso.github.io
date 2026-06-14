@@ -66,9 +66,10 @@ var NAVTREE =
     ] ],
     [ "Usage", "usage.html", [
       [ "Service management", "usage.html#autotoc_md61", null ],
-      [ "openpresso-ctl", "usage.html#autotoc_md63", null ],
-      [ "Direct gRPC access", "usage.html#autotoc_md65", null ],
-      [ "Security considerations", "usage.html#autotoc_md67", null ]
+      [ "Command-line options", "usage.html#autotoc_md63", null ],
+      [ "openpresso-ctl", "usage.html#autotoc_md65", null ],
+      [ "Direct gRPC access", "usage.html#autotoc_md67", null ],
+      [ "Security considerations", "usage.html#autotoc_md69", null ]
     ] ]
   ] ]
 ];

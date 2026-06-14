@@ -63,7 +63,7 @@ MathJax.Hub.Config({
               </td>
               <td id="projectalign">
                 <div id="projectname">Openpressod<span
-                    id="projectnumber">&#160;0.0.0-64-gfeea9ba</span>
+                    id="projectnumber">&#160;0.0.0-68-gcf77f43</span>
                 </div>
                 <div id="projectbrief">Smart espresso machine control library</div>
               </td>
@@ -155,18 +155,34 @@ Service management</h1>
 </div><!-- fragment --> </blockquote>
 <hr  />
 <h1 class="doxsection"><a class="anchor" id="autotoc_md63"></a>
+Command-line options</h1>
+<p>When running <span class="tt">openpressod</span> directly, you can pass command-line options or set environment variables to configure its behavior.</p>
+<p><b>Synopsis:</b></p>
+<div class="fragment"><div class="line">openpressod [-h|--help] [-v|--version] [-c|--conf &lt;path&gt;]</div>
+</div><!-- fragment --><p><b>Options:</b></p>
+<ul>
+<li><span class="tt">-h</span>, <span class="tt">--help</span> Print help message and exit.</li>
+<li><span class="tt">-v</span>, <span class="tt">--version</span> Print version information and exit.</li>
+<li><span class="tt">-c</span>, <span class="tt">--conf &lt;path&gt;</span> Path to the daemon configuration file. Can also be set via the <span class="tt">OPENPRESSOD_CONFIG_PATH</span> environment variable. Defaults to <span class="tt">/etc/openpressod/openpressod.conf</span>.</li>
+</ul>
+<p><b>Environment Variables:</b></p>
+<ul>
+<li><span class="tt">OPENPRESSOD_CONFIG_PATH</span> Specifies the path to the daemon configuration file. Overridden by the <span class="tt">-c</span>/<span class="tt">--conf</span> command-line option if specified.</li>
+</ul>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md65"></a>
 openpresso-ctl</h1>
 <p><span class="tt">openpresso-ctl</span> is the companion command-line client for <span class="tt">openpressod</span>. It can be used to control and monitor the daemon from the terminal — querying machine state, managing brew profiles, adjusting user settings, and streaming live sensor data.</p>
 <p>It connects to the daemon over the Unix domain socket (or TCP) using the gRPC interface. Refer to the <span class="tt">openpresso-ctl</span> documentation for the full command reference.</p>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md65"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md67"></a>
 Direct gRPC access</h1>
 <p>Any gRPC client generated from the protobuf definitions in <a href="https://github.com/openpresso/openpresso-proto"><span class="tt">openpresso-proto</span></a> can connect to the daemon directly.</p>
 <p>Connect to the Unix domain socket:</p>
 <div class="fragment"><div class="line">unix:///run/openpresso/openpresso.sock</div>
 </div><!-- fragment --><p>If TCP is enabled in the configuration, connect to the configured address and port (default <span class="tt">0.0.0.0:5001</span>). The daemon handles multiple concurrent client connections.</p>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md67"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md69"></a>
 Security considerations</h1>
 <p>By default the daemon exposes only the Unix domain socket, accessible to processes running as the <span class="tt">openpressod</span> user or group. This is the recommended deployment model.</p>
 <p>If TCP is enabled (<span class="tt">tcp_enable = true</span> in <span class="tt">openpressod.conf</span>), be aware that:</p>

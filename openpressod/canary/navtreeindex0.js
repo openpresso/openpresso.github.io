@@ -40,5 +40,6 @@ var NAVTREEINDEX0 =
 "usage.html#autotoc_md61":[6,0],
 "usage.html#autotoc_md63":[6,1],
 "usage.html#autotoc_md65":[6,2],
-"usage.html#autotoc_md67":[6,3]
+"usage.html#autotoc_md67":[6,3],
+"usage.html#autotoc_md69":[6,4]
 };
