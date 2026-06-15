@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Home on Openpresso</title><link>/</link><description>Recent content in Home on Openpresso</description><generator>Hugo</generator><language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Roadmap</title><link>/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/roadmap/</guid><description>&lt;p&gt;The following is the high-level roadmap for the Openpresso project.&lt;/p&gt;
+&lt;ul style="list-style: none; padding: 0;"&gt;
+&lt;li style="margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #4ade80;"&gt;
+&lt;strong&gt;Phase 1: Libopenpresso&lt;/strong&gt;
+&lt;span style="color: #4ade80; font-size: 0.9em; margin-left: 0.5rem;"&gt;(Completed)&lt;/span&gt;
+&lt;p style="margin-top: 0.5rem; margin-bottom: 0;"&gt;Core hardware abstraction library&lt;/p&gt;
+&lt;/li&gt;
+&lt;li style="margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #4ade80;"&gt;
+&lt;strong&gt;Phase 2: Openpressod&lt;/strong&gt;
+&lt;span style="color: #4ade80; font-size: 0.9em; margin-left: 0.5rem;"&gt;(Completed)&lt;/span&gt;
+&lt;p style="margin-top: 0.5rem; margin-bottom: 0;"&gt;Machine control daemon&lt;/p&gt;
+&lt;/li&gt;
+&lt;li style="margin-bottom: 1rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 8px; border-left: 4px solid #4ade80;"&gt;
+&lt;strong&gt;Phase 3: Openpresso-ctl&lt;/strong&gt;
+&lt;span style="color: #4ade80; font-size: 0.9em; margin-left: 0.5rem;"&gt;(Completed)&lt;/span&gt;
+&lt;p style="margin-top: 0.5rem; margin-bottom: 0;"&gt;Daemon control CLI tool&lt;/p&gt;</description></item><item><title>Subprojects</title><link>/subprojects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/subprojects/</guid><description>&lt;p&gt;Openpresso is composed of several independent projects that together form the complete platform.&lt;/p&gt;
+&lt;h2 id="architecture"&gt;Architecture&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD
+UI_Front[Web UI Frontend] --&amp;gt;|Web Sockets / REST| UI_Back[Web UI Backend]
+UI_Back --&amp;gt; Proto1[gRPC / Openpresso.proto] --&amp;gt; Daemon[Openpressod]
+UI_Back --&amp;gt; DB[(Openpresso DB)]
+CLI[Openpresso-ctl] --&amp;gt; Proto2[gRPC / Openpresso.proto] --&amp;gt; Daemon
+Daemon --&amp;gt;|Links against| Lib[Libopenpresso]
+Lib --&amp;gt; Hardware{{Sensors / Output drivers}}
+click Lib &amp;#34;#libopenpresso&amp;#34; _self
+click Daemon &amp;#34;#openpressod&amp;#34; _self
+click CLI &amp;#34;#openpresso-ctl&amp;#34; _self
+click UI_Front &amp;#34;#openpresso-frontend&amp;#34; _self
+click UI_Back &amp;#34;#openpresso-backend&amp;#34; _self
+click Proto1 &amp;#34;#openpresso-proto&amp;#34; _self
+click Proto2 &amp;#34;#openpresso-proto&amp;#34; _self
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="components"&gt;Components&lt;/h2&gt;
+&lt;h3 id="libopenpresso"&gt;Libopenpresso&lt;/h3&gt;
+&lt;p&gt;The foundation of the entire ecosystem.&lt;/p&gt;</description></item></channel></rss>
