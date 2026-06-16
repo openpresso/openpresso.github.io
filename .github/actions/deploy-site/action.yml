@@ -1,0 +1,43 @@
+name: 'Deploy website'
+description: 'Composite action to checkout pages repo and deploy main website'
+inputs:
+  commit_message:
+    description: Commit message
+    required: false
+    default: Documents deployment
+  repository:
+    description: 'Repository where deploy pages'
+    required: true
+  deployment_key:
+    description: 'SSH key with repo write access'
+    required: true
+  source_dir:
+    description: 'Path to built site in the runner'
+    required: true
+  checkout_path:
+    description: 'Path where to checkout pages repository'
+    required: false
+    default: "."
+    
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout pages repository
+      uses: actions/checkout@v6
+      with:
+        repository: ${{ inputs.repository }}
+        ssh-key: ${{ inputs.deployment_key }}
+        path: ${{ inputs.checkout_path }}
+
+    - name: Copy pages files
+      shell: bash
+      working-directory: ${{ inputs.checkout_path }}
+      run: |
+        find . -mindepth 1 -maxdepth 1 ! -name openpresso-docs ! -name .git ! -name .github ! -name .nojekyll -exec rm -rf {} +
+        cp -r "${{ inputs.source_dir }}/*" .
+
+    - name: Commit and push
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: ${{ inputs.commit_message }}
+        repository: ${{ inputs.checkout_path }}
