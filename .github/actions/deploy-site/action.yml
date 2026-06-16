@@ -33,7 +33,7 @@ runs:
       shell: bash
       run: |
         find ${{ inputs.checkout_path }} -mindepth 1 -maxdepth 1 ! -name openpresso-docs ! -name .git ! -name .github ! -name .nojekyll -exec rm -rf {} +
-        cp -r "${{ inputs.source_dir }}/*" ${{ inputs.checkout_path }}
+        cp -r ${{ inputs.source_dir }}/. ${{ inputs.checkout_path }}
 
     - name: Commit and push
       uses: stefanzweifel/git-auto-commit-action@v7
