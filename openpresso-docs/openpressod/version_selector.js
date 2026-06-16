@@ -54,7 +54,7 @@ function addBackButton() {
    const backItem = document.createElement('li');
    backItem.className = 'navelem';
    backItem.innerHTML = `
-   <a href="../../" title="Back to main site">
+   <a href="../../../" title="Back to main site">
       ← To Openpresso Site
    </a>`;
    navpathUl.insertBefore(backItem, navpathUl.firstChild);

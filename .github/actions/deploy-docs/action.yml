@@ -44,7 +44,7 @@ runs:
       run: |
         UPDATED_VERSIONS=$(jq '.stable += ["${{ inputs.version }}"]' "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json")
         echo "$UPDATED_VERSIONS" > "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json"
-        echo "DEPLOY_PATH=${{ inputs.checkout_path }}/${{ inputs.target_dir }}/${{ inputs.version }}" >> $GITHUB_ENV
+        echo "DEPLOY_PATH=${{ inputs.checkout_path }}/openpresso-docs/${{ inputs.target_dir }}/${{ inputs.version }}" >> $GITHUB_ENV
 
     - name: Process canary version
       if: ${{ inputs.verion_type == 'canary' }}
@@ -52,7 +52,7 @@ runs:
       run: |
         UPDATED_VERSIONS=$(jq '.canary = "${{ inputs.version }}"' "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json")
         echo "$UPDATED_VERSIONS" > "${{ inputs.checkout_path }}/${{ inputs.target_dir }}/versions.json"
-        echo "DEPLOY_PATH=${{ inputs.checkout_path }}/${{ inputs.target_dir }}/canary" >> $GITHUB_ENV
+        echo "DEPLOY_PATH=${{ inputs.checkout_path }}/openpresso-docs/${{ inputs.target_dir }}/canary" >> $GITHUB_ENV
 
     - name: Copy pages files
       shell: bash
