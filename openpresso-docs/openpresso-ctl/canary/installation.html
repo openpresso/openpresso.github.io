@@ -63,7 +63,7 @@ MathJax.Hub.Config({
               </td>
               <td id="projectalign">
                 <div id="projectname">openpresso-ctl<span
-                    id="projectnumber">&#160;0.0.0-19-g14896f9</span>
+                    id="projectnumber">&#160;0.0.0-22-g2365524</span>
                 </div>
                 <div id="projectbrief">Openpresso command line utility</div>
               </td>
@@ -162,6 +162,21 @@ Installing from a local <span class="tt">.deb</span></h1>
 </div><!-- fragment --><p>Using <span class="tt">apt-get</span> rather than <span class="tt">dpkg -i</span> is preferred because <span class="tt">apt-get</span> resolves package dependencies in the same step when possible.</p>
 <hr  />
 <h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+Post-installation steps</h1>
+<p>Openpressod Unix socket by default is owner by <span class="tt">openpressod:openpressod</span>. To access it as non-root user you may need to add it to <span class="tt">openpressod</span> group.</p>
+<ol type="1">
+<li>Ensure the gpoup exists if you install CLI tool before the daemon.</li>
+</ol>
+<div class="fragment"><div class="line">sudo groupadd openpressod</div>
+</div><!-- fragment --><ol type="1">
+<li>Add your user to the <span class="tt">openpressod</span> group.</li>
+</ol>
+<div class="fragment"><div class="line">sudo usermod -aG openpressod $USER</div>
+</div><!-- fragment --><ol type="1">
+<li>Log out and log back in so that your group membership is re-evaluated.</li>
+</ol>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 Verifying the installation</h1>
 <p>Confirm that the binary is available in <span class="tt">PATH</span>:</p>
 <div class="fragment"><div class="line">command -v openpresso-ctl</div>
@@ -172,7 +187,7 @@ Verifying the installation</h1>
 </div><!-- fragment --><p>Verify that the client can reach the daemon and request if the machine is turned on:</p>
 <div class="fragment"><div class="line">openpresso-ctl get-power</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 Removing the package</h1>
 <p>To remove the package with <span class="tt">apt-get</span>:</p>
 <div class="fragment"><div class="line">sudo apt-get remove openpresso-ctl</div>

@@ -63,7 +63,7 @@ MathJax.Hub.Config({
               </td>
               <td id="projectalign">
                 <div id="projectname">openpresso-ctl<span
-                    id="projectnumber">&#160;0.0.0-19-g14896f9</span>
+                    id="projectnumber">&#160;0.0.0-22-g2365524</span>
                 </div>
                 <div id="projectbrief">Openpresso command line utility</div>
               </td>
@@ -132,7 +132,7 @@ $(function(){initNavTree('usage.html','',''); });
 <div class="textblock"><p><a class="anchor" id="md_usage"></a></p>
 <p>This page covers day-to-day operation of <span class="tt">openpresso-ctl</span>.</p>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 Command format</h1>
 <p><span class="tt">openpresso-ctl</span> requires exactly one subcommand. The general invocation form is:</p>
 <div class="fragment"><div class="line">openpresso-ctl [-s SOCKET] COMMAND [COMMAND-OPTIONS]</div>
@@ -140,14 +140,14 @@ Command format</h1>
 <div class="fragment"><div class="line">-s, --socket   unix://path or host:port</div>
 </div><!-- fragment --><p>If no endpoint is given, the client uses <span class="tt">unix:///run/openpresso/openpresso.sock</span>. The same value may be provided through the <span class="tt">OPENPRESSO_SOCK</span> environment variable.</p>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 Help output</h1>
 <p>Show top-level help:</p>
 <div class="fragment"><div class="line">openpresso-ctl --help</div>
 </div><!-- fragment --><p>Show expanded help for all subcommands:</p>
 <div class="fragment"><div class="line">openpresso-ctl --help-all</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
 Common control tasks</h1>
 <p><b>Reset the scales:</b></p>
 <div class="fragment"><div class="line">openpresso-ctl reset-scales</div>
@@ -170,7 +170,7 @@ Common control tasks</h1>
 </div><!-- fragment --><p><b>Check current steam mode state:</b></p>
 <div class="fragment"><div class="line">openpresso-ctl get-steam</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
 Profiles and user settings</h1>
 <p><b>Print the active brew profile:</b></p>
 <div class="fragment"><div class="line">openpresso-ctl get-profile</div>
@@ -183,7 +183,7 @@ Profiles and user settings</h1>
 </div><!-- fragment --><p><b>Update steam temperature:</b></p>
 <div class="fragment"><div class="line">echo &quot;{ \&quot;steamTemperature\&quot;: 155000 }&quot; | openpresso-ctl set-user-settings</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md23"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
 Live monitoring</h1>
 <p><b>Stream state-change events:</b></p>
 <div class="fragment"><div class="line">openpresso-ctl events</div>
@@ -192,7 +192,7 @@ Live monitoring</h1>
 </div><!-- fragment --><p><b>Stream live metrics every 0.5 seconds with PID data:</b></p>
 <div class="fragment"><div class="line">openpresso-ctl metrics --rate 0.5 --pid-source brew</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 Endpoint selection</h1>
 <p>Connect to the default Unix domain socket explicitly:</p>
 <div class="fragment"><div class="line">openpresso-ctl --socket unix:///run/openpresso/openpresso.sock get-power</div>
@@ -202,7 +202,7 @@ Endpoint selection</h1>
 <div class="fragment"><div class="line">export OPENPRESSO_SOCK=unix:///run/openpresso/openpresso.sock</div>
 <div class="line">openpresso-ctl get-profile</div>
 </div><!-- fragment --><hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
 Security considerations</h1>
 <p>By default the safest deployment model is to use the daemon's Unix domain socket at <span class="tt">/run/openpresso/openpresso.sock</span>. This relies on local file-system permissions and matches the default <span class="tt">openpressod</span> setup.</p>
 <p>If TCP is enabled in <span class="tt">openpressod</span> config, <span class="tt">openpresso-ctl</span> can connect to it directly, but the daemon provides no built-in authentication, authorization, or transport encryption. Any TCP endpoint should therefore be exposed only within a trusted network boundary. </p>

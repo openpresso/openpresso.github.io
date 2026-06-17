@@ -63,7 +63,7 @@ MathJax.Hub.Config({
               </td>
               <td id="projectalign">
                 <div id="projectname">openpresso-ctl<span
-                    id="projectnumber">&#160;0.0.0-19-g14896f9</span>
+                    id="projectnumber">&#160;0.0.0-22-g2365524</span>
                 </div>
                 <div id="projectbrief">Openpresso command line utility</div>
               </td>
@@ -132,7 +132,7 @@ $(function(){initNavTree('reference.html','',''); });
 <div class="textblock"><p><a class="anchor" id="md_reference"></a></p>
 <p>This page documents the command-line interface exposed by <span class="tt">openpresso-ctl</span>.</p>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md41"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
 Global options</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -147,7 +147,7 @@ Global options</h1>
 <td class="markdownTableBodyNone"><span class="tt">--help-all</span>  </td><td class="markdownTableBodyNone">—  </td><td class="markdownTableBodyNone">—  </td><td class="markdownTableBodyNone">Expand help for all subcommands and exit.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md43"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
 Scale commands</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -156,7 +156,7 @@ Scale commands</h1>
 <td class="markdownTableBodyNone"><span class="tt">reset-scales</span>  </td><td class="markdownTableBodyNone">—  </td><td class="markdownTableBodyNone">Zero the weight scales.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md45"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
 Brew profile commands</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -168,7 +168,7 @@ Brew profile commands</h1>
 </table>
 <p><span class="tt">set-profile</span> accepts field names in either camelCase or snake_case. Duration values must use the protobuf JSON duration form such as <span class="tt">"30s"</span> or <span class="tt">"4.5s"</span>.</p>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md47"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md49"></a>
 User settings commands</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -179,7 +179,7 @@ User settings commands</h1>
 <td class="markdownTableBodyNone"><span class="tt">set-user-settings</span>  </td><td class="markdownTableBodyNone"><span class="tt">[file]</span>  </td><td class="markdownTableBodyNone">Upload user settings from proto3 JSON. If <span class="tt">file</span> is omitted, input is read from standard input.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md49"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md51"></a>
 Power commands</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -192,7 +192,7 @@ Power commands</h1>
 <td class="markdownTableBodyNone"><span class="tt">get-power</span>  </td><td class="markdownTableBodyNone">—  </td><td class="markdownTableBodyNone">Query the current power state.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md51"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md53"></a>
 Brew commands</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -205,7 +205,7 @@ Brew commands</h1>
 <td class="markdownTableBodyNone"><span class="tt">get-brew-state</span>  </td><td class="markdownTableBodyNone">—  </td><td class="markdownTableBodyNone">Query whether a brew is currently running.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md53"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md55"></a>
 Steam commands</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -218,7 +218,7 @@ Steam commands</h1>
 <td class="markdownTableBodyNone"><span class="tt">get-steam</span>  </td><td class="markdownTableBodyNone">—  </td><td class="markdownTableBodyNone">Query the current steam mode state.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md55"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md57"></a>
 Streaming commands</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -251,7 +251,7 @@ Streaming commands</h1>
 <td class="markdownTableBodyNone"><span class="tt">steam-active</span>  </td><td class="markdownTableBodyNone">Steam active temperature controller.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md57"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md59"></a>
 Environment</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -260,7 +260,7 @@ Environment</h1>
 <td class="markdownTableBodyNone"><span class="tt">OPENPRESSO_SOCK</span>  </td><td class="markdownTableBodyNone">Default daemon endpoint used when <span class="tt">--socket</span> is not specified.  </td></tr>
 </table>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md59"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md61"></a>
 Exit behavior</h1>
 <p>A successful command returns exit status <span class="tt">0</span>. Invalid arguments, connection failures, or RPC-level errors return a non-zero status. </p>
 </div></div><!-- contents -->
