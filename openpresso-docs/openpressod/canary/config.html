@@ -63,7 +63,7 @@ MathJax.Hub.Config({
               </td>
               <td id="projectalign">
                 <div id="projectname">Openpressod<span
-                    id="projectnumber">&#160;0.0.0-72-gb61fe75</span>
+                    id="projectnumber">&#160;0.0.0-74-g1f7a81d</span>
                 </div>
                 <div id="projectbrief">Smart espresso machine control library</div>
               </td>
@@ -342,6 +342,8 @@ Units</h1>
 <th class="markdownTableHeadNone">Key  </th><th class="markdownTableHeadNone">Type  </th><th class="markdownTableHeadNone">Required  </th><th class="markdownTableHeadNone">Default  </th><th class="markdownTableHeadNone">Description  </th></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><span class="tt">control_pin</span>  </td><td class="markdownTableBodyNone">Integer  </td><td class="markdownTableBodyNone"><b>Yes</b>  </td><td class="markdownTableBodyNone">—  </td><td class="markdownTableBodyNone">GPIO pin connected to the boiler SSR.  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><span class="tt">ready_hysteresis_period</span>  </td><td class="markdownTableBodyNone">Duration  </td><td class="markdownTableBodyNone">No  </td><td class="markdownTableBodyNone"><span class="tt">5s</span>  </td><td class="markdownTableBodyNone">Time the temperature must continuously remain inside the active mode's temperature window before the heater status changes to ready.  </td></tr>
 </table>
 <hr  />
 <h1 class="doxsection"><a class="anchor" id="autotoc_md50"></a>
